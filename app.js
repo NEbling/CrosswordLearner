@@ -334,6 +334,22 @@ function isFullyConnected() {
     return visited.size === placedWords.length;
 }
 
+function revealCurrentWord() {
+    if (!currentWord || currentWord.solved) return;
+
+    lockWord(currentWord);
+}
+
+function revealPuzzle() {
+    placedWords.forEach(word => {
+        if (!word.solved) {
+            lockWord(word);
+        }
+    });
+
+    checkPuzzleComplete();
+}
+
 function checkAllWords() {
     placedWords.forEach(word => {
         if (word.solved) return;
