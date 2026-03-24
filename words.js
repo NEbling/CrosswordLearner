@@ -1,5774 +1,8002 @@
 const WORDS = [
     {
-        "spanish": "ser",
-        "english": "to be"
+        "spanish": "hacer",
+        "english": "to do"
     },
     {
-        "spanish": "tener",
-        "english": "to have"
+        "spanish": "poder",
+        "english": "to be able to"
     },
     {
-        "spanish": "ese",
-        "english": "that"
-    },
-    {
-        "spanish": "eso",
-        "english": "it"
-    },
-    {
-        "spanish": "para",
-        "english": "for"
-    },
-    {
-        "spanish": "ella",
-        "english": "she"
-    },
-    {
-        "spanish": "como",
-        "english": "as"
-    },
-    {
-        "spanish": "decir",
-        "english": "to say"
-    },
-    {
-        "spanish": "desde",
-        "english": "from"
-    },
-    {
-        "spanish": "pero",
-        "english": "but"
-    },
-    {
-        "spanish": "ellos",
-        "english": "they"
-    },
-    {
-        "spanish": "todos",
-        "english": "all"
-    },
-    {
-        "spanish": "esta",
-        "english": "this"
-    },
-    {
-        "spanish": "uno",
-        "english": "one"
-    },
-    {
-        "spanish": "afuera",
-        "english": "out"
-    },
-    {
-        "spanish": "arriba",
-        "english": "up"
+        "spanish": "ver",
+        "english": "to see"
     },
     {
         "spanish": "saber",
         "english": "to know"
     },
     {
-        "spanish": "podría",
-        "english": "could"
-    },
-    {
-        "spanish": "llegar",
-        "english": "to get"
-    },
-    {
-        "spanish": "nosotros",
-        "english": "we"
-    },
-    {
-        "spanish": "venir",
-        "english": "to come"
-    },
-    {
-        "spanish": "hombre",
-        "english": "man"
-    },
-    {
-        "spanish": "qué",
-        "english": "what"
-    },
-    {
-        "spanish": "ahí",
-        "english": "there"
-    },
-    {
-        "spanish": "cual",
-        "english": "which"
-    },
-    {
-        "spanish": "dentro",
-        "english": "into"
-    },
-    {
-        "spanish": "pensar",
-        "english": "to think"
-    },
-    {
-        "spanish": "mirar",
-        "english": "to look"
-    },
-    {
-        "spanish": "quien",
-        "english": "who"
-    },
-    {
-        "spanish": "cuando",
-        "english": "when"
-    },
-    {
-        "spanish": "tomar",
-        "english": "to take"
-    },
-    {
-        "spanish": "hora",
-        "english": "time"
-    },
-    {
-        "spanish": "atrás",
-        "english": "back"
-    },
-    {
-        "spanish": "más",
-        "english": "more"
-    },
-    {
-        "spanish": "entonces",
-        "english": "then"
-    },
-    {
-        "spanish": "abajo",
-        "english": "down"
-    },
-    {
-        "spanish": "bueno",
-        "english": "good"
-    },
-    {
-        "spanish": "terminado",
-        "english": "over"
-    },
-    {
-        "spanish": "ahora",
-        "english": "now"
-    },
-    {
-        "spanish": "mano",
-        "english": "hand"
-    },
-    {
-        "spanish": "algunos",
-        "english": "some"
-    },
-    {
         "spanish": "querer",
         "english": "to want"
     },
     {
-        "spanish": "sólo",
-        "english": "just"
-    },
-    {
-        "spanish": "solamente",
-        "english": "only"
-    },
-    {
-        "spanish": "camino",
-        "english": "way"
-    },
-    {
-        "spanish": "otro",
-        "english": "other"
-    },
-    {
-        "spanish": "día",
-        "english": "day"
-    },
-    {
-        "spanish": "ojo",
-        "english": "eye"
-    },
-    {
-        "spanish": "preguntar",
-        "english": "to ask"
-    },
-    {
-        "spanish": "encontrar",
-        "english": "to find"
-    },
-    {
-        "spanish": "dos",
-        "english": "two"
-    },
-    {
-        "spanish": "pequeño",
-        "english": "little"
-    },
-    {
-        "spanish": "largo",
-        "english": "long"
-    },
-    {
-        "spanish": "muy",
-        "english": "very"
-    },
-    {
-        "spanish": "sentir",
-        "english": "to feel"
-    },
-    {
-        "spanish": "alguna",
-        "english": "any"
-    },
-    {
-        "spanish": "cosa",
-        "english": "thing"
-    },
-    {
-        "spanish": "también",
-        "english": "too"
-    },
-    {
-        "spanish": "aquí",
-        "english": "here"
-    },
-    {
-        "spanish": "nunca",
-        "english": "never"
-    },
-    {
-        "spanish": "dejar",
-        "english": "to leave"
-    },
-    {
-        "spanish": "persona",
-        "english": "person"
-    },
-    {
-        "spanish": "antiguo",
-        "english": "old"
-    },
-    {
-        "spanish": "cabeza",
-        "english": "head"
-    },
-    {
-        "spanish": "girar",
-        "english": "to turn"
-    },
-    {
-        "spanish": "mediante",
-        "english": "through"
-    },
-    {
-        "spanish": "incluso",
-        "english": "even"
-    },
-    {
-        "spanish": "cara",
-        "english": "face"
-    },
-    {
-        "spanish": "mucho",
-        "english": "much"
-    },
-    {
-        "spanish": "apagado",
-        "english": "off"
-    },
-    {
-        "spanish": "primero",
-        "english": "first"
-    },
-    {
-        "spanish": "correcto",
-        "english": "right"
-    },
-    {
-        "spanish": "nuestro",
-        "english": "our"
-    },
-    {
-        "spanish": "cómo",
-        "english": "how"
-    },
-    {
-        "spanish": "dónde",
-        "english": "where"
-    },
-    {
-        "spanish": "después",
-        "english": "after"
-    },
-    {
-        "spanish": "sus",
-        "english": "its"
-    },
-    {
-        "spanish": "mujer",
-        "english": "woman"
-    },
-    {
-        "spanish": "lejos",
-        "english": "away"
-    },
-    {
-        "spanish": "vida",
-        "english": "life"
-    },
-    {
-        "spanish": "llamar",
-        "english": "to call"
-    },
-    {
-        "spanish": "todavía",
-        "english": "still"
-    },
-    {
-        "spanish": "escuchar",
-        "english": "to hear"
-    },
-    {
-        "spanish": "año",
-        "english": "year"
-    },
-    {
-        "spanish": "propio",
-        "english": "own"
-    },
-    {
-        "spanish": "trabajar",
-        "english": "to work"
-    },
-    {
-        "spanish": "debería",
-        "english": "should"
-    },
-    {
-        "spanish": "lugar",
-        "english": "place"
-    },
-    {
-        "spanish": "habitación",
-        "english": "room"
-    },
-    {
-        "spanish": "bien",
-        "english": "well"
-    },
-    {
-        "spanish": "pararse",
-        "english": "to stand"
-    },
-    {
-        "spanish": "deber",
-        "english": "to must"
-    },
-    {
-        "spanish": "alrededor",
-        "english": "around"
-    },
-    {
-        "spanish": "puerta",
-        "english": "door"
-    },
-    {
-        "spanish": "intentar",
-        "english": "to try"
-    },
-    {
-        "spanish": "amar",
-        "english": "to love"
-    },
-    {
-        "spanish": "casa",
-        "english": "house"
-    },
-    {
-        "spanish": "noche",
-        "english": "night"
+        "spanish": "pasar",
+        "english": "to pass"
     },
     {
         "spanish": "poner",
         "english": "to put"
     },
     {
-        "spanish": "genial",
-        "english": "great"
+        "spanish": "barista",
+        "english": "barista"
     },
     {
-        "spanish": "tal",
-        "english": "such"
+        "spanish": "adelantar",
+        "english": "to advance"
     },
     {
-        "spanish": "mantener",
-        "english": "to keep"
+        "spanish": "antiguo",
+        "english": "ancient"
     },
     {
-        "spanish": "sentarse",
-        "english": "to sit"
+        "spanish": "aparcar",
+        "english": "to park"
     },
     {
-        "spanish": "último",
-        "english": "last"
+        "spanish": "final",
+        "english": "final"
     },
     {
-        "spanish": "empezar",
-        "english": "to begin"
-    },
-    {
-        "spanish": "porque",
-        "english": "because"
-    },
-    {
-        "spanish": "aquellos",
-        "english": "those"
-    },
-    {
-        "spanish": "estas",
-        "english": "these"
-    },
-    {
-        "spanish": "palabra",
-        "english": "word"
-    },
-    {
-        "spanish": "usar",
-        "english": "to use"
-    },
-    {
-        "spanish": "necesitar",
-        "english": "to need"
-    },
-    {
-        "spanish": "abrir",
-        "english": "to open"
-    },
-    {
-        "spanish": "sostener",
-        "english": "to hold"
-    },
-    {
-        "spanish": "mientras",
-        "english": "while"
-    },
-    {
-        "spanish": "hablar",
-        "english": "to talk"
-    },
-    {
-        "spanish": "sobre",
-        "english": "upon"
-    },
-    {
-        "spanish": "sonreír",
-        "english": "to smile"
-    },
-    {
-        "spanish": "siempre",
-        "english": "always"
-    },
-    {
-        "spanish": "voz",
-        "english": "voice"
-    },
-    {
-        "spanish": "niño",
-        "english": "child"
-    },
-    {
-        "spanish": "padre",
-        "english": "father"
-    },
-    {
-        "spanish": "andar",
-        "english": "to walk"
-    },
-    {
-        "spanish": "joven",
-        "english": "young"
-    },
-    {
-        "spanish": "significar",
-        "english": "to mean"
-    },
-    {
-        "spanish": "nada",
-        "english": "nothing"
-    },
-    {
-        "spanish": "correr",
-        "english": "to run"
-    },
-    {
-        "spanish": "aunque",
-        "english": "though"
-    },
-    {
-        "spanish": "momento",
-        "english": "moment"
-    },
-    {
-        "spanish": "madre",
-        "english": "mother"
-    },
-    {
-        "spanish": "mismo",
-        "english": "same"
-    },
-    {
-        "spanish": "nombre",
-        "english": "name"
-    },
-    {
-        "spanish": "muchos",
-        "english": "many"
-    },
-    {
-        "spanish": "mente",
-        "english": "mind"
-    },
-    {
-        "spanish": "pocos",
-        "english": "few"
-    },
-    {
-        "spanish": "traer",
-        "english": "to bring"
-    },
-    {
-        "spanish": "ligero",
-        "english": "light"
-    },
-    {
-        "spanish": "cerrar",
-        "english": "to close"
-    },
-    {
-        "spanish": "lado",
-        "english": "side"
-    },
-    {
-        "spanish": "amigo",
-        "english": "friend"
-    },
-    {
-        "spanish": "cada",
-        "english": "every"
-    },
-    {
-        "spanish": "brazo",
-        "english": "arm"
-    },
-    {
-        "spanish": "tres",
-        "english": "three"
-    },
-    {
-        "spanish": "suficiente",
-        "english": "enough"
-    },
-    {
-        "spanish": "niña",
-        "english": "girl"
-    },
-    {
-        "spanish": "debajo",
-        "english": "under"
-    },
-    {
-        "spanish": "nuevo",
-        "english": "new"
-    },
-    {
-        "spanish": "fin",
-        "english": "end"
-    },
-    {
-        "spanish": "vivir",
-        "english": "to live"
-    },
-    {
-        "spanish": "además",
-        "english": "also"
-    },
-    {
-        "spanish": "ayudar",
-        "english": "to help"
-    },
-    {
-        "spanish": "entre",
-        "english": "between"
-    },
-    {
-        "spanish": "mundo",
-        "english": "world"
-    },
-    {
-        "spanish": "caer",
-        "english": "to fall"
-    },
-    {
-        "spanish": "esperar",
-        "english": "to wait"
-    },
-    {
-        "spanish": "ver",
-        "english": "to watch"
-    },
-    {
-        "spanish": "ambos",
-        "english": "both"
-    },
-    {
-        "spanish": "pie",
-        "english": "foot"
-    },
-    {
-        "spanish": "parte",
-        "english": "part"
-    },
-    {
-        "spanish": "pequeña",
-        "english": "small"
-    },
-    {
-        "spanish": "hasta",
-        "english": "until"
-    },
-    {
-        "spanish": "contestar",
-        "english": "to answer"
-    },
-    {
-        "spanish": "mostrar",
-        "english": "to show"
-    },
-    {
-        "spanish": "mentir",
-        "english": "to lie"
-    },
-    {
-        "spanish": "curso",
-        "english": "course"
-    },
-    {
-        "spanish": "pasar",
-        "english": "to happen"
-    },
-    {
-        "spanish": "creer",
-        "english": "to believe"
-    },
-    {
-        "spanish": "regresar",
-        "english": "to return"
-    },
-    {
-        "spanish": "detrás",
-        "english": "behind"
-    },
-    {
-        "spanish": "punto",
-        "english": "point"
-    },
-    {
-        "spanish": "siguiente",
-        "english": "next"
-    },
-    {
-        "spanish": "corazón",
-        "english": "heart"
-    },
-    {
-        "spanish": "agua",
-        "english": "water"
-    },
-    {
-        "spanish": "casi",
-        "english": "almost"
-    },
-    {
-        "spanish": "cuerpo",
-        "english": "body"
-    },
-    {
-        "spanish": "mañana",
-        "english": "morning"
-    },
-    {
-        "spanish": "sonar",
-        "english": "sound"
-    },
-    {
-        "spanish": "conocer",
-        "english": "to meet"
-    },
-    {
-        "spanish": "dios",
-        "english": "god"
-    },
-    {
-        "spanish": "blanco",
-        "english": "white"
-    },
-    {
-        "spanish": "recordar",
-        "english": "to remember"
-    },
-    {
-        "spanish": "tipo",
-        "english": "kind"
-    },
-    {
-        "spanish": "alcanzar",
-        "english": "to reach"
-    },
-    {
-        "spanish": "morir",
-        "english": "to die"
-    },
-    {
-        "spanish": "difícil",
-        "english": "hard"
-    },
-    {
-        "spanish": "malo",
-        "english": "bad"
-    },
-    {
-        "spanish": "mitad",
-        "english": "half"
-    },
-    {
-        "spanish": "reir",
-        "english": "to laugh"
-    },
-    {
-        "spanish": "familia",
-        "english": "family"
-    },
-    {
-        "spanish": "alto",
-        "english": "high"
-    },
-    {
-        "spanish": "libro",
-        "english": "book"
-    },
-    {
-        "spanish": "importar",
-        "english": "matter"
-    },
-    {
-        "spanish": "paso",
-        "english": "step"
-    },
-    {
-        "spanish": "cambiar",
-        "english": "to change"
-    },
-    {
-        "spanish": "pregunta",
-        "english": "question"
-    },
-    {
-        "spanish": "comprender",
-        "english": "to understand"
-    },
-    {
-        "spanish": "seguir",
-        "english": "to follow"
-    },
-    {
-        "spanish": "juntos",
-        "english": "together"
-    },
-    {
-        "spanish": "esposa",
-        "english": "wife"
-    },
-    {
-        "spanish": "tirar",
-        "english": "to pull"
-    },
-    {
-        "spanish": "mesa",
-        "english": "table"
-    },
-    {
-        "spanish": "jugar",
-        "english": "to play"
-    },
-    {
-        "spanish": "perder",
-        "english": "to lose"
-    },
-    {
-        "spanish": "grande",
-        "english": "big"
-    },
-    {
-        "spanish": "llorar",
-        "english": "to cry"
-    },
-    {
-        "spanish": "negro",
-        "english": "black"
-    },
-    {
-        "spanish": "pelo",
-        "english": "hair"
-    },
-    {
-        "spanish": "leer",
-        "english": "to read"
-    },
-    {
-        "spanish": "frente",
-        "english": "front"
-    },
-    {
-        "spanish": "mandar",
-        "english": "to send"
-    },
-    {
-        "spanish": "bastante",
-        "english": "quite"
-    },
-    {
-        "spanish": "romper",
-        "english": "to break"
-    },
-    {
-        "spanish": "minuto",
-        "english": "minute"
-    },
-    {
-        "spanish": "oscuro",
-        "english": "dark"
-    },
-    {
-        "spanish": "pronto",
-        "english": "soon"
-    },
-    {
-        "spanish": "cama",
-        "english": "bed"
-    },
-    {
-        "spanish": "hacia",
-        "english": "toward"
-    },
-    {
-        "spanish": "todo",
-        "english": "whole"
-    },
-    {
-        "spanish": "coche",
-        "english": "car"
-    },
-    {
-        "spanish": "ventana",
-        "english": "window"
-    },
-    {
-        "spanish": "agitar",
-        "english": "to shake"
-    },
-    {
-        "spanish": "descanso",
-        "english": "rest"
-    },
-    {
-        "spanish": "dinero",
-        "english": "money"
-    },
-    {
-        "spanish": "hecho",
-        "english": "fact"
-    },
-    {
-        "spanish": "hijo",
-        "english": "son"
-    },
-    {
-        "spanish": "escribir",
-        "english": "to write"
-    },
-    {
-        "spanish": "fuego",
-        "english": "fire"
-    },
-    {
-        "spanish": "segundo",
-        "english": "second"
-    },
-    {
-        "spanish": "quedarse",
-        "english": "to stay"
-    },
-    {
-        "spanish": "caso",
-        "english": "case"
-    },
-    {
-        "spanish": "historia",
-        "english": "story"
-    },
-    {
-        "spanish": "línea",
-        "english": "line"
-    },
-    {
-        "spanish": "crecer",
-        "english": "to grow"
-    },
-    {
-        "spanish": "aire",
-        "english": "air"
-    },
-    {
-        "spanish": "desear",
-        "english": "to wish"
-    },
-    {
-        "spanish": "levantar",
-        "english": "to rise"
-    },
-    {
-        "spanish": "menos",
-        "english": "least"
-    },
-    {
-        "spanish": "completo",
-        "english": "full"
-    },
-    {
-        "spanish": "atrapar",
-        "english": "to catch"
-    },
-    {
-        "spanish": "liderar",
-        "english": "to lead"
-    },
-    {
-        "spanish": "llevar",
-        "english": "to carry"
-    },
-    {
-        "spanish": "muerte",
-        "english": "death"
-    },
-    {
-        "spanish": "dormir",
-        "english": "to sleep"
-    },
-    {
-        "spanish": "matar",
-        "english": "to kill"
-    },
-    {
-        "spanish": "responder",
-        "english": "to reply"
-    },
-    {
-        "spanish": "pared",
-        "english": "wall"
-    },
-    {
-        "spanish": "conducir",
-        "english": "to drive"
-    },
-    {
-        "spanish": "cerca",
-        "english": "near"
-    },
-    {
-        "spanish": "dibujar",
-        "english": "to draw"
-    },
-    {
-        "spanish": "hombro",
-        "english": "shoulder"
-    },
-    {
-        "spanish": "semana",
-        "english": "week"
-    },
-    {
-        "spanish": "pasado",
-        "english": "past"
-    },
-    {
-        "spanish": "muerto",
-        "english": "dead"
-    },
-    {
-        "spanish": "temprano",
-        "english": "early"
-    },
-    {
-        "spanish": "solo",
-        "english": "alone"
-    },
-    {
-        "spanish": "sentido",
-        "english": "sense"
-    },
-    {
-        "spanish": "boca",
-        "english": "mouth"
-    },
-    {
-        "spanish": "soportar",
-        "english": "to bear"
-    },
-    {
-        "spanish": "cuatro",
-        "english": "four"
-    },
-    {
-        "spanish": "continuar",
-        "english": "to continue"
-    },
-    {
-        "spanish": "árbol",
-        "english": "tree"
-    },
-    {
-        "spanish": "hermano",
-        "english": "brother"
-    },
-    {
-        "spanish": "razón",
-        "english": "reason"
-    },
-    {
-        "spanish": "caballo",
-        "english": "horse"
-    },
-    {
-        "spanish": "otros",
-        "english": "others"
-    },
-    {
-        "spanish": "orden",
-        "english": "order"
-    },
-    {
-        "spanish": "cinco",
-        "english": "five"
-    },
-    {
-        "spanish": "tocar",
-        "english": "to touch"
-    },
-    {
-        "spanish": "redondo",
-        "english": "round"
-    },
-    {
-        "spanish": "profundo",
-        "english": "deep"
-    },
-    {
-        "spanish": "carta",
-        "english": "letter"
-    },
-    {
-        "spanish": "suponer",
-        "english": "to suppose"
-    },
-    {
-        "spanish": "fuerza",
-        "english": "force"
-    },
-    {
-        "spanish": "pueblo",
-        "english": "town"
-    },
-    {
-        "spanish": "comer",
-        "english": "to eat"
-    },
-    {
-        "spanish": "claro",
-        "english": "clear"
-    },
-    {
-        "spanish": "casarse",
-        "english": "to marry"
-    },
-    {
-        "spanish": "país",
-        "english": "country"
-    },
-    {
-        "spanish": "presente",
-        "english": "present"
-    },
-    {
-        "spanish": "piso",
-        "english": "floor"
-    },
-    {
-        "spanish": "pagar",
-        "english": "to pay"
-    },
-    {
-        "spanish": "asentir",
-        "english": "to nod"
-    },
-    {
-        "spanish": "dedo",
-        "english": "finger"
-    },
-    {
-        "spanish": "permanecer",
-        "english": "to remain"
-    },
-    {
-        "spanish": "lágrima",
-        "english": "tear"
-    },
-    {
-        "spanish": "calle",
-        "english": "street"
-    },
-    {
-        "spanish": "dama",
-        "english": "lady"
-    },
-    {
-        "spanish": "temor",
-        "english": "fear"
-    },
-    {
-        "spanish": "alguien",
-        "english": "someone"
-    },
-    {
-        "spanish": "negocio",
-        "english": "business"
-    },
-    {
-        "spanish": "poder",
-        "english": "able"
-    },
-    {
-        "spanish": "silla",
-        "english": "chair"
-    },
-    {
-        "spanish": "olvidar",
-        "english": "to forget"
-    },
-    {
-        "spanish": "rojo",
-        "english": "red"
-    },
-    {
-        "spanish": "quizás",
-        "english": "perhaps"
-    },
-    {
-        "spanish": "corto",
-        "english": "short"
-    },
-    {
-        "spanish": "suelo",
-        "english": "ground"
-    },
-    {
-        "spanish": "cierto",
-        "english": "true"
-    },
-    {
-        "spanish": "labio",
-        "english": "lip"
-    },
-    {
-        "spanish": "vestirse",
-        "english": "to dress"
-    },
-    {
-        "spanish": "mes",
-        "english": "month"
-    },
-    {
-        "spanish": "tarde",
-        "english": "late"
-    },
-    {
-        "spanish": "colegio",
-        "english": "school"
-    },
-    {
-        "spanish": "quién",
-        "english": "whom"
-    },
-    {
-        "spanish": "bajo",
-        "english": "low"
-    },
-    {
-        "spanish": "marido",
-        "english": "husband"
-    },
-    {
-        "spanish": "diferente",
-        "english": "different"
-    },
-    {
-        "spanish": "beber",
-        "english": "to drink"
-    },
-    {
-        "spanish": "aprender",
-        "english": "to learn"
-    },
-    {
-        "spanish": "papel",
-        "english": "paper"
-    },
-    {
-        "spanish": "tierra",
-        "english": "land"
-    },
-    {
-        "spanish": "ordenar",
-        "english": "sort"
-    },
-    {
-        "spanish": "encima",
-        "english": "above"
-    },
-    {
-        "spanish": "cien",
-        "english": "hundred"
-    },
-    {
-        "spanish": "notar",
-        "english": "to notice"
-    },
-    {
-        "spanish": "hija",
-        "english": "daughter"
-    },
-    {
-        "spanish": "oficina",
-        "english": "office"
-    },
-    {
-        "spanish": "frío",
-        "english": "cold"
-    },
-    {
-        "spanish": "figura",
-        "english": "figure"
-    },
-    {
-        "spanish": "sensación",
-        "english": "feeling"
-    },
-    {
-        "spanish": "colgar",
-        "english": "to hang"
-    },
-    {
-        "spanish": "cortar",
-        "english": "to cut"
-    },
-    {
-        "spanish": "número",
-        "english": "number"
-    },
-    {
-        "spanish": "multa",
-        "english": "fine"
-    },
-    {
-        "spanish": "ciudad",
-        "english": "city"
-    },
-    {
-        "spanish": "sorprender",
-        "english": "to surprise"
-    },
-    {
-        "spanish": "elevar",
-        "english": "to raise"
-    },
-    {
-        "spanish": "llenar",
-        "english": "to fill"
-    },
-    {
-        "spanish": "varios",
-        "english": "several"
-    },
-    {
-        "spanish": "cuyo",
-        "english": "whose"
-    },
-    {
-        "spanish": "pobre",
-        "english": "poor"
-    },
-    {
-        "spanish": "hace",
-        "english": "ago"
-    },
-    {
-        "spanish": "causar",
-        "english": "to cause"
-    },
-    {
-        "spanish": "entrar",
-        "english": "to enter"
-    },
-    {
-        "spanish": "listo",
-        "english": "ready"
-    },
-    {
-        "spanish": "azul",
-        "english": "blue"
-    },
-    {
-        "spanish": "adelante",
-        "english": "forward"
-    },
-    {
-        "spanish": "hermana",
-        "english": "sister"
-    },
-    {
-        "spanish": "gastar",
-        "english": "to spend"
-    },
-    {
-        "spanish": "estado",
-        "english": "state"
-    },
-    {
-        "spanish": "pelear",
-        "english": "to fight"
-    },
-    {
-        "spanish": "fuerte",
-        "english": "strong"
-    },
-    {
-        "spanish": "besar",
-        "english": "to kiss"
-    },
-    {
-        "spanish": "durante",
-        "english": "during"
-    },
-    {
-        "spanish": "poco",
-        "english": "bit"
-    },
-    {
-        "spanish": "pierna",
-        "english": "leg"
-    },
-    {
-        "spanish": "querido",
-        "english": "dear"
-    },
-    {
-        "spanish": "feliz",
-        "english": "happy"
-    },
-    {
-        "spanish": "sueño",
-        "english": "dream"
-    },
-    {
-        "spanish": "nota",
-        "english": "note"
-    },
-    {
-        "spanish": "incorrecto",
-        "english": "wrong"
-    },
-    {
-        "spanish": "interesar",
-        "english": "interest"
-    },
-    {
-        "spanish": "sangre",
-        "english": "blood"
-    },
-    {
-        "spanish": "viento",
-        "english": "wind"
-    },
-    {
-        "spanish": "humano",
-        "english": "human"
-    },
-    {
-        "spanish": "señor",
-        "english": "lord"
-    },
-    {
-        "spanish": "cubrir",
-        "english": "to cover"
-    },
-    {
-        "spanish": "apoyarse",
-        "english": "to lean"
-    },
-    {
-        "spanish": "permitir",
-        "english": "to allow"
-    },
-    {
-        "spanish": "diez",
-        "english": "ten"
-    },
-    {
-        "spanish": "duda",
-        "english": "doubt"
-    },
-    {
-        "spanish": "veinte",
-        "english": "twenty"
-    },
-    {
-        "spanish": "hermoso",
-        "english": "beautiful"
-    },
-    {
-        "spanish": "guerra",
-        "english": "war"
-    },
-    {
-        "spanish": "bonita",
-        "english": "pretty"
-    },
-    {
-        "spanish": "despacio",
-        "english": "slowly"
-    },
-    {
-        "spanish": "posible",
-        "english": "possible"
-    },
-    {
-        "spanish": "problema",
-        "english": "trouble"
-    },
-    {
-        "spanish": "visitar",
-        "english": "to visit"
-    },
-    {
-        "spanish": "gratis",
-        "english": "free"
-    },
-    {
-        "spanish": "trozo",
-        "english": "piece"
-    },
-    {
-        "spanish": "dom",
-        "english": "sun"
-    },
-    {
-        "spanish": "verdad",
-        "english": "truth"
-    },
-    {
-        "spanish": "considerar",
-        "english": "to consider"
-    },
-    {
-        "spanish": "actuar",
-        "english": "to act"
-    },
-    {
-        "spanish": "nadie",
-        "english": "anyone"
-    },
-    {
-        "spanish": "firmar",
-        "english": "sign"
-    },
-    {
-        "spanish": "acuerdo",
-        "english": "deal"
-    },
-    {
-        "spanish": "vaso",
-        "english": "glass"
-    },
-    {
-        "spanish": "trabajo",
-        "english": "job"
-    },
-    {
-        "spanish": "susurrar",
-        "english": "to whisper"
-    },
-    {
-        "spanish": "formar",
-        "english": "form"
-    },
-    {
-        "spanish": "fácil",
-        "english": "easy"
-    },
-    {
-        "spanish": "años",
-        "english": "age"
-    },
-    {
-        "spanish": "imagen",
-        "english": "picture"
-    },
-    {
-        "spanish": "seis",
-        "english": "six"
-    },
-    {
-        "spanish": "finalmente",
-        "english": "finally"
-    },
-    {
-        "spanish": "comprar",
-        "english": "to buy"
-    },
-    {
-        "spanish": "silencio",
-        "english": "silence"
-    },
-    {
-        "spanish": "perro",
-        "english": "dog"
-    },
-    {
-        "spanish": "visión",
-        "english": "sight"
-    },
-    {
-        "spanish": "oreja",
-        "english": "ear"
-    },
-    {
-        "spanish": "ofrecer",
-        "english": "to offer"
-    },
-    {
-        "spanish": "enviar",
-        "english": "ship"
-    },
-    {
-        "spanish": "mar",
-        "english": "sea"
-    },
-    {
-        "spanish": "anillo",
-        "english": "ring"
-    },
-    {
-        "spanish": "prometer",
-        "english": "to promise"
-    },
-    {
-        "spanish": "mil",
-        "english": "thousand"
-    },
-    {
-        "spanish": "adivinar",
-        "english": "to guess"
-    },
-    {
-        "spanish": "esquina",
-        "english": "corner"
-    },
-    {
-        "spanish": "teléfono",
-        "english": "phone"
-    },
-    {
-        "spanish": "atención",
-        "english": "attention"
-    },
-    {
-        "spanish": "esconder",
-        "english": "to hide"
-    },
-    {
-        "spanish": "perderse",
-        "english": "to miss"
-    },
-    {
-        "spanish": "mirada",
-        "english": "gaze"
-    },
-    {
-        "spanish": "policía",
-        "english": "police"
-    },
-    {
-        "spanish": "ahorrar",
-        "english": "to save"
-    },
-    {
-        "spanish": "partido",
-        "english": "party"
-    },
-    {
-        "spanish": "inglés",
-        "english": "english"
-    },
-    {
-        "spanish": "piedra",
-        "english": "stone"
-    },
-    {
-        "spanish": "londres",
-        "english": "london"
-    },
-    {
-        "spanish": "extraño",
-        "english": "strange"
-    },
-    {
-        "spanish": "bebé",
-        "english": "baby"
-    },
-    {
-        "spanish": "temeroso",
-        "english": "afraid"
-    },
-    {
-        "spanish": "dolor",
-        "english": "pain"
-    },
-    {
-        "spanish": "ola",
-        "english": "wave"
-    },
-    {
-        "spanish": "cocina",
-        "english": "kitchen"
-    },
-    {
-        "spanish": "verde",
-        "english": "green"
-    },
-    {
-        "spanish": "pareja",
-        "english": "couple"
-    },
-    {
-        "spanish": "chico",
-        "english": "guy"
-    },
-    {
-        "spanish": "americano",
-        "english": "american"
-    },
-    {
-        "spanish": "asiento",
-        "english": "seat"
-    },
-    {
-        "spanish": "rodar",
-        "english": "to roll"
-    },
-    {
-        "spanish": "soplar",
-        "english": "to blow"
-    },
-    {
-        "spanish": "pesado",
-        "english": "heavy"
-    },
-    {
-        "spanish": "alma",
-        "english": "soul"
-    },
-    {
-        "spanish": "importante",
-        "english": "important"
-    },
-    {
-        "spanish": "calentar",
-        "english": "warm"
-    },
-    {
-        "spanish": "mía",
-        "english": "mine"
-    },
-    {
-        "spanish": "posición",
-        "english": "position"
-    },
-    {
-        "spanish": "caliente",
-        "english": "hot"
-    },
-    {
-        "spanish": "gritar",
-        "english": "to shout"
-    },
-    {
-        "spanish": "tema",
-        "english": "subject"
-    },
-    {
-        "spanish": "cena",
-        "english": "dinner"
-    },
-    {
-        "spanish": "verificar",
-        "english": "to check"
-    },
-    {
-        "spanish": "espíritu",
-        "english": "spirit"
-    },
-    {
-        "spanish": "oficial",
-        "english": "officer"
-    },
-    {
-        "spanish": "tranquilo",
-        "english": "quiet"
-    },
-    {
-        "spanish": "deseo",
-        "english": "desire"
-    },
-    {
-        "spanish": "excepto",
-        "english": "except"
-    },
-    {
-        "spanish": "imaginar",
-        "english": "to imagine"
-    },
-    {
-        "spanish": "pausar",
-        "english": "to pause"
-    },
-    {
-        "spanish": "acercarse",
-        "english": "to approach"
-    },
-    {
-        "spanish": "cuello",
-        "english": "neck"
-    },
-    {
-        "spanish": "milla",
-        "english": "mile"
-    },
-    {
-        "spanish": "manera",
-        "english": "manner"
-    },
-    {
-        "spanish": "unir",
-        "english": "to join"
-    },
-    {
-        "spanish": "comida",
-        "english": "food"
-    },
-    {
-        "spanish": "edificio",
-        "english": "building"
-    },
-    {
-        "spanish": "pegarse",
-        "english": "to stick"
-    },
-    {
-        "spanish": "borde",
-        "english": "edge"
-    },
-    {
-        "spanish": "campo",
-        "english": "field"
-    },
-    {
-        "spanish": "naturaleza",
-        "english": "nature"
-    },
-    {
-        "spanish": "río",
-        "english": "river"
-    },
-    {
-        "spanish": "pistola",
-        "english": "gun"
-    },
-    {
-        "spanish": "mencionar",
-        "english": "to mention"
-    },
-    {
-        "spanish": "derecho",
-        "english": "straight"
-    },
-    {
-        "spanish": "amplio",
-        "english": "wide"
-    },
-    {
-        "spanish": "empresa",
-        "english": "company"
-    },
-    {
-        "spanish": "cielo",
-        "english": "sky"
-    },
-    {
-        "spanish": "madera",
-        "english": "wood"
-    },
-    {
-        "spanish": "golpear",
-        "english": "to hit"
-    },
-    {
-        "spanish": "bailar",
-        "english": "to dance"
-    },
-    {
-        "spanish": "multitud",
-        "english": "crowd"
-    },
-    {
-        "spanish": "compañero",
-        "english": "fellow"
-    },
-    {
-        "spanish": "expresión",
-        "english": "expression"
-    },
-    {
-        "spanish": "caja",
-        "english": "box"
-    },
-    {
-        "spanish": "controlar",
-        "english": "control"
-    },
-    {
-        "spanish": "iglesia",
-        "english": "church"
-    },
-    {
-        "spanish": "suspirar",
-        "english": "to sigh"
-    },
-    {
-        "spanish": "elegir",
-        "english": "to choose"
-    },
-    {
-        "spanish": "sugerir",
-        "english": "to suggest"
-    },
-    {
-        "spanish": "rey",
-        "english": "king"
-    },
-    {
-        "spanish": "agradable",
-        "english": "nice"
-    },
-    {
-        "spanish": "resbalar",
-        "english": "to slip"
-    },
-    {
-        "spanish": "memoria",
-        "english": "memory"
-    },
-    {
-        "spanish": "ropa",
-        "english": "clothes"
-    },
-    {
-        "spanish": "informe",
-        "english": "report"
-    },
-    {
-        "spanish": "aceptar",
-        "english": "to accept"
-    },
-    {
-        "spanish": "disfrutar",
-        "english": "to enjoy"
-    },
-    {
-        "spanish": "piel",
-        "english": "skin"
-    },
-    {
-        "spanish": "secreto",
-        "english": "secret"
-    },
-    {
-        "spanish": "juego",
-        "english": "game"
-    },
-    {
-        "spanish": "bote",
-        "english": "boat"
-    },
-    {
-        "spanish": "vacío",
-        "english": "empty"
-    },
-    {
-        "spanish": "hoy",
-        "english": "today"
-    },
-    {
-        "spanish": "infierno",
-        "english": "hell"
-    },
-    {
-        "spanish": "servir",
-        "english": "to serve"
-    },
-    {
-        "spanish": "suave",
-        "english": "soft"
-    },
-    {
-        "spanish": "escapar",
-        "english": "to escape"
-    },
-    {
-        "spanish": "tono",
-        "english": "tone"
-    },
-    {
-        "spanish": "odiar",
-        "english": "to hate"
-    },
-    {
-        "spanish": "dirección",
-        "english": "direction"
-    },
-    {
-        "spanish": "intento",
-        "english": "attempt"
-    },
-    {
-        "spanish": "grupo",
-        "english": "group"
-    },
-    {
-        "spanish": "mejilla",
-        "english": "cheek"
-    },
-    {
-        "spanish": "bolsillo",
-        "english": "pocket"
-    },
-    {
-        "spanish": "buscar",
-        "english": "to search"
-    },
-    {
-        "spanish": "oler",
-        "english": "to smell"
-    },
-    {
-        "spanish": "primavera",
-        "english": "spring"
-    },
-    {
-        "spanish": "medio",
-        "english": "middle"
-    },
-    {
-        "spanish": "cuenta",
-        "english": "account"
-    },
-    {
-        "spanish": "izquierda",
-        "english": "left"
-    },
-    {
-        "spanish": "servicio",
-        "english": "service"
-    },
-    {
-        "spanish": "siguiendo",
-        "english": "following"
-    },
-    {
-        "spanish": "lastimar",
-        "english": "to hurt"
-    },
-    {
-        "spanish": "cargar",
-        "english": "charge"
-    },
-    {
-        "spanish": "público",
-        "english": "public"
-    },
-    {
-        "spanish": "placer",
-        "english": "pleasure"
-    },
-    {
-        "spanish": "hidalgo",
-        "english": "gentleman"
-    },
-    {
-        "spanish": "oro",
-        "english": "gold"
-    },
-    {
-        "spanish": "noticias",
-        "english": "news"
-    },
-    {
-        "spanish": "rodilla",
-        "english": "knee"
-    },
-    {
-        "spanish": "brillante",
-        "english": "bright"
-    },
-    {
-        "spanish": "alegre",
-        "english": "glad"
-    },
-    {
-        "spanish": "vencer",
-        "english": "to beat"
-    },
-    {
-        "spanish": "rápido",
-        "english": "fast"
-    },
-    {
-        "spanish": "soltero",
-        "english": "single"
-    },
-    {
-        "spanish": "distancia",
-        "english": "distance"
-    },
-    {
-        "spanish": "escena",
-        "english": "scene"
-    },
-    {
-        "spanish": "admitir",
-        "english": "to admit"
-    },
-    {
-        "spanish": "entrenar",
-        "english": "train"
-    },
-    {
-        "spanish": "clase",
-        "english": "class"
-    },
-    {
-        "spanish": "escritorio",
-        "english": "desk"
-    },
-    {
-        "spanish": "sala",
-        "english": "hall"
-    },
-    {
-        "spanish": "pecho",
-        "english": "chest"
-    },
-    {
-        "spanish": "dominar",
-        "english": "master"
-    },
-    {
-        "spanish": "café",
-        "english": "coffee"
-    },
-    {
-        "spanish": "confiar",
-        "english": "to trust"
-    },
-    {
-        "spanish": "guardia",
-        "english": "guard"
-    },
-    {
-        "spanish": "efecto",
-        "english": "effect"
-    },
-    {
-        "spanish": "sombra",
-        "english": "shadow"
-    },
-    {
-        "spanish": "cantar",
-        "english": "to sing"
-    },
-    {
-        "spanish": "bolso",
-        "english": "bag"
-    },
-    {
-        "spanish": "probar",
-        "english": "to prove"
-    },
-    {
-        "spanish": "francés",
-        "english": "french"
-    },
-    {
-        "spanish": "ninguna",
-        "english": "none"
-    },
-    {
-        "spanish": "apurarse",
-        "english": "to rush"
-    },
-    {
-        "spanish": "montaña",
-        "english": "mountain"
-    },
-    {
-        "spanish": "preparar",
-        "english": "to prepare"
-    },
-    {
-        "spanish": "soldado",
-        "english": "soldier"
-    },
-    {
-        "spanish": "apenas",
-        "english": "hardly"
-    },
-    {
-        "spanish": "limpiar",
-        "english": "clean"
-    },
-    {
-        "spanish": "vender",
-        "english": "to sell"
-    },
-    {
-        "spanish": "matrimonio",
-        "english": "marriage"
-    },
-    {
-        "spanish": "acción",
-        "english": "action"
-    },
-    {
-        "spanish": "miembro",
-        "english": "member"
-    },
-    {
-        "spanish": "futuro",
-        "english": "future"
-    },
-    {
-        "spanish": "colina",
-        "english": "hill"
-    },
-    {
-        "spanish": "jardín",
-        "english": "garden"
-    },
-    {
-        "spanish": "dulce",
-        "english": "sweet"
-    },
-    {
-        "spanish": "lluvia",
-        "english": "rain"
-    },
-    {
-        "spanish": "personaje",
-        "english": "character"
-    },
-    {
-        "spanish": "viajar",
-        "english": "to travel"
-    },
-    {
-        "spanish": "ataque",
-        "english": "attack"
-    },
-    {
-        "spanish": "fumar",
-        "english": "smoke"
-    },
-    {
-        "spanish": "seguro",
-        "english": "safe"
-    },
-    {
-        "spanish": "espacio",
-        "english": "space"
-    },
-    {
-        "spanish": "zona",
-        "english": "area"
-    },
-    {
-        "spanish": "situación",
-        "english": "situation"
-    },
-    {
-        "spanish": "rehusar",
-        "english": "to refuse"
-    },
-    {
-        "spanish": "treinta",
-        "english": "thirty"
-    },
-    {
-        "spanish": "seco",
-        "english": "dry"
-    },
-    {
-        "spanish": "saltar",
-        "english": "to jump"
-    },
-    {
-        "spanish": "repetir",
-        "english": "to repeat"
-    },
-    {
-        "spanish": "salvaje",
-        "english": "wild"
-    },
-    {
-        "spanish": "inglaterra",
-        "english": "england"
-    },
-    {
-        "spanish": "tercero",
-        "english": "third"
-    },
-    {
-        "spanish": "camisa",
-        "english": "shirt"
-    },
-    {
-        "spanish": "ganar",
-        "english": "to win"
-    },
-    {
-        "spanish": "nariz",
-        "english": "nose"
-    },
-    {
-        "spanish": "verano",
-        "english": "summer"
-    },
-    {
-        "spanish": "garganta",
-        "english": "throat"
-    },
-    {
-        "spanish": "esfuerzo",
-        "english": "effort"
-    },
-    {
-        "spanish": "sencillo",
-        "english": "simple"
-    },
-    {
-        "spanish": "término",
-        "english": "term"
-    },
-    {
-        "spanish": "enseñar",
-        "english": "to teach"
-    },
-    {
-        "spanish": "carrera",
-        "english": "race"
-    },
-    {
-        "spanish": "lento",
-        "english": "slow"
-    },
-    {
-        "spanish": "música",
-        "english": "music"
-    },
-    {
-        "spanish": "indio",
-        "english": "indian"
-    },
-    {
-        "spanish": "evento",
-        "english": "event"
-    },
-    {
-        "spanish": "flor",
-        "english": "flower"
-    },
-    {
-        "spanish": "marcar",
-        "english": "to mark"
-    },
-    {
-        "spanish": "pájaro",
-        "english": "bird"
-    },
-    {
-        "spanish": "corte",
-        "english": "court"
-    },
-    {
-        "spanish": "reunión",
-        "english": "meeting"
-    },
-    {
-        "spanish": "sombrero",
-        "english": "hat"
-    },
-    {
-        "spanish": "fallar",
-        "english": "to fail"
-    },
-    {
-        "spanish": "escalar",
-        "english": "to climb"
-    },
-    {
-        "spanish": "asesinato",
-        "english": "murder"
-    },
-    {
-        "spanish": "caber",
-        "english": "to fit"
-    },
-    {
-        "spanish": "ninguno",
-        "english": "neither"
-    },
-    {
-        "spanish": "delgado",
-        "english": "thin"
-    },
-    {
-        "spanish": "resultado",
-        "english": "result"
-    },
-    {
-        "spanish": "completar",
-        "english": "complete"
-    },
-    {
-        "spanish": "diente",
-        "english": "tooth"
-    },
-    {
-        "spanish": "propósito",
-        "english": "purpose"
-    },
-    {
-        "spanish": "página",
-        "english": "page"
-    },
-    {
-        "spanish": "así",
-        "english": "thus"
-    },
-    {
-        "spanish": "traje",
-        "english": "suit"
-    },
-    {
-        "spanish": "enemigo",
-        "english": "enemy"
-    },
-    {
-        "spanish": "siglo",
-        "english": "century"
-    },
-    {
-        "spanish": "luchar",
-        "english": "to struggle"
-    },
-    {
-        "spanish": "objeto",
-        "english": "object"
-    },
-    {
-        "spanish": "despertar",
-        "english": "to wake"
-    },
-    {
-        "spanish": "rico",
-        "english": "rich"
-    },
-    {
-        "spanish": "reclamar",
-        "english": "to claim"
-    },
-    {
-        "spanish": "justa",
-        "english": "fair"
-    },
-    {
-        "spanish": "común",
-        "english": "common"
-    },
-    {
-        "spanish": "grueso",
-        "english": "thick"
-    },
-    {
-        "spanish": "cosas",
-        "english": "stuff"
-    },
-    {
-        "spanish": "dirigirse",
-        "english": "to address"
-    },
-    {
-        "spanish": "vivo",
-        "english": "living"
-    },
-    {
-        "spanish": "siete",
-        "english": "seven"
-    },
-    {
-        "spanish": "reconocer",
-        "english": "to recognize"
-    },
-    {
-        "spanish": "apoyar",
-        "english": "to support"
-    },
-    {
-        "spanish": "yarda",
-        "english": "yard"
-    },
-    {
-        "spanish": "agarrar",
-        "english": "to grab"
-    },
-    {
-        "spanish": "marrón",
-        "english": "brown"
-    },
-    {
-        "spanish": "mando",
-        "english": "command"
-    },
-    {
-        "spanish": "presencia",
-        "english": "presence"
-    },
-    {
-        "spanish": "capa",
-        "english": "coat"
-    },
-    {
-        "spanish": "estación",
-        "english": "station"
-    },
-    {
-        "spanish": "necesario",
-        "english": "necessary"
-    },
-    {
-        "spanish": "hundir",
-        "english": "to sink"
-    },
-    {
-        "spanish": "banco",
-        "english": "bank"
-    },
-    {
-        "spanish": "estirar",
-        "english": "to stretch"
-    },
-    {
-        "spanish": "perfecto",
-        "english": "perfect"
-    },
-    {
-        "spanish": "sufrir",
-        "english": "to suffer"
-    },
-    {
-        "spanish": "repentino",
-        "english": "sudden"
-    },
-    {
-        "spanish": "ocho",
-        "english": "eight"
-    },
-    {
-        "spanish": "especial",
-        "english": "particular"
-    },
-    {
-        "spanish": "oscuridad",
-        "english": "darkness"
-    },
-    {
-        "spanish": "escalera",
-        "english": "stair"
-    },
-    {
-        "spanish": "agradecer",
-        "english": "to thank"
-    },
-    {
-        "spanish": "movimiento",
-        "english": "movement"
-    },
-    {
-        "spanish": "tienda",
-        "english": "shop"
-    },
-    {
-        "spanish": "pálido",
-        "english": "pale"
-    },
-    {
-        "spanish": "pertenecer",
-        "english": "to belong"
-    },
-    {
-        "spanish": "idioma",
-        "english": "language"
-    },
-    {
-        "spanish": "grave",
-        "english": "serious"
-    },
-    {
-        "spanish": "estrecho",
-        "english": "narrow"
-    },
-    {
-        "spanish": "condición",
-        "english": "condition"
-    },
-    {
-        "spanish": "estrella",
-        "english": "star"
-    },
-    {
-        "spanish": "botella",
-        "english": "bottle"
-    },
-    {
-        "spanish": "viva",
-        "english": "alive"
-    },
-    {
-        "spanish": "llave",
-        "english": "key"
-    },
-    {
-        "spanish": "balancear",
-        "english": "to swing"
-    },
-    {
-        "spanish": "ruidoso",
-        "english": "loud"
-    },
-    {
-        "spanish": "error",
-        "english": "mistake"
-    },
-    {
-        "spanish": "belleza",
-        "english": "beauty"
-    },
-    {
-        "spanish": "portón",
-        "english": "gate"
-    },
-    {
-        "spanish": "deslizarse",
-        "english": "to slide"
-    },
-    {
-        "spanish": "consciente",
-        "english": "aware"
-    },
-    {
-        "spanish": "atreverse",
-        "english": "to dare"
-    },
-    {
-        "spanish": "servidor",
-        "english": "servant"
-    },
-    {
-        "spanish": "inclinarse",
-        "english": "to bow"
-    },
-    {
-        "spanish": "circulo",
-        "english": "circle"
-    },
-    {
-        "spanish": "grabar",
-        "english": "record"
-    },
-    {
-        "spanish": "enojado",
-        "english": "angry"
-    },
-    {
-        "spanish": "nube",
-        "english": "cloud"
-    },
-    {
-        "spanish": "regla",
-        "english": "rule"
-    },
-    {
-        "spanish": "batalla",
-        "english": "battle"
-    },
-    {
-        "spanish": "tablero",
-        "english": "board"
-    },
-    {
-        "spanish": "privado",
-        "english": "private"
-    },
-    {
-        "spanish": "herida",
-        "english": "wound"
-    },
-    {
-        "spanish": "gusto",
-        "english": "taste"
-    },
-    {
-        "spanish": "arreglar",
-        "english": "to fix"
-    },
-    {
-        "spanish": "fácilmente",
-        "english": "easily"
-    },
-    {
-        "spanish": "criatura",
-        "english": "creature"
-    },
-    {
-        "spanish": "longitud",
-        "english": "length"
-    },
-    {
-        "spanish": "almacenar",
-        "english": "store"
-    },
-    {
-        "spanish": "fresco",
-        "english": "fresh"
-    },
-    {
-        "spanish": "vino",
-        "english": "wine"
-    },
-    {
-        "spanish": "ocasión",
-        "english": "occasion"
-    },
-    {
-        "spanish": "sistema",
-        "english": "system"
-    },
-    {
-        "spanish": "juez",
-        "english": "judge"
-    },
-    {
-        "spanish": "lengua",
-        "english": "tongue"
-    },
-    {
-        "spanish": "libra",
-        "english": "pound"
-    },
-    {
-        "spanish": "crear",
-        "english": "to create"
-    },
-    {
-        "spanish": "forma",
-        "english": "shape"
-    },
-    {
-        "spanish": "valor",
-        "english": "worth"
-    },
-    {
-        "spanish": "canción",
-        "english": "song"
-    },
-    {
-        "spanish": "enfermo",
-        "english": "ill"
-    },
-    {
-        "spanish": "nieve",
-        "english": "snow"
-    },
-    {
-        "spanish": "nivel",
-        "english": "level"
-    },
-    {
-        "spanish": "tonto",
-        "english": "fool"
-    },
-    {
-        "spanish": "enfermos",
-        "english": "sick"
-    },
-    {
-        "spanish": "detalle",
-        "english": "detail"
-    },
-    {
-        "spanish": "opinión",
-        "english": "opinion"
-    },
-    {
-        "spanish": "involucrar",
-        "english": "to involve"
-    },
-    {
-        "spanish": "dólar",
-        "english": "dollar"
-    },
-    {
-        "spanish": "enorme",
-        "english": "huge"
-    },
-    {
-        "spanish": "guay",
-        "english": "cool"
-    },
-    {
-        "spanish": "acampar",
-        "english": "camp"
-    },
-    {
-        "spanish": "ejemplo",
-        "english": "example"
-    },
-    {
-        "spanish": "viaje",
-        "english": "trip"
-    },
-    {
-        "spanish": "par",
-        "english": "pair"
-    },
-    {
-        "spanish": "cuento",
-        "english": "tale"
-    },
-    {
-        "spanish": "probable",
-        "english": "likely"
-    },
-    {
-        "spanish": "imposible",
-        "english": "impossible"
-    },
-    {
-        "spanish": "sociedad",
-        "english": "society"
-    },
-    {
-        "spanish": "robar",
-        "english": "to steal"
-    },
-    {
-        "spanish": "paz",
-        "english": "peace"
-    },
-    {
-        "spanish": "mensaje",
-        "english": "message"
-    },
-    {
-        "spanish": "asunto",
-        "english": "affair"
-    },
-    {
-        "spanish": "requerir",
-        "english": "to require"
-    },
-    {
-        "spanish": "zapato",
-        "english": "shoe"
-    },
-    {
-        "spanish": "pretender",
-        "english": "to intend"
-    },
-    {
-        "spanish": "calor",
-        "english": "heat"
-    },
-    {
-        "spanish": "ejército",
-        "english": "army"
-    },
-    {
-        "spanish": "ocupado",
-        "english": "busy"
-    },
-    {
-        "spanish": "gris",
-        "english": "gray"
-    },
-    {
-        "spanish": "alemán",
-        "english": "german"
-    },
-    {
-        "spanish": "contener",
-        "english": "to contain"
-    },
-    {
-        "spanish": "amarillo",
-        "english": "yellow"
-    },
-    {
-        "spanish": "tarjeta",
-        "english": "card"
-    },
-    {
-        "spanish": "agudo",
-        "english": "sharp"
-    },
-    {
-        "spanish": "calma",
-        "english": "calm"
-    },
-    {
-        "spanish": "bola",
-        "english": "ball"
-    },
-    {
-        "spanish": "fondo",
-        "english": "bottom"
-    },
-    {
-        "spanish": "peligro",
-        "english": "danger"
-    },
-    {
-        "spanish": "pez",
-        "english": "fish"
-    },
-    {
-        "spanish": "principal",
-        "english": "main"
-    },
-    {
-        "spanish": "pintar",
-        "english": "to paint"
-    },
-    {
-        "spanish": "autor",
-        "english": "author"
-    },
-    {
-        "spanish": "ruido",
-        "english": "noise"
-    },
-    {
-        "spanish": "enfado",
-        "english": "anger"
-    },
-    {
-        "spanish": "diferencia",
-        "english": "difference"
-    },
-    {
-        "spanish": "huésped",
-        "english": "guest"
-    },
-    {
-        "spanish": "sospechar",
-        "english": "to suspect"
-    },
-    {
-        "spanish": "choque",
-        "english": "shock"
-    },
-    {
-        "spanish": "disparo",
-        "english": "shot"
-    },
-    {
-        "spanish": "jefe",
-        "english": "chief"
-    },
-    {
-        "spanish": "brillar",
-        "english": "to shine"
-    },
-    {
-        "spanish": "respirar",
-        "english": "to breathe"
-    },
-    {
-        "spanish": "gobierno",
-        "english": "government"
-    },
-    {
-        "spanish": "pasantía",
-        "english": "stage"
-    },
-    {
-        "spanish": "cincuenta",
-        "english": "fifty"
-    },
-    {
-        "spanish": "agujero",
-        "english": "hole"
-    },
-    {
-        "spanish": "escritor",
-        "english": "writer"
-    },
-    {
-        "spanish": "reventar",
-        "english": "to burst"
-    },
-    {
-        "spanish": "elección",
-        "english": "choice"
-    },
-    {
-        "spanish": "plateado",
-        "english": "silver"
-    },
-    {
-        "spanish": "minúsculo",
-        "english": "tiny"
-    },
-    {
-        "spanish": "hierba",
-        "english": "grass"
-    },
-    {
-        "spanish": "dirigir",
-        "english": "to direct"
-    },
-    {
-        "spanish": "apariencia",
-        "english": "appearance"
-    },
-    {
-        "spanish": "américa",
-        "english": "america"
-    },
-    {
-        "spanish": "empacar",
-        "english": "to pack"
-    },
-    {
-        "spanish": "suavemente",
-        "english": "softly"
-    },
-    {
-        "spanish": "pista",
-        "english": "track"
-    },
-    {
-        "spanish": "evidencia",
-        "english": "evidence"
-    },
-    {
-        "spanish": "malvado",
-        "english": "evil"
-    },
-    {
-        "spanish": "revelar",
-        "english": "to reveal"
-    },
-    {
-        "spanish": "existir",
-        "english": "to exist"
-    },
-    {
-        "spanish": "arrastrar",
-        "english": "to drag"
-    },
-    {
-        "spanish": "rezar",
-        "english": "to pray"
-    },
-    {
-        "spanish": "aparte",
-        "english": "aside"
-    },
-    {
-        "spanish": "invierno",
-        "english": "winter"
-    },
-    {
-        "spanish": "período",
-        "english": "period"
-    },
-    {
-        "spanish": "bloque",
-        "english": "block"
-    },
-    {
-        "spanish": "claramente",
-        "english": "clearly"
-    },
-    {
-        "spanish": "murmurar",
-        "english": "to murmur"
-    },
-    {
-        "spanish": "publicar",
-        "english": "post"
-    },
-    {
-        "spanish": "corriente",
-        "english": "stream"
-    },
-    {
-        "spanish": "barrer",
-        "english": "to sweep"
-    },
-    {
-        "spanish": "insistir",
-        "english": "to insist"
-    },
-    {
-        "spanish": "cuarto",
-        "english": "quarter"
-    },
-    {
-        "spanish": "cerebro",
-        "english": "brain"
-    },
-    {
-        "spanish": "llanura",
-        "english": "plain"
-    },
-    {
-        "spanish": "plano",
-        "english": "flat"
-    },
-    {
-        "spanish": "cuestión",
-        "english": "issue"
-    },
-    {
-        "spanish": "deleite",
-        "english": "delight"
-    },
-    {
-        "spanish": "isla",
-        "english": "island"
-    },
-    {
-        "spanish": "planta",
-        "english": "plant"
-    },
-    {
-        "spanish": "alegría",
-        "english": "joy"
-    },
-    {
-        "spanish": "relación",
-        "english": "relationship"
-    },
-    {
-        "spanish": "cuchillo",
-        "english": "knife"
-    },
-    {
-        "spanish": "cepillar",
-        "english": "to brush"
-    },
-    {
-        "spanish": "maldito",
-        "english": "damn"
-    },
-    {
-        "spanish": "temblar",
-        "english": "to tremble"
-    },
-    {
-        "spanish": "parque",
-        "english": "park"
-    },
-    {
-        "spanish": "sexo",
-        "english": "sex"
-    },
-    {
-        "spanish": "juventud",
-        "english": "youth"
-    },
-    {
-        "spanish": "practicar",
-        "english": "practice"
-    },
-    {
-        "spanish": "desayuno",
-        "english": "breakfast"
-    },
-    {
-        "spanish": "capitán",
-        "english": "captain"
-    },
-    {
-        "spanish": "destruir",
-        "english": "to destroy"
-    },
-    {
-        "spanish": "envolver",
-        "english": "to wrap"
-    },
-    {
-        "spanish": "gato",
-        "english": "cat"
-    },
-    {
-        "spanish": "comodidad",
-        "english": "comfort"
-    },
-    {
-        "spanish": "gesto",
-        "english": "gesture"
-    },
-    {
-        "spanish": "sacerdote",
-        "english": "priest"
-    },
-    {
-        "spanish": "francia",
-        "english": "france"
-    },
-    {
-        "spanish": "manejar",
-        "english": "to handle"
-    },
-    {
-        "spanish": "testigo",
-        "english": "witness"
-    },
-    {
-        "spanish": "patear",
-        "english": "to kick"
-    },
-    {
-        "spanish": "asumir",
-        "english": "to assume"
-    },
-    {
-        "spanish": "dormido",
-        "english": "asleep"
-    },
-    {
-        "spanish": "apretado",
-        "english": "tight"
-    },
-    {
-        "spanish": "bosque",
-        "english": "forest"
-    },
-    {
-        "spanish": "falta",
-        "english": "lack"
-    },
-    {
-        "spanish": "compañera",
-        "english": "companion"
-    },
-    {
-        "spanish": "decisión",
-        "english": "decision"
-    },
-    {
-        "spanish": "incluir",
-        "english": "to include"
-    },
-    {
-        "spanish": "invitar",
-        "english": "to invite"
-    },
-    {
-        "spanish": "emoción",
-        "english": "emotion"
-    },
-    {
-        "spanish": "hueso",
-        "english": "bone"
-    },
-    {
-        "spanish": "rodear",
-        "english": "to surround"
-    },
-    {
-        "spanish": "superficie",
-        "english": "surface"
-    },
-    {
-        "spanish": "cajas",
-        "english": "dozen"
-    },
-    {
-        "spanish": "declarar",
-        "english": "to declare"
-    },
-    {
-        "spanish": "arma",
-        "english": "weapon"
-    },
-    {
-        "spanish": "centro",
-        "english": "center"
-    },
-    {
-        "spanish": "bienvenido",
-        "english": "welcome"
-    },
-    {
-        "spanish": "crimen",
-        "english": "crime"
-    },
-    {
-        "spanish": "peso",
-        "english": "weight"
-    },
-    {
-        "spanish": "amante",
-        "english": "lover"
-    },
-    {
-        "spanish": "espada",
-        "english": "sword"
-    },
-    {
-        "spanish": "lista",
-        "english": "list"
-    },
-    {
-        "spanish": "fecha",
-        "english": "date"
-    },
-    {
-        "spanish": "discurso",
-        "english": "speech"
-    },
-    {
-        "spanish": "cristiano",
-        "english": "christian"
-    },
-    {
-        "spanish": "pasion",
-        "english": "passion"
-    },
-    {
-        "spanish": "influencia",
-        "english": "influence"
-    },
-    {
-        "spanish": "gente",
-        "english": "folk"
-    },
-    {
-        "spanish": "tormenta",
-        "english": "storm"
-    },
-    {
-        "spanish": "luna",
-        "english": "moon"
-    },
-    {
-        "spanish": "político",
-        "english": "political"
-    },
-    {
-        "spanish": "rogar",
-        "english": "to beg"
-    },
-    {
-        "spanish": "acordar",
-        "english": "to accord"
-    },
-    {
-        "spanish": "maquina",
-        "english": "machine"
-    },
-    {
-        "spanish": "cuarenta",
-        "english": "forty"
-    },
-    {
-        "spanish": "nueve",
-        "english": "nine"
-    },
-    {
-        "spanish": "norte",
-        "english": "north"
-    },
-    {
-        "spanish": "tio",
-        "english": "uncle"
-    },
-    {
-        "spanish": "triste",
-        "english": "sad"
-    },
-    {
-        "spanish": "británico",
-        "english": "british"
-    },
-    {
-        "spanish": "desmayarse",
-        "english": "faint"
-    },
-    {
-        "spanish": "doble",
-        "english": "double"
-    },
-    {
-        "spanish": "tumba",
-        "english": "grave"
-    },
-    {
-        "spanish": "instante",
-        "english": "instant"
-    },
-    {
-        "spanish": "plato",
-        "english": "plate"
-    },
-    {
-        "spanish": "enterrar",
-        "english": "to bury"
-    },
-    {
-        "spanish": "encantador",
-        "english": "lovely"
-    },
-    {
-        "spanish": "hielo",
-        "english": "ice"
-    },
-    {
-        "spanish": "separar",
-        "english": "to separate"
-    },
-    {
-        "spanish": "morder",
-        "english": "to bite"
-    },
-    {
-        "spanish": "robo",
-        "english": "roof"
-    },
-    {
-        "spanish": "jurar",
-        "english": "to swear"
-    },
-    {
-        "spanish": "pulgada",
-        "english": "inch"
-    },
-    {
-        "spanish": "conductor",
-        "english": "driver"
-    },
-    {
-        "spanish": "espejo",
-        "english": "mirror"
-    },
-    {
-        "spanish": "estómago",
-        "english": "stomach"
-    },
-    {
-        "spanish": "siendo",
-        "english": "being"
-    },
-    {
-        "spanish": "ignorar",
-        "english": "to ignore"
-    },
-    {
-        "spanish": "opuesto",
-        "english": "opposite"
-    },
-    {
-        "spanish": "molestar",
-        "english": "to bother"
+        "spanish": "antepasado",
+        "english": "ancestor"
     },
     {
         "spanish": "barco",
-        "english": "boot"
-    },
-    {
-        "spanish": "polvo",
-        "english": "dust"
-    },
-    {
-        "spanish": "frotar",
-        "english": "to rub"
-    },
-    {
-        "spanish": "resplandor",
-        "english": "glow"
-    },
-    {
-        "spanish": "enfermera",
-        "english": "nurse"
-    },
-    {
-        "spanish": "señora",
-        "english": "mrs"
-    },
-    {
-        "spanish": "orgulloso",
-        "english": "proud"
-    },
-    {
-        "spanish": "loco",
-        "english": "mad"
-    },
-    {
-        "spanish": "autoridad",
-        "english": "authority"
-    },
-    {
-        "spanish": "contactar",
-        "english": "contact"
-    },
-    {
-        "spanish": "periódico",
-        "english": "newspaper"
-    },
-    {
-        "spanish": "navidad",
-        "english": "christmas"
-    },
-    {
-        "spanish": "riesgo",
-        "english": "risk"
-    },
-    {
-        "spanish": "grado",
-        "english": "degree"
-    },
-    {
-        "spanish": "algo",
-        "english": "somewhat"
-    },
-    {
-        "spanish": "estilo",
-        "english": "style"
-    },
-    {
-        "spanish": "poseer",
-        "english": "to possess"
-    },
-    {
-        "spanish": "camion",
-        "english": "truck"
-    },
-    {
-        "spanish": "broma",
-        "english": "joke"
-    },
-    {
-        "spanish": "propiedad",
-        "english": "property"
-    },
-    {
-        "spanish": "desnudo",
-        "english": "bare"
-    },
-    {
-        "spanish": "carne",
-        "english": "flesh"
-    },
-    {
-        "spanish": "alivio",
-        "english": "relief"
-    },
-    {
-        "spanish": "dudar",
-        "english": "to hesitate"
-    },
-    {
-        "spanish": "agarre",
-        "english": "grip"
-    },
-    {
-        "spanish": "suministro",
-        "english": "supply"
-    },
-    {
-        "spanish": "primo",
-        "english": "cousin"
-    },
-    {
-        "spanish": "proceso",
-        "english": "process"
-    },
-    {
-        "spanish": "pérdida",
-        "english": "loss"
-    },
-    {
-        "spanish": "cigarrillo",
-        "english": "cigarette"
-    },
-    {
-        "spanish": "hierro",
-        "english": "iron"
-    },
-    {
-        "spanish": "convencer",
-        "english": "to convince"
-    },
-    {
-        "spanish": "fila",
-        "english": "row"
-    },
-    {
-        "spanish": "ritmo",
-        "english": "pace"
-    },
-    {
-        "spanish": "fluir",
-        "english": "to flow"
-    },
-    {
-        "spanish": "paciente",
-        "english": "patient"
-    },
-    {
-        "spanish": "fingir",
-        "english": "to pretend"
-    },
-    {
-        "spanish": "tamaño",
-        "english": "size"
-    },
-    {
-        "spanish": "casamiento",
-        "english": "wedding"
-    },
-    {
-        "spanish": "anunciar",
-        "english": "to announce"
-    },
-    {
-        "spanish": "hoja",
-        "english": "sheet"
-    },
-    {
-        "spanish": "diseño",
-        "english": "design"
-    },
-    {
-        "spanish": "cocinar",
-        "english": "to cook"
-    },
-    {
-        "spanish": "rueda",
-        "english": "wheel"
-    },
-    {
-        "spanish": "peligroso",
-        "english": "dangerous"
-    },
-    {
-        "spanish": "despierto",
-        "english": "awake"
-    },
-    {
-        "spanish": "suelto",
-        "english": "loose"
-    },
-    {
-        "spanish": "desierto",
-        "english": "desert"
-    },
-    {
-        "spanish": "revolver",
-        "english": "to stir"
-    },
-    {
-        "spanish": "trazo",
-        "english": "stroke"
-    },
-    {
-        "spanish": "ala",
-        "english": "wing"
-    },
-    {
-        "spanish": "doblar",
-        "english": "to fold"
-    },
-    {
-        "spanish": "pila",
-        "english": "pile"
-    },
-    {
-        "spanish": "llama",
-        "english": "flame"
-    },
-    {
-        "spanish": "entrada",
-        "english": "entrance"
-    },
-    {
-        "spanish": "navegar",
-        "english": "to sail"
-    },
-    {
-        "spanish": "poderoso",
-        "english": "powerful"
-    },
-    {
-        "spanish": "costo",
-        "english": "cost"
-    },
-    {
-        "spanish": "millones",
-        "english": "million"
-    },
-    {
-        "spanish": "tragar",
-        "english": "to swallow"
-    },
-    {
-        "spanish": "puente",
-        "english": "bridge"
-    },
-    {
-        "spanish": "estudiante",
-        "english": "student"
-    },
-    {
-        "spanish": "medir",
-        "english": "measure"
-    },
-    {
-        "spanish": "ciego",
-        "english": "blind"
-    },
-    {
-        "spanish": "fortuna",
-        "english": "fortune"
-    },
-    {
-        "spanish": "debido",
-        "english": "due"
-    },
-    {
-        "spanish": "gentil",
-        "english": "gentle"
-    },
-    {
-        "spanish": "diversión",
-        "english": "fun"
-    },
-    {
-        "spanish": "orgullo",
-        "english": "pride"
-    },
-    {
-        "spanish": "prueba",
-        "english": "test"
-    },
-    {
-        "spanish": "marco",
-        "english": "frame"
-    },
-    {
-        "spanish": "limpio",
-        "english": "proper"
-    },
-    {
-        "spanish": "vagar",
-        "english": "to wander"
-    },
-    {
-        "spanish": "granja",
-        "english": "farm"
-    },
-    {
-        "spanish": "equipo",
-        "english": "team"
-    },
-    {
-        "spanish": "tiempo",
-        "english": "weather"
-    },
-    {
-        "spanish": "dificultad",
-        "english": "difficulty"
-    },
-    {
-        "spanish": "débil",
-        "english": "weak"
-    },
-    {
-        "spanish": "vuelo",
-        "english": "flight"
-    },
-    {
-        "spanish": "cubierta",
-        "english": "deck"
-    },
-    {
-        "spanish": "cuidado",
-        "english": "careful"
-    },
-    {
-        "spanish": "cuadrado",
-        "english": "square"
-    },
-    {
-        "spanish": "excusa",
-        "english": "excuse"
-    },
-    {
-        "spanish": "firme",
-        "english": "firm"
-    },
-    {
-        "spanish": "rama",
-        "english": "branch"
-    },
-    {
-        "spanish": "precio",
-        "english": "price"
-    },
-    {
-        "spanish": "doce",
-        "english": "twelve"
-    },
-    {
-        "spanish": "abogado",
-        "english": "lawyer"
-    },
-    {
-        "spanish": "traza",
-        "english": "trace"
-    },
-    {
-        "spanish": "oración",
-        "english": "prayer"
-    },
-    {
-        "spanish": "cualquiera",
-        "english": "anybody"
-    },
-    {
-        "spanish": "campana",
-        "english": "bell"
-    },
-    {
-        "spanish": "regalo",
-        "english": "gift"
-    },
-    {
-        "spanish": "cristo",
-        "english": "christ"
-    },
-    {
-        "spanish": "energia",
-        "english": "energy"
-    },
-    {
-        "spanish": "hábito",
-        "english": "habit"
-    },
-    {
-        "spanish": "dispuesto",
-        "english": "willing"
-    },
-    {
-        "spanish": "calidad",
-        "english": "quality"
-    },
-    {
-        "spanish": "culpa",
-        "english": "fault"
-    },
-    {
-        "spanish": "bajar",
-        "english": "to lower"
-    },
-    {
-        "spanish": "discutir",
-        "english": "to argue"
-    },
-    {
-        "spanish": "comienzo",
-        "english": "beginning"
-    },
-    {
-        "spanish": "guapo",
-        "english": "handsome"
-    },
-    {
-        "spanish": "culpar",
-        "english": "to blame"
-    },
-    {
-        "spanish": "prisionero",
-        "english": "prisoner"
-    },
-    {
-        "spanish": "torcer",
-        "english": "to twist"
-    },
-    {
-        "spanish": "héroe",
-        "english": "hero"
-    },
-    {
-        "spanish": "suerte",
-        "english": "luck"
-    },
-    {
-        "spanish": "contenido",
-        "english": "content"
-    },
-    {
-        "spanish": "informar",
-        "english": "to inform"
-    },
-    {
-        "spanish": "arruinar",
-        "english": "to ruin"
-    },
-    {
-        "spanish": "líder",
-        "english": "leader"
-    },
-    {
-        "spanish": "ayer",
-        "english": "yesterday"
-    },
-    {
-        "spanish": "quince",
-        "english": "fifteen"
-    },
-    {
-        "spanish": "agente",
-        "english": "agent"
-    },
-    {
-        "spanish": "respuesta",
-        "english": "response"
-    },
-    {
-        "spanish": "pasaje",
-        "english": "passage"
-    },
-    {
-        "spanish": "estúpido",
-        "english": "stupid"
-    },
-    {
-        "spanish": "tarea",
-        "english": "task"
-    },
-    {
-        "spanish": "curioso",
-        "english": "curious"
-    },
-    {
-        "spanish": "sabio",
-        "english": "wise"
-    },
-    {
-        "spanish": "cantidad",
-        "english": "amount"
-    },
-    {
-        "spanish": "telefono",
-        "english": "telephone"
-    },
-    {
-        "spanish": "negar",
-        "english": "to deny"
-    },
-    {
-        "spanish": "cavar",
-        "english": "to dig"
-    },
-    {
-        "spanish": "instar",
-        "english": "to urge"
-    },
-    {
-        "spanish": "comunidad",
-        "english": "community"
-    },
-    {
-        "spanish": "físico",
-        "english": "physical"
-    },
-    {
-        "spanish": "fuente",
-        "english": "source"
-    },
-    {
-        "spanish": "palma",
-        "english": "palm"
-    },
-    {
-        "spanish": "profesor",
-        "english": "teacher"
-    },
-    {
-        "spanish": "esclavo",
-        "english": "slave"
-    },
-    {
-        "spanish": "gordo",
-        "english": "fat"
-    },
-    {
-        "spanish": "preferir",
-        "english": "to prefer"
-    },
-    {
-        "spanish": "militar",
-        "english": "military"
-    },
-    {
-        "spanish": "cabina",
-        "english": "cabin"
-    },
-    {
-        "spanish": "plenamente",
-        "english": "fully"
-    },
-    {
-        "spanish": "incapaz",
-        "english": "unable"
-    },
-    {
-        "spanish": "acompañar",
-        "english": "to accompany"
-    },
-    {
-        "spanish": "proceder",
-        "english": "to proceed"
-    },
-    {
-        "spanish": "misa",
-        "english": "mass"
-    },
-    {
-        "spanish": "solicitud",
-        "english": "request"
-    },
-    {
-        "spanish": "establecer",
-        "english": "to establish"
-    },
-    {
-        "spanish": "orilla",
-        "english": "shore"
-    },
-    {
-        "spanish": "dorado",
-        "english": "golden"
-    },
-    {
-        "spanish": "mero",
-        "english": "mere"
-    },
-    {
-        "spanish": "amenazar",
-        "english": "to threaten"
-    },
-    {
-        "spanish": "tasa",
-        "english": "rate"
-    },
-    {
-        "spanish": "maldecir",
-        "english": "to curse"
-    },
-    {
-        "spanish": "oso",
-        "english": "beer"
-    },
-    {
-        "spanish": "distante",
-        "english": "distant"
-    },
-    {
-        "spanish": "obvio",
-        "english": "obvious"
-    },
-    {
-        "spanish": "comentar",
-        "english": "comment"
-    },
-    {
-        "spanish": "ventaja",
-        "english": "advantage"
-    },
-    {
-        "spanish": "pesar",
-        "english": "spite"
-    },
-    {
-        "spanish": "archivo",
-        "english": "file"
-    },
-    {
-        "spanish": "moderno",
-        "english": "modern"
-    },
-    {
-        "spanish": "enfocar",
-        "english": "to focus"
-    },
-    {
-        "spanish": "pantalla",
-        "english": "screen"
-    },
-    {
-        "spanish": "existencia",
-        "english": "existence"
-    },
-    {
-        "spanish": "arena",
-        "english": "sand"
-    },
-    {
-        "spanish": "víctima",
-        "english": "victim"
-    },
-    {
-        "spanish": "propina",
-        "english": "tip"
-    },
-    {
-        "spanish": "locura",
-        "english": "rage"
-    },
-    {
-        "spanish": "contador",
-        "english": "counter"
-    },
-    {
-        "spanish": "asustar",
-        "english": "to scare"
-    },
-    {
-        "spanish": "accidente",
-        "english": "accident"
-    },
-    {
-        "spanish": "impresión",
-        "english": "impression"
-    },
-    {
-        "spanish": "enrollarse",
-        "english": "to curl"
-    },
-    {
-        "spanish": "playa",
-        "english": "beach"
-    },
-    {
-        "spanish": "tia",
-        "english": "aunt"
-    },
-    {
-        "spanish": "cómodo",
-        "english": "comfortable"
-    },
-    {
-        "spanish": "lástima",
-        "english": "pity"
-    },
-    {
-        "spanish": "obviamente",
-        "english": "obviously"
-    },
-    {
-        "spanish": "comercio",
-        "english": "trade"
-    },
-    {
-        "spanish": "celular",
-        "english": "cell"
-    },
-    {
-        "spanish": "salud",
-        "english": "health"
-    },
-    {
-        "spanish": "cuero",
-        "english": "leather"
-    },
-    {
-        "spanish": "áspero",
-        "english": "rough"
-    },
-    {
-        "spanish": "jadear",
-        "english": "to gasp"
-    },
-    {
-        "spanish": "banda",
-        "english": "band"
-    },
-    {
-        "spanish": "sentencia",
-        "english": "sentence"
-    },
-    {
-        "spanish": "artículo",
-        "english": "article"
-    },
-    {
-        "spanish": "cadena",
-        "english": "chain"
-    },
-    {
-        "spanish": "carro",
-        "english": "carriage"
-    },
-    {
-        "spanish": "pronunciar",
-        "english": "to utter"
+        "english": "boat"
     },
     {
         "spanish": "avión",
-        "english": "plane"
-    },
-    {
-        "spanish": "perdonar",
-        "english": "to forgive"
-    },
-    {
-        "spanish": "poema",
-        "english": "poem"
-    },
-    {
-        "spanish": "cuerda",
-        "english": "rope"
-    },
-    {
-        "spanish": "lampara",
-        "english": "lamp"
-    },
-    {
-        "spanish": "instancia",
-        "english": "instance"
-    },
-    {
-        "spanish": "puro",
-        "english": "pure"
-    },
-    {
-        "spanish": "apoderarse",
-        "english": "to seize"
-    },
-    {
-        "spanish": "trasero",
-        "english": "rear"
-    },
-    {
-        "spanish": "honesto",
-        "english": "honest"
-    },
-    {
-        "spanish": "mayor",
-        "english": "major"
-    },
-    {
-        "spanish": "actividad",
-        "english": "activity"
-    },
-    {
-        "spanish": "ocupar",
-        "english": "to occupy"
-    },
-    {
-        "spanish": "famoso",
-        "english": "famous"
-    },
-    {
-        "spanish": "ansioso",
-        "english": "anxious"
-    },
-    {
-        "spanish": "gracioso",
-        "english": "funny"
-    },
-    {
-        "spanish": "argumento",
-        "english": "argument"
-    },
-    {
-        "spanish": "diablo",
-        "english": "devil"
-    },
-    {
-        "spanish": "confianza",
-        "english": "confidence"
-    },
-    {
-        "spanish": "lamentar",
-        "english": "to regret"
-    },
-    {
-        "spanish": "sudor",
-        "english": "sweat"
-    },
-    {
-        "spanish": "ruso",
-        "english": "russian"
-    },
-    {
-        "spanish": "rango",
-        "english": "range"
-    },
-    {
-        "spanish": "alarma",
-        "english": "alarm"
-    },
-    {
-        "spanish": "seguridad",
-        "english": "security"
-    },
-    {
-        "spanish": "rugir",
-        "english": "to roar"
+        "english": "airplane"
     },
     {
         "spanish": "amanecer",
-        "english": "dawn"
+        "english": "to dawn"
     },
     {
-        "spanish": "nación",
-        "english": "nation"
+        "spanish": "atardecer",
+        "english": "to get late"
     },
     {
-        "spanish": "nervioso",
-        "english": "nervous"
+        "spanish": "anochecer",
+        "english": "to get dark"
     },
     {
-        "spanish": "prisión",
-        "english": "prison"
+        "spanish": "amarrar",
+        "english": "to tie up"
     },
     {
-        "spanish": "abandonar",
-        "english": "to abandon"
+        "spanish": "dogma",
+        "english": "dogma"
     },
     {
-        "spanish": "poeta",
-        "english": "poet"
+        "spanish": "civil",
+        "english": "civil"
     },
     {
-        "spanish": "actitud",
-        "english": "attitude"
+        "spanish": "articular",
+        "english": "to articulate"
     },
     {
-        "spanish": "ceja",
-        "english": "brow"
+        "spanish": "amado",
+        "english": "loved one"
     },
     {
-        "spanish": "moralidad",
-        "english": "moral"
+        "spanish": "asistir",
+        "english": "to assist"
     },
     {
-        "spanish": "rolle",
-        "english": "role"
-    },
-    {
-        "spanish": "cola",
-        "english": "tail"
-    },
-    {
-        "spanish": "nacimiento",
-        "english": "birth"
-    },
-    {
-        "spanish": "aplicar",
-        "english": "to apply"
-    },
-    {
-        "spanish": "destino",
-        "english": "fate"
-    },
-    {
-        "spanish": "proyecto",
-        "english": "project"
-    },
-    {
-        "spanish": "valle",
-        "english": "valley"
-    },
-    {
-        "spanish": "mercado",
-        "english": "market"
-    },
-    {
-        "spanish": "puño",
-        "english": "fist"
-    },
-    {
-        "spanish": "intención",
-        "english": "intention"
-    },
-    {
-        "spanish": "conexión",
-        "english": "connection"
-    },
-    {
-        "spanish": "serie",
-        "english": "series"
-    },
-    {
-        "spanish": "coraje",
-        "english": "courage"
-    },
-    {
-        "spanish": "torre",
-        "english": "tower"
-    },
-    {
-        "spanish": "lago",
-        "english": "lake"
-    },
-    {
-        "spanish": "emerger",
-        "english": "to emerge"
-    },
-    {
-        "spanish": "apostar",
-        "english": "to bet"
-    },
-    {
-        "spanish": "película",
-        "english": "movie"
-    },
-    {
-        "spanish": "falda",
-        "english": "skirt"
-    },
-    {
-        "spanish": "cámara",
-        "english": "chamber"
-    },
-    {
-        "spanish": "juicio",
-        "english": "trial"
-    },
-    {
-        "spanish": "magia",
-        "english": "magic"
-    },
-    {
-        "spanish": "motor",
-        "english": "engine"
-    },
-    {
-        "spanish": "gracias",
-        "english": "thanks"
-    },
-    {
-        "spanish": "escritura",
-        "english": "writing"
-    },
-    {
-        "spanish": "botón",
-        "english": "button"
-    },
-    {
-        "spanish": "cazar",
-        "english": "to hunt"
-    },
-    {
-        "spanish": "ordinario",
-        "english": "ordinary"
-    },
-    {
-        "spanish": "extender",
-        "english": "to extend"
-    },
-    {
-        "spanish": "teoría",
-        "english": "theory"
-    },
-    {
-        "spanish": "conceder",
-        "english": "to grant"
-    },
-    {
-        "spanish": "junio",
-        "english": "june"
-    },
-    {
-        "spanish": "judio",
-        "english": "jew"
-    },
-    {
-        "spanish": "texto",
-        "english": "text"
-    },
-    {
-        "spanish": "honor",
-        "english": "honour"
-    },
-    {
-        "spanish": "flotar",
-        "english": "to float"
-    },
-    {
-        "spanish": "misterio",
-        "english": "mystery"
-    },
-    {
-        "spanish": "temporada",
-        "english": "season"
-    },
-    {
-        "spanish": "permitirse",
-        "english": "to afford"
-    },
-    {
-        "spanish": "color",
-        "english": "colour"
-    },
-    {
-        "spanish": "socio",
-        "english": "partner"
-    },
-    {
-        "spanish": "admirar",
-        "english": "to admire"
-    },
-    {
-        "spanish": "tapa",
-        "english": "cap"
-    },
-    {
-        "spanish": "libertad",
-        "english": "freedom"
-    },
-    {
-        "spanish": "merecer",
-        "english": "to deserve"
-    },
-    {
-        "spanish": "saludar",
-        "english": "to greet"
-    },
-    {
-        "spanish": "abrazar",
-        "english": "to hug"
-    },
-    {
-        "spanish": "personal",
-        "english": "staff"
-    },
-    {
-        "spanish": "empujar",
-        "english": "to thrust"
-    },
-    {
-        "spanish": "depender",
-        "english": "to depend"
-    },
-    {
-        "spanish": "nadar",
-        "english": "to swim"
-    },
-    {
-        "spanish": "piscina",
-        "english": "pool"
-    },
-    {
-        "spanish": "señal",
-        "english": "signal"
-    },
-    {
-        "spanish": "inocente",
-        "english": "innocent"
-    },
-    {
-        "spanish": "talón",
-        "english": "heel"
-    },
-    {
-        "spanish": "generelt",
-        "english": "generally"
-    },
-    {
-        "spanish": "cortina",
-        "english": "curtain"
-    },
-    {
-        "spanish": "posesión",
-        "english": "possession"
-    },
-    {
-        "spanish": "fotografía",
-        "english": "photograph"
-    },
-    {
-        "spanish": "nativo",
-        "english": "native"
-    },
-    {
-        "spanish": "formulario",
-        "english": "blanket"
-    },
-    {
-        "spanish": "entrevista",
-        "english": "interview"
-    },
-    {
-        "spanish": "sucio",
-        "english": "dirty"
-    },
-    {
-        "spanish": "vergüenza",
-        "english": "shame"
-    },
-    {
-        "spanish": "cesar",
-        "english": "to cease"
-    },
-    {
-        "spanish": "huevo",
-        "english": "egg"
-    },
-    {
-        "spanish": "vagón",
-        "english": "wagon"
-    },
-    {
-        "spanish": "audiencia",
-        "english": "audience"
-    },
-    {
-        "spanish": "horrible",
-        "english": "awful"
-    },
-    {
-        "spanish": "pipa",
-        "english": "pipe"
-    },
-    {
-        "spanish": "colar",
-        "english": "to strain"
-    },
-    {
-        "spanish": "artista",
-        "english": "artist"
-    },
-    {
-        "spanish": "apretar",
-        "english": "to squeeze"
-    },
-    {
-        "spanish": "novela",
-        "english": "roman"
-    },
-    {
-        "spanish": "paño",
-        "english": "cloth"
-    },
-    {
-        "spanish": "volumen",
-        "english": "volume"
-    },
-    {
-        "spanish": "este",
-        "english": "east"
-    },
-    {
-        "spanish": "sección",
-        "english": "section"
-    },
-    {
-        "spanish": "amistoso",
-        "english": "friendly"
-    },
-    {
-        "spanish": "hambriento",
-        "english": "hungry"
-    },
-    {
-        "spanish": "visitante",
-        "english": "visitor"
-    },
-    {
-        "spanish": "religioso",
-        "english": "religious"
-    },
-    {
-        "spanish": "criada",
-        "english": "maid"
-    },
-    {
-        "spanish": "justicia",
-        "english": "justice"
-    },
-    {
-        "spanish": "progreso",
-        "english": "progress"
-    },
-    {
-        "spanish": "regazo",
-        "english": "lap"
-    },
-    {
-        "spanish": "creencia",
-        "english": "belief"
-    },
-    {
-        "spanish": "fantasma",
-        "english": "ghost"
-    },
-    {
-        "spanish": "apuntar",
-        "english": "to aim"
-    },
-    {
-        "spanish": "arrojar",
-        "english": "to fling"
-    },
-    {
-        "spanish": "sábado",
-        "english": "saturday"
-    },
-    {
-        "spanish": "cirugía",
-        "english": "operation"
-    },
-    {
-        "spanish": "trota",
-        "english": "despite"
-    },
-    {
-        "spanish": "cintura",
-        "english": "waist"
-    },
-    {
-        "spanish": "leche",
-        "english": "milk"
-    },
-    {
-        "spanish": "olla",
-        "english": "pot"
-    },
-    {
-        "spanish": "finca",
-        "english": "estate"
-    },
-    {
-        "spanish": "anterior",
-        "english": "previous"
-    },
-    {
-        "spanish": "ficción",
-        "english": "fiction"
-    },
-    {
-        "spanish": "magnífico",
-        "english": "grand"
-    },
-    {
-        "spanish": "trampa",
-        "english": "trap"
+        "spanish": "anticipar",
+        "english": "to anticipate"
     },
     {
         "spanish": "afectar",
         "english": "to affect"
     },
     {
-        "spanish": "truco",
-        "english": "trick"
+        "spanish": "camarero",
+        "english": "waiter"
     },
     {
-        "spanish": "droga",
-        "english": "drug"
+        "spanish": "bueno",
+        "english": "good"
     },
     {
-        "spanish": "seda",
-        "english": "silk"
+        "spanish": "autorizar",
+        "english": "to authorize"
     },
     {
-        "spanish": "sopas",
-        "english": "supper"
+        "spanish": "atemperar",
+        "english": "to temper"
     },
     {
-        "spanish": "borracho",
-        "english": "drunk"
+        "spanish": "año",
+        "english": "year"
     },
     {
-        "spanish": "indicio",
-        "english": "hint"
+        "spanish": "cada",
+        "english": "each"
     },
     {
-        "spanish": "fruta",
-        "english": "fruit"
+        "spanish": "calmar",
+        "english": "to calm"
     },
     {
-        "spanish": "ordenador",
-        "english": "computer"
+        "spanish": "aeropuerto",
+        "english": "airport"
     },
     {
-        "spanish": "codo",
-        "english": "elbow"
+        "spanish": "asignación",
+        "english": "assignment"
     },
     {
-        "spanish": "descender",
-        "english": "to descend"
+        "spanish": "abuso",
+        "english": "abuse"
     },
     {
-        "spanish": "porche",
-        "english": "porch"
-    },
-    {
-        "spanish": "hincharse",
-        "english": "to swell"
-    },
-    {
-        "spanish": "ups",
-        "english": "upper"
-    },
-    {
-        "spanish": "poli",
-        "english": "cop"
+        "spanish": "beber",
+        "english": "to drink"
     },
     {
         "spanish": "abuelo",
         "english": "grandfather"
     },
     {
-        "spanish": "ejercicio",
-        "english": "exercise"
+        "spanish": "abolengo",
+        "english": "ancestry"
     },
     {
-        "spanish": "biblioteca",
-        "english": "library"
+        "spanish": "alguno",
+        "english": "some"
     },
     {
-        "spanish": "músculo",
-        "english": "muscle"
-    },
-    {
-        "spanish": "congelar",
-        "english": "to freeze"
-    },
-    {
-        "spanish": "quejarse",
-        "english": "to complain"
-    },
-    {
-        "spanish": "europa",
-        "english": "europe"
-    },
-    {
-        "spanish": "favorecer",
-        "english": "favor"
-    },
-    {
-        "spanish": "raíz",
-        "english": "root"
-    },
-    {
-        "spanish": "bestia",
-        "english": "beast"
-    },
-    {
-        "spanish": "surgir",
-        "english": "to arise"
-    },
-    {
-        "spanish": "desafío",
-        "english": "challenge"
-    },
-    {
-        "spanish": "ducha",
-        "english": "shower"
-    },
-    {
-        "spanish": "griego",
-        "english": "greek"
-    },
-    {
-        "spanish": "límite",
-        "english": "limit"
-    },
-    {
-        "spanish": "religión",
-        "english": "religion"
-    },
-    {
-        "spanish": "presión",
-        "english": "pressure"
-    },
-    {
-        "spanish": "gracia",
-        "english": "grace"
-    },
-    {
-        "spanish": "vasto",
-        "english": "vast"
-    },
-    {
-        "spanish": "confesar",
-        "english": "to confess"
-    },
-    {
-        "spanish": "sacrificio",
-        "english": "sacrifice"
-    },
-    {
-        "spanish": "llegada",
-        "english": "arrival"
-    },
-    {
-        "spanish": "sacudirse",
-        "english": "to jerk"
-    },
-    {
-        "spanish": "lección",
-        "english": "lesson"
-    },
-    {
-        "spanish": "cadera",
-        "english": "hip"
-    },
-    {
-        "spanish": "aceite",
-        "english": "oil"
-    },
-    {
-        "spanish": "patrón",
-        "english": "pattern"
-    },
-    {
-        "spanish": "afortunado",
-        "english": "lucky"
-    },
-    {
-        "spanish": "culo",
-        "english": "ass"
-    },
-    {
-        "spanish": "aburrido",
-        "english": "dull"
-    },
-    {
-        "spanish": "lío",
-        "english": "mess"
-    },
-    {
-        "spanish": "elemento",
-        "english": "element"
-    },
-    {
-        "spanish": "gemir",
-        "english": "to groan"
-    },
-    {
-        "spanish": "konsekvens",
-        "english": "consequence"
-    },
-    {
-        "spanish": "equilibrio",
-        "english": "balance"
-    },
-    {
-        "spanish": "principio",
-        "english": "principle"
-    },
-    {
-        "spanish": "afecto",
-        "english": "affection"
+        "spanish": "alcurnia",
+        "english": "lineage"
     },
     {
         "spanish": "actual",
         "english": "current"
     },
     {
-        "spanish": "vela",
-        "english": "candle"
+        "spanish": "corrector",
+        "english": "corrector"
     },
     {
-        "spanish": "mierda",
-        "english": "shit"
+        "spanish": "celestial",
+        "english": "celestial"
     },
     {
-        "spanish": "altura",
-        "english": "height"
+        "spanish": "anunciar",
+        "english": "to announce"
     },
     {
-        "spanish": "valores",
-        "english": "stock"
+        "spanish": "atención",
+        "english": "attention"
     },
     {
-        "spanish": "caballero",
-        "english": "knight"
+        "spanish": "anden",
+        "english": "platform"
     },
     {
-        "spanish": "reloj",
-        "english": "clock"
+        "spanish": "bisabuelo",
+        "english": "great-grandfather"
     },
     {
-        "spanish": "castillo",
-        "english": "castle"
+        "spanish": "café",
+        "english": "coffee"
     },
     {
-        "spanish": "valla",
-        "english": "fence"
+        "spanish": "calmado",
+        "english": "calm"
     },
     {
-        "spanish": "culpable",
-        "english": "guilty"
+        "spanish": "cama",
+        "english": "bed"
     },
     {
-        "spanish": "templo",
-        "english": "temple"
+        "spanish": "agua",
+        "english": "water"
     },
     {
-        "spanish": "revista",
-        "english": "magazine"
+        "spanish": "absorto",
+        "english": "absorbed"
     },
     {
-        "spanish": "favorito",
-        "english": "favorite"
-    },
-    {
-        "spanish": "sentado",
-        "english": "seated"
-    },
-    {
-        "spanish": "abril",
-        "english": "april"
-    },
-    {
-        "spanish": "tradición",
-        "english": "tradition"
-    },
-    {
-        "spanish": "amargo",
-        "english": "bitter"
-    },
-    {
-        "spanish": "apreciar",
-        "english": "to appreciate"
-    },
-    {
-        "spanish": "ciencia",
-        "english": "science"
-    },
-    {
-        "spanish": "abuela",
-        "english": "grandmother"
-    },
-    {
-        "spanish": "modelo",
-        "english": "model"
-    },
-    {
-        "spanish": "diario",
-        "english": "daily"
-    },
-    {
-        "spanish": "discusión",
-        "english": "discussion"
-    },
-    {
-        "spanish": "príncipe",
-        "english": "prince"
-    },
-    {
-        "spanish": "encanto",
-        "english": "charm"
-    },
-    {
-        "spanish": "desnudarse",
-        "english": "to strip"
-    },
-    {
-        "spanish": "uniforme",
-        "english": "uniform"
-    },
-    {
-        "spanish": "techo",
-        "english": "ceiling"
-    },
-    {
-        "spanish": "arbusto",
-        "english": "bush"
-    },
-    {
-        "spanish": "falso",
-        "english": "false"
-    },
-    {
-        "spanish": "trayectos",
-        "english": "interested"
-    },
-    {
-        "spanish": "aferrarse",
-        "english": "to cling"
-    },
-    {
-        "spanish": "perseguir",
-        "english": "to pursue"
-    },
-    {
-        "spanish": "valiente",
-        "english": "brave"
-    },
-    {
-        "spanish": "autobús",
-        "english": "bus"
-    },
-    {
-        "spanish": "literario",
-        "english": "literary"
-    },
-    {
-        "spanish": "sangriento",
-        "english": "bloody"
-    },
-    {
-        "spanish": "extranjero",
-        "english": "foreign"
-    },
-    {
-        "spanish": "proponer",
-        "english": "to propose"
-    },
-    {
-        "spanish": "pluma",
-        "english": "pen"
-    },
-    {
-        "spanish": "ayuda",
-        "english": "aid"
-    },
-    {
-        "spanish": "amistad",
-        "english": "friendship"
-    },
-    {
-        "spanish": "chocar",
-        "english": "to crash"
-    },
-    {
-        "spanish": "aventura",
-        "english": "adventure"
-    },
-    {
-        "spanish": "cultura",
-        "english": "culture"
-    },
-    {
-        "spanish": "haz",
-        "english": "beam"
-    },
-    {
-        "spanish": "marzo",
-        "english": "march"
-    },
-    {
-        "spanish": "gafas",
-        "english": "glasses"
-    },
-    {
-        "spanish": "evne",
-        "english": "ability"
-    },
-    {
-        "spanish": "excelente",
-        "english": "excellent"
-    },
-    {
-        "spanish": "firmemente",
-        "english": "firmly"
-    },
-    {
-        "spanish": "acero",
-        "english": "steel"
-    },
-    {
-        "spanish": "nervio",
-        "english": "nerve"
-    },
-    {
-        "spanish": "ángel",
-        "english": "angel"
-    },
-    {
-        "spanish": "gigante",
-        "english": "giant"
-    },
-    {
-        "spanish": "sospecha",
-        "english": "suspicion"
-    },
-    {
-        "spanish": "igual",
-        "english": "equal"
-    },
-    {
-        "spanish": "generación",
-        "english": "generation"
-    },
-    {
-        "spanish": "deletrear",
-        "english": "spell"
-    },
-    {
-        "spanish": "reacción",
-        "english": "reaction"
-    },
-    {
-        "spanish": "educación",
-        "english": "education"
-    },
-    {
-        "spanish": "excitar",
-        "english": "to excite"
-    },
-    {
-        "spanish": "azotar",
-        "english": "to whip"
-    },
-    {
-        "spanish": "cuenco",
-        "english": "bowl"
-    },
-    {
-        "spanish": "exponer",
-        "english": "to expose"
-    },
-    {
-        "spanish": "capítulo",
-        "english": "chapter"
-    },
-    {
-        "spanish": "arreglo",
-        "english": "arrangement"
-    },
-    {
-        "spanish": "doler",
-        "english": "to ache"
-    },
-    {
-        "spanish": "italiano",
-        "english": "italian"
-    },
-    {
-        "spanish": "reír",
-        "english": "to chuckle"
-    },
-    {
-        "spanish": "palacio",
-        "english": "palace"
-    },
-    {
-        "spanish": "seriamente",
-        "english": "seriously"
-    },
-    {
-        "spanish": "retirarse",
-        "english": "to retreat"
-    },
-    {
-        "spanish": "pintura",
-        "english": "painting"
-    },
-    {
-        "spanish": "reina",
-        "english": "queen"
-    },
-    {
-        "spanish": "muñeca",
-        "english": "wrist"
-    },
-    {
-        "spanish": "lodos",
-        "english": "to slam"
-    },
-    {
-        "spanish": "mandíbula",
-        "english": "jaw"
-    },
-    {
-        "spanish": "mal",
-        "english": "badly"
-    },
-    {
-        "spanish": "pasajero",
-        "english": "passenger"
-    },
-    {
-        "spanish": "apertura",
-        "english": "opening"
-    },
-    {
-        "spanish": "julio",
-        "english": "july"
-    },
-    {
-        "spanish": "habilidad",
-        "english": "skill"
-    },
-    {
-        "spanish": "misión",
-        "english": "mission"
-    },
-    {
-        "spanish": "costumbre",
-        "english": "custom"
-    },
-    {
-        "spanish": "método",
-        "english": "method"
-    },
-    {
-        "spanish": "vaca",
-        "english": "cow"
-    },
-    {
-        "spanish": "guerrero",
-        "english": "warrior"
-    },
-    {
-        "spanish": "percibir",
-        "english": "to perceive"
-    },
-    {
-        "spanish": "cueva",
-        "english": "cave"
-    },
-    {
-        "spanish": "crédito",
-        "english": "credit"
-    },
-    {
-        "spanish": "alabanza",
-        "english": "praise"
-    },
-    {
-        "spanish": "capaz",
-        "english": "capable"
-    },
-    {
-        "spanish": "contratar",
-        "english": "to hire"
-    },
-    {
-        "spanish": "versión",
-        "english": "version"
-    },
-    {
-        "spanish": "vecino",
-        "english": "neighbor"
-    },
-    {
-        "spanish": "simpatía",
-        "english": "sympathy"
-    },
-    {
-        "spanish": "alambre",
-        "english": "wire"
-    },
-    {
-        "spanish": "curiosidad",
-        "english": "curiosity"
-    },
-    {
-        "spanish": "cinturón",
-        "english": "belt"
-    },
-    {
-        "spanish": "pariente",
-        "english": "relative"
-    },
-    {
-        "spanish": "noción",
-        "english": "notion"
-    },
-    {
-        "spanish": "correo",
-        "english": "mail"
-    },
-    {
-        "spanish": "sofá",
-        "english": "couch"
-    },
-    {
-        "spanish": "corredor",
-        "english": "corridor"
-    },
-    {
-        "spanish": "español",
-        "english": "spanish"
-    },
-    {
-        "spanish": "amenaza",
-        "english": "threat"
-    },
-    {
-        "spanish": "chino",
-        "english": "chinese"
-    },
-    {
-        "spanish": "emplear",
-        "english": "to employ"
-    },
-    {
-        "spanish": "enlace",
-        "english": "link"
-    },
-    {
-        "spanish": "ausencia",
-        "english": "absence"
-    },
-    {
-        "spanish": "estructura",
-        "english": "structure"
-    },
-    {
-        "spanish": "solitario",
-        "english": "lonely"
-    },
-    {
-        "spanish": "agradecido",
-        "english": "grateful"
-    },
-    {
-        "spanish": "mapa",
-        "english": "map"
-    },
-    {
-        "spanish": "ministro",
-        "english": "minister"
+        "spanish": "bañera",
+        "english": "bathtub"
     },
     {
         "spanish": "almohada",
         "english": "pillow"
     },
     {
-        "spanish": "buque",
-        "english": "vessel"
+        "spanish": "almuerzo",
+        "english": "lunch"
     },
     {
-        "spanish": "adjuntar",
-        "english": "to attach"
+        "spanish": "armario",
+        "english": "closet"
     },
     {
-        "spanish": "delicado",
-        "english": "delicate"
+        "spanish": "azafata",
+        "english": "flight attendant"
     },
     {
-        "spanish": "confundir",
-        "english": "to confuse"
+        "spanish": "autobús",
+        "english": "bus"
     },
     {
-        "spanish": "roto",
-        "english": "broken"
+        "spanish": "alfombra",
+        "english": "carpet"
     },
     {
-        "spanish": "agotar",
-        "english": "to exhaust"
+        "spanish": "ascensor",
+        "english": "elevator"
     },
     {
-        "spanish": "daño",
-        "english": "damage"
+        "spanish": "discusión",
+        "english": "discussion"
     },
     {
-        "spanish": "traicionar",
-        "english": "to betray"
+        "spanish": "billete",
+        "english": "ticket"
     },
     {
-        "spanish": "vestido",
-        "english": "gown"
+        "spanish": "apunte",
+        "english": "note"
     },
     {
-        "spanish": "sólido",
-        "english": "solid"
+        "spanish": "autopista",
+        "english": "highway"
     },
     {
-        "spanish": "frase",
-        "english": "phrase"
+        "spanish": "camionero",
+        "english": "truck driver"
     },
     {
-        "spanish": "uña",
-        "english": "nail"
+        "spanish": "hotel",
+        "english": "hotel"
     },
     {
-        "spanish": "agosto",
-        "english": "august"
+        "spanish": "día",
+        "english": "day"
     },
     {
-        "spanish": "trabajador",
-        "english": "worker"
+        "spanish": "días",
+        "english": "days"
     },
     {
-        "spanish": "bala",
-        "english": "bullet"
+        "spanish": "aprender",
+        "english": "to learn"
     },
     {
-        "spanish": "tronco",
-        "english": "trunk"
+        "spanish": "callar",
+        "english": "to be quiet"
     },
     {
-        "spanish": "cabaña",
-        "english": "cottage"
+        "spanish": "avisar",
+        "english": "to notify"
     },
     {
-        "spanish": "ciudadano",
-        "english": "citizen"
+        "spanish": "futuro",
+        "english": "future"
     },
     {
-        "spanish": "silbar",
-        "english": "to whistle"
+        "spanish": "aislar",
+        "english": "to isolate"
     },
     {
-        "spanish": "aspecto",
-        "english": "aspect"
+        "spanish": "armar",
+        "english": "to arm"
     },
     {
-        "spanish": "confusión",
-        "english": "confusion"
+        "spanish": "atraer",
+        "english": "to attract"
     },
     {
-        "spanish": "feo",
-        "english": "ugly"
+        "spanish": "adorar",
+        "english": "to adore"
     },
     {
-        "spanish": "papá",
-        "english": "dad"
+        "spanish": "agarrar",
+        "english": "to grab"
     },
     {
-        "spanish": "curva",
-        "english": "curve"
+        "spanish": "analizar",
+        "english": "to analyze"
     },
     {
-        "spanish": "brisa",
-        "english": "breeze"
+        "spanish": "aviso",
+        "english": "notice"
     },
     {
-        "spanish": "lika",
-        "english": "equally"
-    },
-    {
-        "spanish": "cinta",
-        "english": "tape"
-    },
-    {
-        "spanish": "olor",
-        "english": "scent"
-    },
-    {
-        "spanish": "desarrollo",
-        "english": "development"
-    },
-    {
-        "spanish": "médico",
-        "english": "medical"
-    },
-    {
-        "spanish": "pendiente",
-        "english": "slope"
-    },
-    {
-        "spanish": "suciedad",
-        "english": "dirt"
-    },
-    {
-        "spanish": "cáscara",
-        "english": "shell"
-    },
-    {
-        "spanish": "parcela",
-        "english": "plot"
-    },
-    {
-        "spanish": "corona",
-        "english": "crown"
-    },
-    {
-        "spanish": "exitoso",
-        "english": "successful"
-    },
-    {
-        "spanish": "virtud",
-        "english": "virtue"
-    },
-    {
-        "spanish": "inundación",
-        "english": "flood"
-    },
-    {
-        "spanish": "roma",
-        "english": "rome"
-    },
-    {
-        "spanish": "poesía",
-        "english": "poetry"
-    },
-    {
-        "spanish": "vientre",
-        "english": "belly"
-    },
-    {
-        "spanish": "énorme",
-        "english": "enormous"
-    },
-    {
-        "spanish": "aplastar",
-        "english": "to crush"
-    },
-    {
-        "spanish": "baloncesto",
-        "english": "basket"
-    },
-    {
-        "spanish": "abrigo",
-        "english": "shelter"
-    },
-    {
-        "spanish": "ansvarlig",
-        "english": "responsible"
-    },
-    {
-        "spanish": "senaste",
-        "english": "recent"
-    },
-    {
-        "spanish": "dividir",
-        "english": "to divide"
-    },
-    {
-        "spanish": "precioso",
-        "english": "precious"
-    },
-    {
-        "spanish": "alentar",
-        "english": "to encourage"
-    },
-    {
-        "spanish": "frontera",
-        "english": "border"
-    },
-    {
-        "spanish": "océano",
-        "english": "ocean"
-    },
-    {
-        "spanish": "hojas",
-        "english": "blade"
-    },
-    {
-        "spanish": "muslo",
-        "english": "thigh"
-    },
-    {
-        "spanish": "reflexión",
-        "english": "reflection"
-    },
-    {
-        "spanish": "raro",
-        "english": "unusual"
-    },
-    {
-        "spanish": "vehículo",
-        "english": "vehicle"
-    },
-    {
-        "spanish": "temer",
-        "english": "dread"
-    },
-    {
-        "spanish": "estándar",
-        "english": "standard"
-    },
-    {
-        "spanish": "televisión",
-        "english": "television"
+        "spanish": "beca",
+        "english": "scholarship"
     },
     {
         "spanish": "acusar",
         "english": "to accuse"
     },
     {
-        "spanish": "totalmente",
-        "english": "totally"
+        "spanish": "argumentar",
+        "english": "to argue"
     },
     {
-        "spanish": "beneficio",
-        "english": "benefit"
+        "spanish": "asaltar",
+        "english": "to assault"
     },
     {
-        "spanish": "asociar",
-        "english": "to associate"
+        "spanish": "agrupar",
+        "english": "to group"
     },
     {
-        "spanish": "empleado",
-        "english": "clerk"
+        "spanish": "anexar",
+        "english": "to annex"
     },
     {
-        "spanish": "permiso",
-        "english": "permission"
+        "spanish": "blandir",
+        "english": "to brandish"
     },
     {
-        "spanish": "costa",
-        "english": "coast"
+        "spanish": "asegurar",
+        "english": "to assure"
+    },
+    {
+        "spanish": "beneficiar",
+        "english": "to benefit"
+    },
+    {
+        "spanish": "asemejar",
+        "english": "to resemble"
+    },
+    {
+        "spanish": "avanzar",
+        "english": "to advance"
+    },
+    {
+        "spanish": "bombardear",
+        "english": "to bomb"
+    },
+    {
+        "spanish": "actuar",
+        "english": "to act"
+    },
+    {
+        "spanish": "atacar",
+        "english": "to attack"
+    },
+    {
+        "spanish": "acompañar",
+        "english": "to accompany"
+    },
+    {
+        "spanish": "anular",
+        "english": "to annul"
+    },
+    {
+        "spanish": "aprobar",
+        "english": "to approve"
+    },
+    {
+        "spanish": "apurar",
+        "english": "to hurry"
+    },
+    {
+        "spanish": "atribuir",
+        "english": "to attribute"
+    },
+    {
+        "spanish": "aparentar",
+        "english": "to appear"
+    },
+    {
+        "spanish": "aparecer",
+        "english": "to appear"
+    },
+    {
+        "spanish": "aprestar",
+        "english": "to prepare"
+    },
+    {
+        "spanish": "atender",
+        "english": "to attend to"
+    },
+    {
+        "spanish": "aplacar",
+        "english": "to placate"
+    },
+    {
+        "spanish": "batir",
+        "english": "to beat"
+    },
+    {
+        "spanish": "abusar",
+        "english": "to abuse"
+    },
+    {
+        "spanish": "adquirir",
+        "english": "to acquire"
+    },
+    {
+        "spanish": "atrever",
+        "english": "to dare"
+    },
+    {
+        "spanish": "aclarar",
+        "english": "to clarify"
+    },
+    {
+        "spanish": "instructor",
+        "english": "instructor"
+    },
+    {
+        "spanish": "detestado",
+        "english": "detested person"
+    },
+    {
+        "spanish": "cargo",
+        "english": "charge"
+    },
+    {
+        "spanish": "intervalo",
+        "english": "interval"
+    },
+    {
+        "spanish": "divorciado",
+        "english": "divorced person"
+    },
+    {
+        "spanish": "demanda",
+        "english": "demand"
+    },
+    {
+        "spanish": "división",
+        "english": "division"
+    },
+    {
+        "spanish": "defensa",
+        "english": "defense"
+    },
+    {
+        "spanish": "curador",
+        "english": "curator"
+    },
+    {
+        "spanish": "cónsul",
+        "english": "consul"
+    },
+    {
+        "spanish": "dentista",
+        "english": "dentist"
+    },
+    {
+        "spanish": "cresta",
+        "english": "crest"
+    },
+    {
+        "spanish": "abeja",
+        "english": "bee"
+    },
+    {
+        "spanish": "ambos",
+        "english": "both"
+    },
+    {
+        "spanish": "atado",
+        "english": "tied"
+    },
+    {
+        "spanish": "alto",
+        "english": "tall"
+    },
+    {
+        "spanish": "añejo",
+        "english": "aged"
+    },
+    {
+        "spanish": "asilo",
+        "english": "asylum"
+    },
+    {
+        "spanish": "breve",
+        "english": "brief"
+    },
+    {
+        "spanish": "bulto",
+        "english": "bundle"
+    },
+    {
+        "spanish": "atroz",
+        "english": "atrocious"
+    },
+    {
+        "spanish": "boxeo",
+        "english": "boxing"
+    },
+    {
+        "spanish": "bajo",
+        "english": "bass"
+    },
+    {
+        "spanish": "abad",
+        "english": "abbot"
+    },
+    {
+        "spanish": "ateo",
+        "english": "atheist"
+    },
+    {
+        "spanish": "ajeno",
+        "english": "alien"
+    },
+    {
+        "spanish": "calvo",
+        "english": "bald"
+    },
+    {
+        "spanish": "ansia",
+        "english": "anxiety"
+    },
+    {
+        "spanish": "asado",
+        "english": "roasted"
+    },
+    {
+        "spanish": "bello",
+        "english": "beautiful"
+    },
+    {
+        "spanish": "alumno",
+        "english": "student"
+    },
+    {
+        "spanish": "aprobado",
+        "english": "pass"
+    },
+    {
+        "spanish": "becario",
+        "english": "scholarship holder"
+    },
+    {
+        "spanish": "anuario",
+        "english": "yearbook"
+    },
+    {
+        "spanish": "correctivo",
+        "english": "corrective"
+    },
+    {
+        "spanish": "contráctil",
+        "english": "contractile"
+    },
+    {
+        "spanish": "garaje",
+        "english": "garage"
+    },
+    {
+        "spanish": "contrario",
+        "english": "contrary"
+    },
+    {
+        "spanish": "arbitrio",
+        "english": "discretion"
+    },
+    {
+        "spanish": "barroco",
+        "english": "baroque"
+    },
+    {
+        "spanish": "apático",
+        "english": "apathetic person"
+    },
+    {
+        "spanish": "borroso",
+        "english": "blurry"
+    },
+    {
+        "spanish": "alojado",
+        "english": "lodged"
+    },
+    {
+        "spanish": "adelanto",
+        "english": "advancement"
+    },
+    {
+        "spanish": "bautizo",
+        "english": "baptism"
+    },
+    {
+        "spanish": "añadido",
+        "english": "added"
+    },
+    {
+        "spanish": "batido",
+        "english": "beaten"
+    },
+    {
+        "spanish": "altivez",
+        "english": "haughtiness"
+    },
+    {
+        "spanish": "calidad",
+        "english": "quality"
+    },
+    {
+        "spanish": "aplanado",
+        "english": "flattened"
+    },
+    {
+        "spanish": "cadena",
+        "english": "chain"
+    },
+    {
+        "spanish": "apacible",
+        "english": "peaceful"
+    },
+    {
+        "spanish": "brilloso",
+        "english": "glossy"
+    },
+    {
+        "spanish": "anónimo",
+        "english": "anonymous person"
+    },
+    {
+        "spanish": "béisbol",
+        "english": "baseball"
+    },
+    {
+        "spanish": "báscula",
+        "english": "scale"
+    },
+    {
+        "spanish": "ambiente",
+        "english": "environment"
     },
     {
         "spanish": "ansiedad",
         "english": "anxiety"
     },
     {
-        "spanish": "título",
-        "english": "title"
+        "spanish": "borrado",
+        "english": "erased"
     },
     {
-        "spanish": "tierno",
-        "english": "tender"
+        "spanish": "boreal",
+        "english": "northern"
     },
     {
-        "spanish": "pastel",
-        "english": "cake"
+        "spanish": "apócrifo",
+        "english": "apocryphal"
     },
     {
-        "spanish": "granjero",
+        "spanish": "cantidad",
+        "english": "quantity"
+    },
+    {
+        "spanish": "aislante",
+        "english": "insulating"
+    },
+    {
+        "spanish": "atónito",
+        "english": "astonished person"
+    },
+    {
+        "spanish": "bendito",
+        "english": "blessed"
+    },
+    {
+        "spanish": "abultado",
+        "english": "bulky"
+    },
+    {
+        "spanish": "arboleda",
+        "english": "grove"
+    },
+    {
+        "spanish": "asignatura",
+        "english": "subject"
+    },
+    {
+        "spanish": "ampuloso",
+        "english": "pompous"
+    },
+    {
+        "spanish": "acortado",
+        "english": "shortened"
+    },
+    {
+        "spanish": "bolígrafo",
+        "english": "pen"
+    },
+    {
+        "spanish": "aliviado",
+        "english": "relieved"
+    },
+    {
+        "spanish": "artesano",
+        "english": "craftsman"
+    },
+    {
+        "spanish": "legal",
+        "english": "legal"
+    },
+    {
+        "spanish": "error",
+        "english": "error"
+    },
+    {
+        "spanish": "local",
+        "english": "local"
+    },
+    {
+        "spanish": "mafia",
+        "english": "mafia"
+    },
+    {
+        "spanish": "extra",
+        "english": "extra"
+    },
+    {
+        "spanish": "funcional",
+        "english": "functional"
+    },
+    {
+        "spanish": "grave",
+        "english": "grave"
+    },
+    {
+        "spanish": "gamer",
+        "english": "gamer"
+    },
+    {
+        "spanish": "idea",
+        "english": "idea"
+    },
+    {
+        "spanish": "huaso",
+        "english": "huaso"
+    },
+    {
+        "spanish": "inoperante",
+        "english": "inoperative"
+    },
+    {
+        "spanish": "honor",
+        "english": "honor"
+    },
+    {
+        "spanish": "descuento",
+        "english": "discount"
+    },
+    {
+        "spanish": "triple",
+        "english": "triple"
+    },
+    {
+        "spanish": "calderero",
+        "english": "boilermaker"
+    },
+    {
+        "spanish": "agraviado",
+        "english": "aggrieved person"
+    },
+    {
+        "spanish": "aparición",
+        "english": "appearance"
+    },
+    {
+        "spanish": "apelación",
+        "english": "appeal"
+    },
+    {
+        "spanish": "adelantado",
+        "english": "advanced"
+    },
+    {
+        "spanish": "asequible",
+        "english": "affordable"
+    },
+    {
+        "spanish": "aplastado",
+        "english": "flattened"
+    },
+    {
+        "spanish": "aportación",
+        "english": "contribution"
+    },
+    {
+        "spanish": "autótrofo",
+        "english": "autotrophic"
+    },
+    {
+        "spanish": "asistencia",
+        "english": "attendance"
+    },
+    {
+        "spanish": "aprendido",
+        "english": "learned"
+    },
+    {
+        "spanish": "adiestrado",
+        "english": "trained"
+    },
+    {
+        "spanish": "amaestrado",
+        "english": "trained"
+    },
+    {
+        "spanish": "cacofónico",
+        "english": "cacophonous"
+    },
+    {
+        "spanish": "antecesor",
+        "english": "predecessor"
+    },
+    {
+        "spanish": "campesino",
+        "english": "peasant"
+    },
+    {
+        "spanish": "bullicioso",
+        "english": "bustling"
+    },
+    {
+        "spanish": "campeonato",
+        "english": "championship"
+    },
+    {
+        "spanish": "afectuoso",
+        "english": "affectionate"
+    },
+    {
+        "spanish": "banjoísta",
+        "english": "banjo player"
+    },
+    {
+        "spanish": "arreglista",
+        "english": "arranger"
+    },
+    {
+        "spanish": "ambiental",
+        "english": "environmental"
+    },
+    {
+        "spanish": "arqueólogo",
+        "english": "archaeologist"
+    },
+    {
+        "spanish": "anárquico",
+        "english": "anarchic"
+    },
+    {
+        "spanish": "alimentar",
+        "english": "to feed"
+    },
+    {
+        "spanish": "asar",
+        "english": "to roast"
+    },
+    {
+        "spanish": "arriesgar",
+        "english": "to risk"
+    },
+    {
+        "spanish": "acosar",
+        "english": "to harass"
+    },
+    {
+        "spanish": "alistar",
+        "english": "to ready"
+    },
+    {
+        "spanish": "asediar",
+        "english": "to besiege"
+    },
+    {
+        "spanish": "agradar",
+        "english": "to please"
+    },
+    {
+        "spanish": "acortar",
+        "english": "to shorten"
+    },
+    {
+        "spanish": "alegrar",
+        "english": "to make happy"
+    },
+    {
+        "spanish": "agradecer",
+        "english": "to thank"
+    },
+    {
+        "spanish": "aliviar",
+        "english": "to relieve"
+    },
+    {
+        "spanish": "amenazar",
+        "english": "to threaten"
+    },
+    {
+        "spanish": "alcanzar",
+        "english": "to reach"
+    },
+    {
+        "spanish": "agregar",
+        "english": "to add"
+    },
+    {
+        "spanish": "alabar",
+        "english": "to praise"
+    },
+    {
+        "spanish": "acabar",
+        "english": "to finish"
+    },
+    {
+        "spanish": "alargar",
+        "english": "to lengthen"
+    },
+    {
+        "spanish": "atracar",
+        "english": "to rob"
+    },
+    {
+        "spanish": "aguantar",
+        "english": "to endure"
+    },
+    {
+        "spanish": "acariciar",
+        "english": "to caress"
+    },
+    {
+        "spanish": "atesorar",
+        "english": "to treasure"
+    },
+    {
+        "spanish": "agriar",
+        "english": "to sour"
+    },
+    {
+        "spanish": "aterrizar",
+        "english": "to land"
+    },
+    {
+        "spanish": "asir",
+        "english": "to seize"
+    },
+    {
+        "spanish": "acceder",
+        "english": "to agree"
+    },
+    {
+        "spanish": "acechar",
+        "english": "to stalk"
+    },
+    {
+        "spanish": "atemorizar",
+        "english": "to frighten"
+    },
+    {
+        "spanish": "atar",
+        "english": "to tie"
+    },
+    {
+        "spanish": "asustar",
+        "english": "to scare"
+    },
+    {
+        "spanish": "acertar",
+        "english": "to hit"
+    },
+    {
+        "spanish": "asquear",
+        "english": "to disgust"
+    },
+    {
+        "spanish": "arriar",
+        "english": "to lower (flag)"
+    },
+    {
+        "spanish": "ahorrar",
+        "english": "to save"
+    },
+    {
+        "spanish": "almacenar",
+        "english": "to store"
+    },
+    {
+        "spanish": "arreglar",
+        "english": "to fix"
+    },
+    {
+        "spanish": "alzar",
+        "english": "to lift"
+    },
+    {
+        "spanish": "apartar",
+        "english": "to set aside"
+    },
+    {
+        "spanish": "apagar",
+        "english": "to turn off"
+    },
+    {
+        "spanish": "adjuntar",
+        "english": "to attach"
+    },
+    {
+        "spanish": "apaciguar",
+        "english": "to appease"
+    },
+    {
+        "spanish": "amar",
+        "english": "to love"
+    },
+    {
+        "spanish": "amargar",
+        "english": "to embitter"
+    },
+    {
+        "spanish": "amasar",
+        "english": "to knead"
+    },
+    {
+        "spanish": "anteponer",
+        "english": "to put before"
+    },
+    {
+        "spanish": "afinar",
+        "english": "to tune"
+    },
+    {
+        "spanish": "adobar",
+        "english": "to marinate"
+    },
+    {
+        "spanish": "andar",
+        "english": "to walk"
+    },
+    {
+        "spanish": "advertir",
+        "english": "to warn"
+    },
+    {
+        "spanish": "amedrentar",
+        "english": "to intimidate"
+    },
+    {
+        "spanish": "ampliar",
+        "english": "to expand"
+    },
+    {
+        "spanish": "aferrar",
+        "english": "to grasp"
+    },
+    {
+        "spanish": "amontonar",
+        "english": "to pile up"
+    },
+    {
+        "spanish": "amnistiar",
+        "english": "to grant amnesty"
+    },
+    {
+        "spanish": "adjudicar",
+        "english": "to award"
+    },
+    {
+        "spanish": "alunizar",
+        "english": "to land on moon"
+    },
+    {
+        "spanish": "actualizar",
+        "english": "to update"
+    },
+    {
+        "spanish": "aplazar",
+        "english": "to postpone"
+    },
+    {
+        "spanish": "arrancar",
+        "english": "to start"
+    },
+    {
+        "spanish": "aliñar",
+        "english": "to dress (salad)"
+    },
+    {
+        "spanish": "besar",
+        "english": "to kiss"
+    },
+    {
+        "spanish": "amerizar",
+        "english": "to land on water"
+    },
+    {
+        "spanish": "agitar",
+        "english": "to shake"
+    },
+    {
+        "spanish": "almorzar",
+        "english": "to have lunch"
+    },
+    {
+        "spanish": "apuntar",
+        "english": "to aim"
+    },
+    {
+        "spanish": "agendar",
+        "english": "to schedule"
+    },
+    {
+        "spanish": "aprovechar",
+        "english": "to take advantage"
+    },
+    {
+        "spanish": "adelgazar",
+        "english": "to slim down"
+    },
+    {
+        "spanish": "aderezar",
+        "english": "to garnish"
+    },
+    {
+        "spanish": "agachar",
+        "english": "to bend down"
+    },
+    {
+        "spanish": "apresurar",
+        "english": "to hasten"
+    },
+    {
+        "spanish": "aflorar",
+        "english": "to surface"
+    },
+    {
+        "spanish": "alumbrar",
+        "english": "to light up"
+    },
+    {
+        "spanish": "apoyar",
+        "english": "to support"
+    },
+    {
+        "spanish": "aplicar",
+        "english": "to apply"
+    },
+    {
+        "spanish": "apilar",
+        "english": "to stack"
+    },
+    {
+        "spanish": "asombrar",
+        "english": "to amaze"
+    },
+    {
+        "spanish": "ahondar",
+        "english": "to delve"
+    },
+    {
+        "spanish": "cambiar",
+        "english": "to change"
+    },
+    {
+        "spanish": "bostezar",
+        "english": "to yawn"
+    },
+    {
+        "spanish": "brillar",
+        "english": "to shine"
+    },
+    {
+        "spanish": "brincar",
+        "english": "to hop"
+    },
+    {
+        "spanish": "brindar",
+        "english": "to toast"
+    },
+    {
+        "spanish": "brotar",
+        "english": "to sprout"
+    },
+    {
+        "spanish": "auxiliar",
+        "english": "to aid"
+    },
+    {
+        "spanish": "avergonzar",
+        "english": "to shame"
+    },
+    {
+        "spanish": "bucear",
+        "english": "to dive"
+    },
+    {
+        "spanish": "averiguar",
+        "english": "to find out"
+    },
+    {
+        "spanish": "ayudar",
+        "english": "to help"
+    },
+    {
+        "spanish": "azucarar",
+        "english": "to sugar"
+    },
+    {
+        "spanish": "buscar",
+        "english": "to look for"
+    },
+    {
+        "spanish": "caducar",
+        "english": "to expire"
+    },
+    {
+        "spanish": "caer",
+        "english": "to fall"
+    },
+    {
+        "spanish": "abrazar",
+        "english": "to hug"
+    },
+    {
+        "spanish": "bajar",
+        "english": "to go down"
+    },
+    {
+        "spanish": "añadir",
+        "english": "to add"
+    },
+    {
+        "spanish": "añorar",
+        "english": "to long for"
+    },
+    {
+        "spanish": "calentar",
+        "english": "to heat"
+    },
+    {
+        "spanish": "abastecer",
+        "english": "to supply"
+    },
+    {
+        "spanish": "bailar",
+        "english": "to dance"
+    },
+    {
+        "spanish": "aburrir",
+        "english": "to bore"
+    },
+    {
+        "spanish": "canjear",
+        "english": "to redeem"
+    },
+    {
+        "spanish": "aumentar",
+        "english": "to increase"
+    },
+    {
+        "spanish": "caminar",
+        "english": "to walk"
+    },
+    {
+        "spanish": "bloquear",
+        "english": "to block"
+    },
+    {
+        "spanish": "blanquear",
+        "english": "to whiten"
+    },
+    {
+        "spanish": "abrir",
+        "english": "to open"
+    },
+    {
+        "spanish": "bendecir",
+        "english": "to bless"
+    },
+    {
+        "spanish": "avivar",
+        "english": "to enliven"
+    },
+    {
+        "spanish": "averiar",
+        "english": "to break down"
+    },
+    {
+        "spanish": "cantar",
+        "english": "to sing"
+    },
+    {
+        "spanish": "comunicar",
+        "english": "to communicate"
+    },
+    {
+        "spanish": "educar",
+        "english": "to educate"
+    },
+    {
+        "spanish": "integral",
+        "english": "integral"
+    },
+    {
+        "spanish": "eventual",
+        "english": "eventual"
+    },
+    {
+        "spanish": "hospital",
+        "english": "hospital"
+    },
+    {
+        "spanish": "gaucho",
+        "english": "gaucho"
+    },
+    {
+        "spanish": "hematoma",
+        "english": "hematoma"
+    },
+    {
+        "spanish": "horrible",
+        "english": "horrible"
+    },
+    {
+        "spanish": "informal",
+        "english": "informal"
+    },
+    {
+        "spanish": "glacial",
+        "english": "glacial"
+    },
+    {
+        "spanish": "frontal",
+        "english": "frontal"
+    },
+    {
+        "spanish": "internet",
+        "english": "internet"
+    },
+    {
+        "spanish": "insignia",
+        "english": "insignia"
+    },
+    {
+        "spanish": "frugal",
+        "english": "frugal"
+    },
+    {
+        "spanish": "general",
+        "english": "general"
+    },
+    {
+        "spanish": "global",
+        "english": "global"
+    },
+    {
+        "spanish": "germinal",
+        "english": "germinal"
+    },
+    {
+        "spanish": "interior",
+        "english": "interior"
+    },
+    {
+        "spanish": "insular",
+        "english": "insular"
+    },
+    {
+        "spanish": "taxi",
+        "english": "taxi"
+    },
+    {
+        "spanish": "lateral",
+        "english": "lateral"
+    },
+    {
+        "spanish": "factual",
+        "english": "factual"
+    },
+    {
+        "spanish": "flamenco",
+        "english": "flamenco"
+    },
+    {
+        "spanish": "formal",
+        "english": "formal"
+    },
+    {
+        "spanish": "liberal",
+        "english": "liberal"
+    },
+    {
+        "spanish": "habitual",
+        "english": "habitual"
+    },
+    {
+        "spanish": "festival",
+        "english": "festival"
+    },
+    {
+        "spanish": "laminar",
+        "english": "laminar"
+    },
+    {
+        "spanish": "fervor",
+        "english": "fervor"
+    },
+    {
+        "spanish": "federal",
+        "english": "federal"
+    },
+    {
+        "spanish": "gradual",
+        "english": "gradual"
+    },
+    {
+        "spanish": "flexible",
+        "english": "flexible"
+    },
+    {
+        "spanish": "floral",
+        "english": "floral"
+    },
+    {
+        "spanish": "familiar",
+        "english": "familiar"
+    },
+    {
+        "spanish": "karateka",
+        "english": "karateka"
+    },
+    {
+        "spanish": "inventor",
+        "english": "inventor"
+    },
+    {
+        "spanish": "impostor",
+        "english": "impostor"
+    },
+    {
+        "spanish": "factor",
+        "english": "factor"
+    },
+    {
+        "spanish": "judoka",
+        "english": "judoka"
+    },
+    {
+        "spanish": "foliar",
+        "english": "foliar"
+    },
+    {
+        "spanish": "jovial",
+        "english": "jovial"
+    },
+    {
+        "spanish": "inferior",
+        "english": "inferior"
+    },
+    {
+        "spanish": "hacker",
+        "english": "hacker"
+    },
+    {
+        "spanish": "literal",
+        "english": "literal"
+    },
+    {
+        "spanish": "campo",
+        "english": "field"
+    },
+    {
+        "spanish": "arma",
+        "english": "weapon"
+    },
+    {
+        "spanish": "ayuda",
+        "english": "help"
+    },
+    {
+        "spanish": "araña",
+        "english": "spider"
+    },
+    {
+        "spanish": "calor",
+        "english": "heat"
+    },
+    {
+        "spanish": "azar",
+        "english": "chance"
+    },
+    {
+        "spanish": "aéreo",
+        "english": "aerial"
+    },
+    {
+        "spanish": "amigo",
+        "english": "friend"
+    },
+    {
+        "spanish": "baile",
+        "english": "dance"
+    },
+    {
+        "spanish": "baja",
+        "english": "drop"
+    },
+    {
+        "spanish": "bis",
+        "english": "encore"
+    },
+    {
+        "spanish": "agudo",
+        "english": "acute"
+    },
+    {
+        "spanish": "agrio",
+        "english": "sour"
+    },
+    {
+        "spanish": "boca",
+        "english": "mouth"
+    },
+    {
+        "spanish": "aldea",
+        "english": "village"
+    },
+    {
+        "spanish": "boda",
+        "english": "wedding"
+    },
+    {
+        "spanish": "beato",
+        "english": "blessed person"
+    },
+    {
+        "spanish": "algún",
+        "english": "some"
+    },
+    {
+        "spanish": "bolso",
+        "english": "bag"
+    },
+    {
+        "spanish": "afán",
+        "english": "eagerness"
+    },
+    {
+        "spanish": "alta",
+        "english": "discharge"
+    },
+    {
+        "spanish": "bravo",
+        "english": "wild"
+    },
+    {
+        "spanish": "brazo",
+        "english": "arm"
+    },
+    {
+        "spanish": "alza",
+        "english": "rise"
+    },
+    {
+        "spanish": "basto",
+        "english": "coarse"
+    },
+    {
+        "spanish": "brujo",
+        "english": "witch"
+    },
+    {
+        "spanish": "bruto",
+        "english": "raw"
+    },
+    {
+        "spanish": "amor",
+        "english": "love"
+    },
+    {
+        "spanish": "burdo",
+        "english": "coarse"
+    },
+    {
+        "spanish": "burla",
+        "english": "mockery"
+    },
+    {
+        "spanish": "bando",
+        "english": "proclamation"
+    },
+    {
+        "spanish": "ancho",
+        "english": "wide"
+    },
+    {
+        "spanish": "buzo",
+        "english": "diver"
+    },
+    {
+        "spanish": "cabo",
+        "english": "end"
+    },
+    {
+        "spanish": "acoso",
+        "english": "harassment"
+    },
+    {
+        "spanish": "calle",
+        "english": "street"
+    },
+    {
+        "spanish": "avaro",
+        "english": "greedy"
+    },
+    {
+        "spanish": "auto",
+        "english": "court order"
+    },
+    {
+        "spanish": "acera",
+        "english": "sidewalk"
+    },
+    {
+        "spanish": "audaz",
+        "english": "audacious person"
+    },
+    {
+        "spanish": "clase",
+        "english": "class"
+    },
+    {
+        "spanish": "curso",
+        "english": "course"
+    },
+    {
+        "spanish": "industrial",
+        "english": "industrial"
+    },
+    {
+        "spanish": "individual",
+        "english": "individual"
+    },
+    {
+        "spanish": "formidable",
+        "english": "formidable"
+    },
+    {
+        "spanish": "irregular",
+        "english": "irregular"
+    },
+    {
+        "spanish": "inspector",
+        "english": "inspector"
+    },
+    {
+        "spanish": "impalpable",
+        "english": "impalpable"
+    },
+    {
+        "spanish": "invariable",
+        "english": "invariable"
+    },
+    {
+        "spanish": "impersonal",
+        "english": "impersonal"
+    },
+    {
+        "spanish": "improbable",
+        "english": "improbable"
+    },
+    {
+        "spanish": "glandular",
+        "english": "glandular"
+    },
+    {
+        "spanish": "intangible",
+        "english": "intangible"
+    },
+    {
+        "spanish": "invisible",
+        "english": "invisible"
+    },
+    {
+        "spanish": "inaudible",
+        "english": "inaudible"
+    },
+    {
+        "spanish": "horizontal",
+        "english": "horizontal"
+    },
+    {
+        "spanish": "influencer",
+        "english": "influencer"
+    },
+    {
+        "spanish": "hexagonal",
+        "english": "hexagonal"
+    },
+    {
+        "spanish": "excitable",
+        "english": "excitable"
+    },
+    {
+        "spanish": "headhunter",
+        "english": "headhunter"
+    },
+    {
+        "spanish": "fusionable",
+        "english": "fusionable"
+    },
+    {
+        "spanish": "inflexible",
+        "english": "inflexible"
+    },
+    {
+        "spanish": "viable",
+        "english": "viable"
+    },
+    {
+        "spanish": "amoroso",
+        "english": "loving"
+    },
+    {
+        "spanish": "austral",
+        "english": "southern"
+    },
+    {
+        "spanish": "afueras",
+        "english": "outskirts"
+    },
+    {
+        "spanish": "batería",
+        "english": "drums"
+    },
+    {
+        "spanish": "amparo",
+        "english": "protection"
+    },
+    {
+        "spanish": "altanero",
+        "english": "haughty"
+    },
+    {
+        "spanish": "afinado",
+        "english": "tuned"
+    },
+    {
+        "spanish": "altavoz",
+        "english": "speaker"
+    },
+    {
+        "spanish": "barriada",
+        "english": "neighborhood"
+    },
+    {
+        "spanish": "altivo",
+        "english": "haughty"
+    },
+    {
+        "spanish": "basurero",
+        "english": "garbage collector"
+    },
+    {
+        "spanish": "amargo",
+        "english": "bitter"
+    },
+    {
+        "spanish": "barrio",
+        "english": "neighborhood"
+    },
+    {
+        "spanish": "altura",
+        "english": "height"
+    },
+    {
+        "spanish": "amistoso",
+        "english": "friendly"
+    },
+    {
+        "spanish": "amistad",
+        "english": "friendship"
+    },
+    {
+        "spanish": "acequia",
+        "english": "irrigation ditch"
+    },
+    {
+        "spanish": "bufanda",
+        "english": "scarf"
+    },
+    {
+        "spanish": "amenaza",
+        "english": "threat"
+    },
+    {
+        "spanish": "brumoso",
+        "english": "misty"
+    },
+    {
+        "spanish": "amarrado",
+        "english": "tied"
+    },
+    {
+        "spanish": "amable",
+        "english": "kind"
+    },
+    {
+        "spanish": "alquiler",
+        "english": "rent"
+    },
+    {
+        "spanish": "amante",
+        "english": "lover"
+    },
+    {
+        "spanish": "bombero",
+        "english": "firefighter"
+    },
+    {
+        "spanish": "botiquín",
+        "english": "first aid kit"
+    },
+    {
+        "spanish": "bosque",
+        "english": "forest"
+    },
+    {
+        "spanish": "abarcado",
+        "english": "encompassed"
+    },
+    {
+        "spanish": "acabado",
+        "english": "finished"
+    },
+    {
+        "spanish": "alcance",
+        "english": "reach"
+    },
+    {
+        "spanish": "alcalde",
+        "english": "mayor"
+    },
+    {
+        "spanish": "blando",
+        "english": "soft"
+    },
+    {
+        "spanish": "albergue",
+        "english": "shelter"
+    },
+    {
+        "spanish": "albedrío",
+        "english": "will"
+    },
+    {
+        "spanish": "albañil",
+        "english": "bricklayer"
+    },
+    {
+        "spanish": "blanco",
+        "english": "white"
+    },
+    {
+        "spanish": "agudeza",
+        "english": "sharpness"
+    },
+    {
+        "spanish": "alargado",
+        "english": "lengthened"
+    },
+    {
+        "spanish": "bisoño",
+        "english": "inexperienced"
+    },
+    {
+        "spanish": "ajustado",
+        "english": "tight"
+    },
+    {
+        "spanish": "ahogarse",
+        "english": "to drown"
+    },
+    {
+        "spanish": "ahínco",
+        "english": "eagerness"
+    },
+    {
+        "spanish": "ahumado",
+        "english": "smoked"
+    },
+    {
+        "spanish": "ahorro",
+        "english": "savings"
+    },
+    {
+        "spanish": "agregado",
+        "english": "attaché"
+    },
+    {
+        "spanish": "atrevido",
+        "english": "bold person"
+    },
+    {
+        "spanish": "aldeano",
+        "english": "villager"
+    },
+    {
+        "spanish": "bañarse",
+        "english": "to bathe"
+    },
+    {
+        "spanish": "abierto",
+        "english": "open"
+    },
+    {
+        "spanish": "borrador",
+        "english": "draft"
+    },
+    {
+        "spanish": "almacén",
+        "english": "warehouse"
+    },
+    {
+        "spanish": "aumento",
+        "english": "increase"
+    },
+    {
+        "spanish": "atraco",
+        "english": "holdup"
+    },
+    {
+        "spanish": "bondad",
+        "english": "kindness"
+    },
+    {
+        "spanish": "barato",
+        "english": "cheap"
+    },
+    {
+        "spanish": "alisado",
+        "english": "straightened"
+    },
+    {
+        "spanish": "atrasado",
+        "english": "backward"
+    },
+    {
+        "spanish": "bolsillo",
+        "english": "pocket"
+    },
+    {
+        "spanish": "aliado",
+        "english": "ally"
+    },
+    {
+        "spanish": "algodón",
+        "english": "cotton"
+    },
+    {
+        "spanish": "alfarero",
+        "english": "potter"
+    },
+    {
+        "spanish": "bodegón",
+        "english": "still life"
+    },
+    {
+        "spanish": "alejado",
+        "english": "distant"
+    },
+    {
+        "spanish": "alegre",
+        "english": "cheerful"
+    },
+    {
+        "spanish": "avalista",
+        "english": "guarantor"
+    },
+    {
+        "spanish": "aseado",
+        "english": "tidy"
+    },
+    {
+        "spanish": "ampliado",
+        "english": "enlarged"
+    },
+    {
+        "spanish": "acogido",
+        "english": "welcomed"
+    },
+    {
+        "spanish": "asilado",
+        "english": "asylum seeker"
+    },
+    {
+        "spanish": "acápite",
+        "english": "paragraph"
+    },
+    {
+        "spanish": "arancel",
+        "english": "tariff"
+    },
+    {
+        "spanish": "averiado",
+        "english": "broken down"
+    },
+    {
+        "spanish": "absuelto",
+        "english": "acquitted"
+    },
+    {
+        "spanish": "apátrida",
+        "english": "stateless person"
+    },
+    {
+        "spanish": "apuesta",
+        "english": "bet"
+    },
+    {
+        "spanish": "apretado",
+        "english": "tight"
+    },
+    {
+        "spanish": "aplazado",
+        "english": "postponed"
+    },
+    {
+        "spanish": "caliente",
+        "english": "hot"
+    },
+    {
+        "spanish": "calidez",
+        "english": "warmth"
+    },
+    {
+        "spanish": "bailarín",
+        "english": "dancer"
+    },
+    {
+        "spanish": "apremio",
+        "english": "urgency"
+    },
+    {
+        "spanish": "cancha",
+        "english": "court"
+    },
+    {
+        "spanish": "adivino",
+        "english": "fortune teller"
+    },
+    {
+        "spanish": "acogedor",
+        "english": "cozy"
+    },
+    {
+        "spanish": "achaque",
+        "english": "ailment"
+    },
+    {
+        "spanish": "archivo",
+        "english": "file"
+    },
+    {
+        "spanish": "ardiente",
+        "english": "burning"
+    },
+    {
+        "spanish": "arista",
+        "english": "edge"
+    },
+    {
+        "spanish": "cantor",
+        "english": "singer"
+    },
+    {
+        "spanish": "acosado",
+        "english": "harassed person"
+    },
+    {
+        "spanish": "canción",
+        "english": "song"
+    },
+    {
+        "spanish": "avezado",
+        "english": "experienced"
+    },
+    {
+        "spanish": "candente",
+        "english": "red-hot"
+    },
+    {
+        "spanish": "arrugado",
+        "english": "wrinkled"
+    },
+    {
+        "spanish": "campos",
+        "english": "fields"
+    },
+    {
+        "spanish": "acorde",
+        "english": "in tune"
+    },
+    {
+        "spanish": "camisa",
+        "english": "shirt"
+    },
+    {
+        "spanish": "cansado",
+        "english": "tired"
+    },
+    {
+        "spanish": "camino",
+        "english": "path"
+    },
+    {
+        "spanish": "acotado",
+        "english": "bounded"
+    },
+    {
+        "spanish": "cantante",
+        "english": "singer"
+    },
+    {
+        "spanish": "acuerdo",
+        "english": "agreement"
+    },
+    {
+        "spanish": "arranque",
+        "english": "start"
+    },
+    {
+        "spanish": "cambio",
+        "english": "change"
+    },
+    {
+        "spanish": "arrabal",
+        "english": "outskirts"
+    },
+    {
+        "spanish": "bajada",
+        "english": "descent"
+    },
+    {
+        "spanish": "abrigo",
+        "english": "coat"
+    },
+    {
+        "spanish": "bajado",
+        "english": "lowered"
+    },
+    {
+        "spanish": "cabeza",
+        "english": "head"
+    },
+    {
+        "spanish": "anudado",
+        "english": "knotted"
+    },
+    {
+        "spanish": "caballo",
+        "english": "horse"
+    },
+    {
+        "spanish": "bandeja",
+        "english": "tray"
+    },
+    {
+        "spanish": "baldío",
+        "english": "wasteland"
+    },
+    {
+        "spanish": "bandera",
+        "english": "flag"
+    },
+    {
+        "spanish": "astuto",
+        "english": "cunning"
+    },
+    {
+        "spanish": "animoso",
+        "english": "spirited"
+    },
+    {
+        "spanish": "anillo",
+        "english": "ring"
+    },
+    {
+        "spanish": "anhelo",
+        "english": "yearning"
+    },
+    {
+        "spanish": "anhelado",
+        "english": "yearned for person"
+    },
+    {
+        "spanish": "angosto",
+        "english": "narrow"
+    },
+    {
+        "spanish": "butaca",
+        "english": "seat"
+    },
+    {
+        "spanish": "asunto",
+        "english": "matter"
+    },
+    {
+        "spanish": "andanza",
+        "english": "adventure"
+    },
+    {
+        "spanish": "adscrito",
+        "english": "assigned"
+    },
+    {
+        "spanish": "anciano",
+        "english": "elderly"
+    },
+    {
+        "spanish": "anchura",
+        "english": "width"
+    },
+    {
+        "spanish": "asustado",
+        "english": "frightened person"
+    },
+    {
+        "spanish": "buscado",
+        "english": "sought person"
+    },
+    {
+        "spanish": "anuncio",
+        "english": "advertisement"
+    },
+    {
+        "spanish": "augurio",
+        "english": "omen"
+    },
+    {
+        "spanish": "adjunto",
+        "english": "attached"
+    },
+    {
+        "spanish": "abombado",
+        "english": "bulging"
+    },
+    {
+        "spanish": "apertura",
+        "english": "opening"
+    },
+    {
+        "spanish": "acertado",
+        "english": "correct"
+    },
+    {
+        "spanish": "caduco",
+        "english": "expired"
+    },
+    {
+        "spanish": "apagado",
+        "english": "dull person"
+    },
+    {
+        "spanish": "caducado",
+        "english": "expired"
+    },
+    {
+        "spanish": "apartado",
+        "english": "remote"
+    },
+    {
+        "spanish": "abogado",
+        "english": "lawyer"
+    },
+    {
+        "spanish": "astucia",
+        "english": "cunning"
+    },
+    {
+        "spanish": "decano",
+        "english": "dean"
+    },
+    {
+        "spanish": "supervisor",
+        "english": "supervisor"
+    },
+    {
+        "spanish": "sommelier",
+        "english": "sommelier"
+    },
+    {
+        "spanish": "debido",
+        "english": "due"
+    },
+    {
+        "spanish": "acompasado",
+        "english": "rhythmic"
+    },
+    {
+        "spanish": "abrasador",
+        "english": "scorching"
+    },
+    {
+        "spanish": "aficionado",
+        "english": "fan"
+    },
+    {
+        "spanish": "agujereado",
+        "english": "holed"
+    },
+    {
+        "spanish": "absolución",
+        "english": "acquittal"
+    },
+    {
+        "spanish": "advenedizo",
+        "english": "upstart"
+    },
+    {
+        "spanish": "adjudicado",
+        "english": "awarded"
+    },
+    {
+        "spanish": "acostarse",
+        "english": "to go to bed"
+    },
+    {
+        "spanish": "agonizante",
+        "english": "dying"
+    },
+    {
+        "spanish": "aguardado",
+        "english": "awaited person"
+    },
+    {
+        "spanish": "abarrotado",
+        "english": "crowded"
+    },
+    {
+        "spanish": "acordarse",
+        "english": "to remember"
+    },
+    {
+        "spanish": "accionista",
+        "english": "shareholder"
+    },
+    {
+        "spanish": "agradable",
+        "english": "pleasant"
+    },
+    {
+        "spanish": "adinerado",
+        "english": "wealthy"
+    },
+    {
+        "spanish": "agrietado",
+        "english": "cracked"
+    },
+    {
+        "spanish": "ablandado",
+        "english": "softened"
+    },
+    {
+        "spanish": "agrandado",
+        "english": "enlarged"
+    },
+    {
+        "spanish": "agricultor",
         "english": "farmer"
     },
     {
-        "spanish": "violencia",
-        "english": "violence"
+        "spanish": "acaudalado",
+        "english": "wealthy"
     },
     {
-        "spanish": "vislumbre",
-        "english": "glimpse"
+        "spanish": "bienestar",
+        "english": "wellbeing"
     },
     {
-        "spanish": "sugerencia",
-        "english": "suggestion"
+        "spanish": "ahorrativo",
+        "english": "thrifty"
     },
     {
-        "spanish": "infancia",
-        "english": "childhood"
+        "spanish": "asqueroso",
+        "english": "disgusting"
     },
     {
-        "spanish": "recompensa",
-        "english": "reward"
+        "spanish": "aspiradora",
+        "english": "vacuum cleaner"
     },
     {
-        "spanish": "gancho",
-        "english": "hook"
+        "spanish": "asombrado",
+        "english": "amazed person"
     },
     {
-        "spanish": "apagarse",
-        "english": "dim"
+        "spanish": "ascendido",
+        "english": "promoted"
     },
     {
-        "spanish": "cliente",
-        "english": "client"
+        "spanish": "artesanía",
+        "english": "crafts"
+    },
+    {
+        "spanish": "arreglado",
+        "english": "neat"
+    },
+    {
+        "spanish": "apropiado",
+        "english": "suitable"
+    },
+    {
+        "spanish": "apresurado",
+        "english": "hurried"
+    },
+    {
+        "spanish": "apostador",
+        "english": "gambler"
+    },
+    {
+        "spanish": "apoderado",
+        "english": "attorney-in-fact"
+    },
+    {
+        "spanish": "apicultor",
+        "english": "beekeeper"
+    },
+    {
+        "spanish": "anfitrión",
+        "english": "host"
+    },
+    {
+        "spanish": "astillado",
+        "english": "splintered"
+    },
+    {
+        "spanish": "aterrizaje",
+        "english": "landing"
+    },
+    {
+        "spanish": "ampliación",
+        "english": "enlargement"
+    },
+    {
+        "spanish": "bendecido",
+        "english": "blessed"
+    },
+    {
+        "spanish": "belicista",
+        "english": "warmongering"
+    },
+    {
+        "spanish": "bondadoso",
+        "english": "kind person"
+    },
+    {
+        "spanish": "borrascoso",
+        "english": "stormy"
+    },
+    {
+        "spanish": "baterista",
+        "english": "drummer"
+    },
+    {
+        "spanish": "bancarrota",
+        "english": "bankruptcy"
+    },
+    {
+        "spanish": "cadencioso",
+        "english": "rhythmic"
+    },
+    {
+        "spanish": "baloncesto",
+        "english": "basketball"
+    },
+    {
+        "spanish": "cambiante",
+        "english": "changing"
+    },
+    {
+        "spanish": "campestre",
+        "english": "rural"
+    },
+    {
+        "spanish": "avicultor",
+        "english": "poultry farmer"
+    },
+    {
+        "spanish": "aventajado",
+        "english": "advanced"
+    },
+    {
+        "spanish": "aumentado",
+        "english": "increased"
+    },
+    {
+        "spanish": "atrilista",
+        "english": "music stand player"
+    },
+    {
+        "spanish": "atracador",
+        "english": "robber"
+    },
+    {
+        "spanish": "analfabeto",
+        "english": "illiterate"
+    },
+    {
+        "spanish": "algodonoso",
+        "english": "cottony"
+    },
+    {
+        "spanish": "alpinista",
+        "english": "mountaineer"
+    },
+    {
+        "spanish": "aleatorio",
+        "english": "random"
+    },
+    {
+        "spanish": "alborotado",
+        "english": "tousled"
+    },
+    {
+        "spanish": "almidonado",
+        "english": "starched"
+    },
+    {
+        "spanish": "albergado",
+        "english": "housed"
+    },
+    {
+        "spanish": "ambulante",
+        "english": "itinerant"
+    },
+    {
+        "spanish": "alcanzado",
+        "english": "reached"
+    },
+    {
+        "spanish": "comentario",
+        "english": "comment"
+    },
+    {
+        "spanish": "expresión",
+        "english": "expression"
+    },
+    {
+        "spanish": "cautivado",
+        "english": "captivated person"
+    },
+    {
+        "spanish": "itinerante",
+        "english": "itinerant"
+    },
+    {
+        "spanish": "consejero",
+        "english": "counselor"
+    },
+    {
+        "spanish": "educación",
+        "english": "education"
+    },
+    {
+        "spanish": "itinerario",
+        "english": "itinerary"
+    },
+    {
+        "spanish": "celo",
+        "english": "zeal"
+    },
+    {
+        "spanish": "cojín",
+        "english": "cushion"
+    },
+    {
+        "spanish": "expirar",
+        "english": "to expire"
+    },
+    {
+        "spanish": "destinar",
+        "english": "to destine"
+    },
+    {
+        "spanish": "degradar",
+        "english": "to degrade"
+    },
+    {
+        "spanish": "disgustar",
+        "english": "to disgust"
+    },
+    {
+        "spanish": "hora",
+        "english": "hour"
+    },
+    {
+        "spanish": "desistir",
+        "english": "to desist"
+    },
+    {
+        "spanish": "demostrar",
+        "english": "to demonstrate"
+    },
+    {
+        "spanish": "desfigurar",
+        "english": "to disfigure"
+    },
+    {
+        "spanish": "deplorar",
+        "english": "to deplore"
+    },
+    {
+        "spanish": "deponer",
+        "english": "to depose"
+    },
+    {
+        "spanish": "descender",
+        "english": "to descend"
+    },
+    {
+        "spanish": "desactivar",
+        "english": "to deactivate"
+    },
+    {
+        "spanish": "deformar",
+        "english": "to deform"
+    },
+    {
+        "spanish": "decorar",
+        "english": "to decorate"
+    },
+    {
+        "spanish": "declarar",
+        "english": "to declare"
+    },
+    {
+        "spanish": "lapso",
+        "english": "lapse"
+    },
+    {
+        "spanish": "divulgar",
+        "english": "to divulge"
+    },
+    {
+        "spanish": "dividir",
+        "english": "to divide"
+    },
+    {
+        "spanish": "dilatar",
+        "english": "to dilate"
+    },
+    {
+        "spanish": "distraer",
+        "english": "to distract"
+    },
+    {
+        "spanish": "diseminar",
+        "english": "to disseminate"
+    },
+    {
+        "spanish": "decidir",
+        "english": "to decide"
+    },
+    {
+        "spanish": "economizar",
+        "english": "to economize"
+    },
+    {
+        "spanish": "decrecer",
+        "english": "to decrease"
+    },
+    {
+        "spanish": "editar",
+        "english": "to edit"
+    },
+    {
+        "spanish": "cultivar",
+        "english": "to cultivate"
+    },
+    {
+        "spanish": "elaborar",
+        "english": "to elaborate"
+    },
+    {
+        "spanish": "elevar",
+        "english": "to elevate"
+    },
+    {
+        "spanish": "dedicar",
+        "english": "to dedicate"
+    },
+    {
+        "spanish": "eliminar",
+        "english": "to eliminate"
+    },
+    {
+        "spanish": "cuestionar",
+        "english": "to question"
+    },
+    {
+        "spanish": "defender",
+        "english": "to defend"
+    },
+    {
+        "spanish": "detestar",
+        "english": "to detest"
+    },
+    {
+        "spanish": "emerger",
+        "english": "to emerge"
+    },
+    {
+        "spanish": "emitir",
+        "english": "to emit"
+    },
+    {
+        "spanish": "disimular",
+        "english": "to dissimulate"
+    },
+    {
+        "spanish": "mucho",
+        "english": "much"
+    },
+    {
+        "spanish": "corroer",
+        "english": "to corrode"
+    },
+    {
+        "spanish": "condenar",
+        "english": "to condemn"
+    },
+    {
+        "spanish": "celebrar",
+        "english": "to celebrate"
+    },
+    {
+        "spanish": "carbonizar",
+        "english": "to carbonize"
+    },
+    {
+        "spanish": "confirmar",
+        "english": "to confirm"
+    },
+    {
+        "spanish": "coincidir",
+        "english": "to coincide"
+    },
+    {
+        "spanish": "configurar",
+        "english": "to configure"
+    },
+    {
+        "spanish": "convencer",
+        "english": "to convince"
+    },
+    {
+        "spanish": "completar",
+        "english": "to complete"
+    },
+    {
+        "spanish": "complicar",
+        "english": "to complicate"
+    },
+    {
+        "spanish": "consentir",
+        "english": "to consent"
+    },
+    {
+        "spanish": "continuar",
+        "english": "to continue"
+    },
+    {
+        "spanish": "conectar",
+        "english": "to connect"
+    },
+    {
+        "spanish": "controlar",
+        "english": "to control"
+    },
+    {
+        "spanish": "conservar",
+        "english": "to conserve"
+    },
+    {
+        "spanish": "convertir",
+        "english": "to convert"
+    },
+    {
+        "spanish": "tutor",
+        "english": "tutor"
+    },
+    {
+        "spanish": "considerar",
+        "english": "to consider"
+    },
+    {
+        "spanish": "visa",
+        "english": "visa"
+    },
+    {
+        "spanish": "conspirar",
+        "english": "to conspire"
+    },
+    {
+        "spanish": "censurar",
+        "english": "to censure"
+    },
+    {
+        "spanish": "contraer",
+        "english": "to contract"
+    },
+    {
+        "spanish": "contaminar",
+        "english": "to contaminate"
+    },
+    {
+        "spanish": "componer",
+        "english": "to compose"
+    },
+    {
+        "spanish": "colaborar",
+        "english": "to collaborate"
+    },
+    {
+        "spanish": "conmemorar",
+        "english": "to commemorate"
+    },
+    {
+        "spanish": "cooperar",
+        "english": "to cooperate"
+    },
+    {
+        "spanish": "condensar",
+        "english": "to condense"
+    },
+    {
+        "spanish": "coordinar",
+        "english": "to coordinate"
+    },
+    {
+        "spanish": "combinar",
+        "english": "to combine"
+    },
+    {
+        "spanish": "vario",
+        "english": "various"
+    },
+    {
+        "spanish": "compensar",
+        "english": "to compensate"
+    },
+    {
+        "spanish": "concretar",
+        "english": "to concretize"
+    },
+    {
+        "spanish": "congregar",
+        "english": "to congregate"
+    },
+    {
+        "spanish": "competir",
+        "english": "to compete"
+    },
+    {
+        "spanish": "contemplar",
+        "english": "to contemplate"
+    },
+    {
+        "spanish": "cocinero",
+        "english": "cook"
+    },
+    {
+        "spanish": "casta",
+        "english": "caste"
+    },
+    {
+        "spanish": "curvo",
+        "english": "curved"
+    },
+    {
+        "spanish": "coro",
+        "english": "choir"
+    },
+    {
+        "spanish": "caso",
+        "english": "case"
+    },
+    {
+        "spanish": "cono",
+        "english": "cone"
+    },
+    {
+        "spanish": "cine",
+        "english": "cinema"
+    },
+    {
+        "spanish": "forma",
+        "english": "form"
+    },
+    {
+        "spanish": "circo",
+        "english": "circus"
+    },
+    {
+        "spanish": "causa",
+        "english": "cause"
+    },
+    {
+        "spanish": "claro",
+        "english": "clear"
+    },
+    {
+        "spanish": "capaz",
+        "english": "capable"
+    },
+    {
+        "spanish": "credo",
+        "english": "creed"
+    },
+    {
+        "spanish": "dato",
+        "english": "data"
+    },
+    {
+        "spanish": "conducir",
+        "english": "to drive"
+    },
+    {
+        "spanish": "puntual",
+        "english": "punctual"
+    },
+    {
+        "spanish": "macerar",
+        "english": "to macerate"
+    },
+    {
+        "spanish": "casado",
+        "english": "married person"
+    },
+    {
+        "spanish": "comprar",
+        "english": "to buy"
+    },
+    {
+        "spanish": "cocinar",
+        "english": "to cook"
+    },
+    {
+        "spanish": "familia",
+        "english": "family"
+    },
+    {
+        "spanish": "coetáneo",
+        "english": "contemporary"
+    },
+    {
+        "spanish": "rector",
+        "english": "rector"
+    },
+    {
+        "spanish": "comer",
+        "english": "to eat"
+    },
+    {
+        "spanish": "desfasado",
+        "english": "outdated"
+    },
+    {
+        "spanish": "inusual",
+        "english": "unusual"
+    },
+    {
+        "spanish": "cena",
+        "english": "dinner"
+    },
+    {
+        "spanish": "ducha",
+        "english": "shower"
+    },
+    {
+        "spanish": "coche",
+        "english": "car"
+    },
+    {
+        "spanish": "ecólogo",
+        "english": "ecologist"
+    },
+    {
+        "spanish": "citar",
+        "english": "to cite"
+    },
+    {
+        "spanish": "cinético",
+        "english": "kinetic"
+    },
+    {
+        "spanish": "discutir",
+        "english": "to discuss"
+    },
+    {
+        "spanish": "casa",
+        "english": "house"
+    },
+    {
+        "spanish": "hostil",
+        "english": "hostile"
+    },
+    {
+        "spanish": "carne",
+        "english": "meat"
+    },
+    {
+        "spanish": "carga",
+        "english": "load"
+    },
+    {
+        "spanish": "contestar",
+        "english": "to answer"
+    },
+    {
+        "spanish": "corista",
+        "english": "chorister"
+    },
+    {
+        "spanish": "copa",
+        "english": "wine glass"
+    },
+    {
+        "spanish": "carril",
+        "english": "lane"
+    },
+    {
+        "spanish": "piloto",
+        "english": "pilot"
+    },
+    {
+        "spanish": "cuarto",
+        "english": "room"
+    },
+    {
+        "spanish": "comida",
+        "english": "food"
+    },
+    {
+        "spanish": "estación",
+        "english": "station"
+    },
+    {
+        "spanish": "desagüe",
+        "english": "drain"
+    },
+    {
+        "spanish": "cocina",
+        "english": "kitchen"
+    },
+    {
+        "spanish": "chofer",
+        "english": "driver"
+    },
+    {
+        "spanish": "desayuno",
+        "english": "breakfast"
+    },
+    {
+        "spanish": "transporte",
+        "english": "transport"
+    },
+    {
+        "spanish": "carnicería",
+        "english": "butcher shop"
+    },
+    {
+        "spanish": "real",
+        "english": "real"
+    },
+    {
+        "spanish": "vagabundo",
+        "english": "vagabond"
+    },
+    {
+        "spanish": "colegio",
+        "english": "school"
+    },
+    {
+        "spanish": "carretera",
+        "english": "road"
+    },
+    {
+        "spanish": "comunicado",
+        "english": "communiqué"
+    },
+    {
+        "spanish": "expresar",
+        "english": "to express"
+    },
+    {
+        "spanish": "mapa",
+        "english": "map"
+    },
+    {
+        "spanish": "carta",
+        "english": "letter"
+    },
+    {
+        "spanish": "cita",
+        "english": "quote"
+    },
+    {
+        "spanish": "cautivar",
+        "english": "to captivate"
+    },
+    {
+        "spanish": "causar",
+        "english": "to cause"
+    },
+    {
+        "spanish": "despreciar",
+        "english": "to despise"
+    },
+    {
+        "spanish": "comprender",
+        "english": "to understand"
+    },
+    {
+        "spanish": "precursor",
+        "english": "precursor"
+    },
+    {
+        "spanish": "permeable",
+        "english": "permeable"
+    },
+    {
+        "spanish": "crear",
+        "english": "to create"
+    },
+    {
+        "spanish": "medicinal",
+        "english": "medicinal"
+    },
+    {
+        "spanish": "deshonrar",
+        "english": "to dishonor"
+    },
+    {
+        "spanish": "dañar",
+        "english": "to damage"
+    },
+    {
+        "spanish": "confundir",
+        "english": "to confuse"
+    },
+    {
+        "spanish": "ejercitar",
+        "english": "to exercise"
+    },
+    {
+        "spanish": "diferir",
+        "english": "to defer"
+    },
+    {
+        "spanish": "dinamizar",
+        "english": "to dynamize"
+    },
+    {
+        "spanish": "donar",
+        "english": "to donate"
+    },
+    {
+        "spanish": "desmontar",
+        "english": "to dismantle"
+    },
+    {
+        "spanish": "discrepar",
+        "english": "to disagree"
+    },
+    {
+        "spanish": "contener",
+        "english": "to contain"
+    },
+    {
+        "spanish": "rejoneador",
+        "english": "rejoneador"
+    },
+    {
+        "spanish": "desarmar",
+        "english": "to disarm"
+    },
+    {
+        "spanish": "drenar",
+        "english": "to drain"
+    },
+    {
+        "spanish": "desaprobar",
+        "english": "to disapprove"
+    },
+    {
+        "spanish": "triangular",
+        "english": "triangular"
+    },
+    {
+        "spanish": "curar",
+        "english": "to cure"
+    },
+    {
+        "spanish": "contar",
+        "english": "to count"
+    },
+    {
+        "spanish": "curvar",
+        "english": "to curve"
+    },
+    {
+        "spanish": "custodiar",
+        "english": "to guard"
+    },
+    {
+        "spanish": "desplazar",
+        "english": "to displace"
+    },
+    {
+        "spanish": "corregir",
+        "english": "to correct"
+    },
+    {
+        "spanish": "criticar",
+        "english": "to criticize"
+    },
+    {
+        "spanish": "vectorial",
+        "english": "vectorial"
+    },
+    {
+        "spanish": "dificultar",
+        "english": "to make difficult"
+    },
+    {
+        "spanish": "primordial",
+        "english": "primordial"
+    },
+    {
+        "spanish": "complacer",
+        "english": "to please"
+    },
+    {
+        "spanish": "clasificar",
+        "english": "to classify"
+    },
+    {
+        "spanish": "principal",
+        "english": "principal"
+    },
+    {
+        "spanish": "corromper",
+        "english": "to corrupt"
+    },
+    {
+        "spanish": "propaganda",
+        "english": "propaganda"
+    },
+    {
+        "spanish": "protector",
+        "english": "protector"
+    },
+    {
+        "spanish": "cesar",
+        "english": "to cease"
+    },
+    {
+        "spanish": "destilar",
+        "english": "to distill"
+    },
+    {
+        "spanish": "emplear",
+        "english": "to employ"
+    },
+    {
+        "spanish": "destruir",
+        "english": "to destroy"
+    },
+    {
+        "spanish": "particular",
+        "english": "particular"
+    },
+    {
+        "spanish": "consagrar",
+        "english": "to consecrate"
+    },
+    {
+        "spanish": "cosechar",
+        "english": "to harvest"
+    },
+    {
+        "spanish": "detraer",
+        "english": "to detract"
+    },
+    {
+        "spanish": "tensorial",
+        "english": "tensorial"
+    },
+    {
+        "spanish": "semestre",
+        "english": "semester"
+    },
+    {
+        "spanish": "esperado",
+        "english": "expected person"
+    },
+    {
+        "spanish": "maestro",
+        "english": "master"
+    },
+    {
+        "spanish": "deuda",
+        "english": "debt"
+    },
+    {
+        "spanish": "cauto",
+        "english": "cautious person"
+    },
+    {
+        "spanish": "huérfano",
+        "english": "orphan"
+    },
+    {
+        "spanish": "correo",
+        "english": "mail"
+    },
+    {
+        "spanish": "decir",
+        "english": "to say"
+    },
+    {
+        "spanish": "corto",
+        "english": "short"
+    },
+    {
+        "spanish": "turista",
+        "english": "tourist"
+    },
+    {
+        "spanish": "profesor",
+        "english": "professor"
+    },
+    {
+        "spanish": "examen",
+        "english": "exam"
+    },
+    {
+        "spanish": "duda",
+        "english": "doubt"
+    },
+    {
+        "spanish": "cinta",
+        "english": "tape"
+    },
+    {
+        "spanish": "hermano",
+        "english": "brother"
     },
     {
         "spanish": "digno",
-        "english": "worthy"
+        "english": "dignified person"
     },
     {
-        "spanish": "misterioso",
-        "english": "mysterious"
+        "spanish": "estancia",
+        "english": "stay"
     },
     {
-        "spanish": "pollo",
-        "english": "chicken"
+        "spanish": "cuaderno",
+        "english": "notebook"
     },
     {
-        "spanish": "túnica",
-        "english": "robe"
+        "spanish": "evaluación",
+        "english": "evaluation"
     },
     {
-        "spanish": "tropezar",
-        "english": "to stumble"
+        "spanish": "formación",
+        "english": "formation"
+    },
+    {
+        "spanish": "jamón",
+        "english": "ham"
+    },
+    {
+        "spanish": "fascinado",
+        "english": "fascinated person"
+    },
+    {
+        "spanish": "graduación",
+        "english": "graduation"
+    },
+    {
+        "spanish": "empresas",
+        "english": "companies"
+    },
+    {
+        "spanish": "capítulo",
+        "english": "chapter"
+    },
+    {
+        "spanish": "deseado",
+        "english": "desired person"
+    },
+    {
+        "spanish": "dinámico",
+        "english": "dynamic person"
+    },
+    {
+        "spanish": "demorado",
+        "english": "delayed"
+    },
+    {
+        "spanish": "costero",
+        "english": "coastal"
+    },
+    {
+        "spanish": "efímero",
+        "english": "ephemeral"
+    },
+    {
+        "spanish": "desigual",
+        "english": "unequal"
+    },
+    {
+        "spanish": "empresa",
+        "english": "company"
+    },
+    {
+        "spanish": "cuadro",
+        "english": "picture"
+    },
+    {
+        "spanish": "cornista",
+        "english": "horn player"
+    },
+    {
+        "spanish": "consejo",
+        "english": "council"
+    },
+    {
+        "spanish": "cautela",
+        "english": "caution"
+    },
+    {
+        "spanish": "concejal",
+        "english": "councilor"
+    },
+    {
+        "spanish": "emisor",
+        "english": "emitting"
+    },
+    {
+        "spanish": "ejemplo",
+        "english": "example"
+    },
+    {
+        "spanish": "ciclismo",
+        "english": "cycling"
+    },
+    {
+        "spanish": "certero",
+        "english": "accurate"
+    },
+    {
+        "spanish": "collar",
+        "english": "necklace"
+    },
+    {
+        "spanish": "diputado",
+        "english": "deputy"
+    },
+    {
+        "spanish": "cumplido",
+        "english": "fulfilled"
+    },
+    {
+        "spanish": "cierre",
+        "english": "closure"
+    },
+    {
+        "spanish": "cicatriz",
+        "english": "scar"
+    },
+    {
+        "spanish": "cuadrado",
+        "english": "square"
+    },
+    {
+        "spanish": "costeño",
+        "english": "coastal person"
+    },
+    {
+        "spanish": "conexo",
+        "english": "connected"
+    },
+    {
+        "spanish": "diáfano",
+        "english": "diaphanous"
+    },
+    {
+        "spanish": "cláusula",
+        "english": "clause"
+    },
+    {
+        "spanish": "ecuánime",
+        "english": "equanimous"
+    },
+    {
+        "spanish": "céntrico",
+        "english": "central"
+    },
+    {
+        "spanish": "cruzado",
+        "english": "crossed"
+    },
+    {
+        "spanish": "cuantía",
+        "english": "amount"
+    },
+    {
+        "spanish": "decidido",
+        "english": "determined"
+    },
+    {
+        "spanish": "caridad",
+        "english": "charity"
+    },
+    {
+        "spanish": "cocido",
+        "english": "cooked"
+    },
+    {
+        "spanish": "citadino",
+        "english": "city"
+    },
+    {
+        "spanish": "donante",
+        "english": "donor"
+    },
+    {
+        "spanish": "chaqueta",
+        "english": "jacket"
+    },
+    {
+        "spanish": "dérmico",
+        "english": "dermal"
+    },
+    {
+        "spanish": "cascado",
+        "english": "cracked"
+    },
+    {
+        "spanish": "contador",
+        "english": "accountant"
+    },
+    {
+        "spanish": "cobrador",
+        "english": "collector"
+    },
+    {
+        "spanish": "dirigido",
+        "english": "directed"
+    },
+    {
+        "spanish": "cronista",
+        "english": "chronicler"
+    },
+    {
+        "spanish": "cheque",
+        "english": "check"
+    },
+    {
+        "spanish": "descuidar",
+        "english": "to neglect"
+    },
+    {
+        "spanish": "descansar",
+        "english": "to rest"
+    },
+    {
+        "spanish": "comenzar",
+        "english": "to begin"
+    },
+    {
+        "spanish": "instruir",
+        "english": "to instruct"
+    },
+    {
+        "spanish": "imaginar",
+        "english": "to imagine"
+    },
+    {
+        "spanish": "interesar",
+        "english": "to interest"
+    },
+    {
+        "spanish": "evaluar",
+        "english": "to evaluate"
+    },
+    {
+        "spanish": "desear",
+        "english": "to wish"
+    },
+    {
+        "spanish": "inspirar",
+        "english": "to inspire"
+    },
+    {
+        "spanish": "centellear",
+        "english": "to sparkle"
+    },
+    {
+        "spanish": "insistir",
+        "english": "to insist"
+    },
+    {
+        "spanish": "estimar",
+        "english": "to estimate"
+    },
+    {
+        "spanish": "está",
+        "english": "is (temporary"
+    },
+    {
+        "spanish": "cercar",
+        "english": "to fence in"
+    },
+    {
+        "spanish": "descubrir",
+        "english": "to discover"
+    },
+    {
+        "spanish": "iluminar",
+        "english": "to illuminate"
+    },
+    {
+        "spanish": "cercenar",
+        "english": "to cut off"
+    },
+    {
+        "spanish": "integrar",
+        "english": "to integrate"
+    },
+    {
+        "spanish": "descendido",
+        "english": "demoted"
+    },
+    {
+        "spanish": "evaporar",
+        "english": "to evaporate"
+    },
+    {
+        "spanish": "compartir",
+        "english": "to share"
+    },
+    {
+        "spanish": "ignorar",
+        "english": "to ignore"
+    },
+    {
+        "spanish": "disponer",
+        "english": "to arrange"
+    },
+    {
+        "spanish": "discutible",
+        "english": "debatable"
+    },
+    {
+        "spanish": "incorporar",
+        "english": "to incorporate"
+    },
+    {
+        "spanish": "decolorar",
+        "english": "to bleach"
+    },
+    {
+        "spanish": "conseguir",
+        "english": "to get"
+    },
+    {
+        "spanish": "indemnizar",
+        "english": "to indemnify"
+    },
+    {
+        "spanish": "germinar",
+        "english": "to germinate"
+    },
+    {
+        "spanish": "disminuir",
+        "english": "to decrease"
+    },
+    {
+        "spanish": "indicar",
+        "english": "to indicate"
+    },
+    {
+        "spanish": "disculpar",
+        "english": "to excuse"
+    },
+    {
+        "spanish": "comerciar",
+        "english": "to trade"
+    },
+    {
+        "spanish": "disparar",
+        "english": "to shoot"
+    },
+    {
+        "spanish": "degustar",
+        "english": "to taste"
+    },
+    {
+        "spanish": "dejar",
+        "english": "to leave"
+    },
+    {
+        "spanish": "conocer",
+        "english": "to know (person)"
+    },
+    {
+        "spanish": "indisponer",
+        "english": "to indispose"
+    },
+    {
+        "spanish": "facilitar",
+        "english": "to facilitate"
+    },
+    {
+        "spanish": "delatar",
+        "english": "to inform on"
+    },
+    {
+        "spanish": "conmover",
+        "english": "to move emotionally"
+    },
+    {
+        "spanish": "fascinar",
+        "english": "to fascinate"
+    },
+    {
+        "spanish": "conservado",
+        "english": "preserved"
+    },
+    {
+        "spanish": "cubrir",
+        "english": "to cover"
+    },
+    {
+        "spanish": "fecha",
+        "english": "date"
+    },
+    {
+        "spanish": "culpar",
+        "english": "to blame"
+    },
+    {
+        "spanish": "cuidar",
+        "english": "to take care"
+    },
+    {
+        "spanish": "imputar",
+        "english": "to impute"
+    },
+    {
+        "spanish": "cumplir",
+        "english": "to fulfill"
+    },
+    {
+        "spanish": "fin",
+        "english": "end"
+    },
+    {
+        "spanish": "filtrar",
+        "english": "to filter"
+    },
+    {
+        "spanish": "contagiar",
+        "english": "to infect"
+    },
+    {
+        "spanish": "incinerar",
+        "english": "to incinerate"
+    },
+    {
+        "spanish": "castigar",
+        "english": "to punish"
+    },
+    {
+        "spanish": "disfrutar",
+        "english": "to enjoy"
+    },
+    {
+        "spanish": "dar",
+        "english": "to give"
+    },
+    {
+        "spanish": "fermentar",
+        "english": "to ferment"
+    },
+    {
+        "spanish": "disgregado",
+        "english": "scattered"
+    },
+    {
+        "spanish": "imponer",
+        "english": "to impose"
+    },
+    {
+        "spanish": "deber",
+        "english": "must"
+    },
+    {
+        "spanish": "construir",
+        "english": "to build"
+    },
+    {
+        "spanish": "debilitar",
+        "english": "to weaken"
+    },
+    {
+        "spanish": "demorar",
+        "english": "to delay"
+    },
+    {
+        "spanish": "demógrafo",
+        "english": "demographer"
+    },
+    {
+        "spanish": "desayunar",
+        "english": "to have breakfast"
+    },
+    {
+        "spanish": "desagradar",
+        "english": "to displease"
+    },
+    {
+        "spanish": "existir",
+        "english": "to exist"
+    },
+    {
+        "spanish": "inhalar",
+        "english": "to inhale"
+    },
+    {
+        "spanish": "formar",
+        "english": "to form"
+    },
+    {
+        "spanish": "exhibir",
+        "english": "to exhibit"
+    },
+    {
+        "spanish": "desaparcar",
+        "english": "to unpark"
+    },
+    {
+        "spanish": "exhalar",
+        "english": "to exhale"
+    },
+    {
+        "spanish": "desapilar",
+        "english": "to unstack"
+    },
+    {
+        "spanish": "excusar",
+        "english": "to excuse"
+    },
+    {
+        "spanish": "exculpar",
+        "english": "to exculpate"
+    },
+    {
+        "spanish": "formular",
+        "english": "to formulate"
+    },
+    {
+        "spanish": "desarmado",
+        "english": "unarmed"
+    },
+    {
+        "spanish": "cenar",
+        "english": "to have dinner"
+    },
+    {
+        "spanish": "desatar",
+        "english": "to untie"
+    },
+    {
+        "spanish": "examinar",
+        "english": "to examine"
+    },
+    {
+        "spanish": "exaltar",
+        "english": "to exalt"
+    },
+    {
+        "spanish": "comodidad",
+        "english": "comfort"
+    },
+    {
+        "spanish": "exagerar",
+        "english": "to exaggerate"
+    },
+    {
+        "spanish": "exonerar",
+        "english": "to exonerate"
+    },
+    {
+        "spanish": "expandir",
+        "english": "to expand"
+    },
+    {
+        "spanish": "denunciar",
+        "english": "to report"
+    },
+    {
+        "spanish": "disponible",
+        "english": "available"
+    },
+    {
+        "spanish": "extender",
+        "english": "to extend"
+    },
+    {
+        "spanish": "deprimido",
+        "english": "depressed"
+    },
+    {
+        "spanish": "depurar",
+        "english": "to purify"
+    },
+    {
+        "spanish": "ceder",
+        "english": "to yield"
+    },
+    {
+        "spanish": "derechista",
+        "english": "rightist"
+    },
+    {
+        "spanish": "cegar",
+        "english": "to blind"
+    },
+    {
+        "spanish": "cuarteado",
+        "english": "cracked"
+    },
+    {
+        "spanish": "derogar",
+        "english": "to repeal"
+    },
+    {
+        "spanish": "exponer",
+        "english": "to expose"
+    },
+    {
+        "spanish": "derretir",
+        "english": "to melt"
+    },
+    {
+        "spanish": "derribar",
+        "english": "to demolish"
+    },
+    {
+        "spanish": "derrochar",
+        "english": "to squander"
+    },
+    {
+        "spanish": "derrotado",
+        "english": "defeated"
+    },
+    {
+        "spanish": "confiar",
+        "english": "to trust"
+    },
+    {
+        "spanish": "desafinar",
+        "english": "to be out of tune"
+    },
+    {
+        "spanish": "desempleo",
+        "english": "unemployment"
+    },
+    {
+        "spanish": "creer",
+        "english": "to believe"
+    },
+    {
+        "spanish": "despegado",
+        "english": "detached"
+    },
+    {
+        "spanish": "desordenar",
+        "english": "to mess up"
+    },
+    {
+        "spanish": "concordar",
+        "english": "to agree"
+    },
+    {
+        "spanish": "erradicar",
+        "english": "to eradicate"
+    },
+    {
+        "spanish": "despedir",
+        "english": "to say goodbye"
+    },
+    {
+        "spanish": "ejercicio",
+        "english": "exercise"
+    },
+    {
+        "spanish": "despegar",
+        "english": "to take off"
+    },
+    {
+        "spanish": "correr",
+        "english": "to run"
+    },
+    {
+        "spanish": "compuesto",
+        "english": "compound"
+    },
+    {
+        "spanish": "elegir",
+        "english": "to choose"
+    },
+    {
+        "spanish": "equipar",
+        "english": "to equip"
+    },
+    {
+        "spanish": "colocación",
+        "english": "placement"
+    },
+    {
+        "spanish": "liberar",
+        "english": "to liberate"
+    },
+    {
+        "spanish": "despejar",
+        "english": "to clear up"
+    },
+    {
+        "spanish": "escapar",
+        "english": "to escape"
+    },
+    {
+        "spanish": "desnutrir",
+        "english": "to malnourish"
+    },
+    {
+        "spanish": "dialogante",
+        "english": "open to dialogue"
+    },
+    {
+        "spanish": "capitalino",
+        "english": "capital dweller"
+    },
+    {
+        "spanish": "chupar",
+        "english": "to suck"
+    },
+    {
+        "spanish": "comprimido",
+        "english": "compressed"
+    },
+    {
+        "spanish": "escalera",
+        "english": "stairs"
+    },
+    {
+        "spanish": "comprobar",
+        "english": "to check"
+    },
+    {
+        "spanish": "hay",
+        "english": "there is"
+    },
+    {
+        "spanish": "devolver",
+        "english": "to return"
+    },
+    {
+        "spanish": "caritativo",
+        "english": "charitable person"
+    },
+    {
+        "spanish": "desocupado",
+        "english": "unoccupied"
+    },
+    {
+        "spanish": "conceder",
+        "english": "to grant"
+    },
+    {
+        "spanish": "costumbre",
+        "english": "custom"
+    },
+    {
+        "spanish": "gratinar",
+        "english": "to gratin"
+    },
+    {
+        "spanish": "crecer",
+        "english": "to grow"
+    },
+    {
+        "spanish": "embellecer",
+        "english": "to beautify"
+    },
+    {
+        "spanish": "divulgado",
+        "english": "disclosed"
+    },
+    {
+        "spanish": "captar",
+        "english": "to grasp"
+    },
+    {
+        "spanish": "colindante",
+        "english": "adjoining"
+    },
+    {
+        "spanish": "embrujar",
+        "english": "to bewitch"
+    },
+    {
+        "spanish": "doblar",
+        "english": "to fold"
+    },
+    {
+        "spanish": "emparchado",
+        "english": "patched"
+    },
+    {
+        "spanish": "empapar",
+        "english": "to soak"
+    },
+    {
+        "spanish": "hija",
+        "english": "daughter"
+    },
+    {
+        "spanish": "clarear",
+        "english": "to brighten"
+    },
+    {
+        "spanish": "frutería",
+        "english": "fruit shop"
+    },
+    {
+        "spanish": "despertar",
+        "english": "to wake up"
+    },
+    {
+        "spanish": "lámpara",
+        "english": "lamp"
+    },
+    {
+        "spanish": "desplazado",
+        "english": "displaced person"
+    },
+    {
+        "spanish": "colar",
+        "english": "to strain"
+    },
+    {
+        "spanish": "detener",
+        "english": "to stop"
+    },
+    {
+        "spanish": "elogiar",
+        "english": "to praise"
+    },
+    {
+        "spanish": "fue",
+        "english": "was"
+    },
+    {
+        "spanish": "desplegar",
+        "english": "to unfold"
+    },
+    {
+        "spanish": "despoblado",
+        "english": "unpopulated"
+    },
+    {
+        "spanish": "madre",
+        "english": "mother"
+    },
+    {
+        "spanish": "hijo",
+        "english": "son"
+    },
+    {
+        "spanish": "cobrar",
+        "english": "to charge"
+    },
+    {
+        "spanish": "destejer",
+        "english": "to unravel"
+    },
+    {
+        "spanish": "compasivo",
+        "english": "compassionate person"
+    },
+    {
+        "spanish": "invalidar",
+        "english": "to invalidate"
+    },
+    {
+        "spanish": "cerrar",
+        "english": "to close"
+    },
+    {
+        "spanish": "inventar",
+        "english": "to invent"
+    },
+    {
+        "spanish": "desfilar",
+        "english": "to parade"
+    },
+    {
+        "spanish": "coger",
+        "english": "to take"
+    },
+    {
+        "spanish": "investigar",
+        "english": "to investigate"
+    },
+    {
+        "spanish": "desgastar",
+        "english": "to wear out"
+    },
+    {
+        "spanish": "gerente",
+        "english": "manager"
+    },
+    {
+        "spanish": "dotar",
+        "english": "to endow"
+    },
+    {
+        "spanish": "otro",
+        "english": "other"
+    },
+    {
+        "spanish": "empuñar",
+        "english": "to grip"
+    },
+    {
+        "spanish": "deshelar",
+        "english": "to thaw"
+    },
+    {
+        "spanish": "interponer",
+        "english": "to interpose"
+    },
+    {
+        "spanish": "desenredar",
+        "english": "to untangle"
+    },
+    {
+        "spanish": "diluviar",
+        "english": "to pour"
+    },
+    {
+        "spanish": "intimidar",
+        "english": "to intimidate"
+    },
+    {
+        "spanish": "introducir",
+        "english": "to introduce"
+    },
+    {
+        "spanish": "desentonar",
+        "english": "to be out of tune"
+    },
+    {
+        "spanish": "intrigar",
+        "english": "to intrigue"
+    },
+    {
+        "spanish": "diseñador",
+        "english": "designer"
+    },
+    {
+        "spanish": "dormir",
+        "english": "to sleep"
+    },
+    {
+        "spanish": "destellar",
+        "english": "to flash"
+    },
+    {
+        "spanish": "deslizarse",
+        "english": "to slide"
+    },
+    {
+        "spanish": "energizar",
+        "english": "to energize"
+    },
+    {
+        "spanish": "destapar",
+        "english": "to uncover"
+    },
+    {
+        "spanish": "deslizar",
+        "english": "to slide"
+    },
+    {
+        "spanish": "capacitar",
+        "english": "to train"
+    },
+    {
+        "spanish": "echar",
+        "english": "to throw"
+    },
+    {
+        "spanish": "cribar",
+        "english": "to sieve"
+    },
+    {
+        "spanish": "dirigir",
+        "english": "to direct"
+    },
+    {
+        "spanish": "empatar",
+        "english": "to tie"
+    },
+    {
+        "spanish": "deslumbrar",
+        "english": "to dazzle"
+    },
+    {
+        "spanish": "generar",
+        "english": "to generate"
+    },
+    {
+        "spanish": "cocer",
+        "english": "to cook"
+    },
+    {
+        "spanish": "edificar",
+        "english": "to build"
+    },
+    {
+        "spanish": "han",
+        "english": "have (they)"
+    },
+    {
+        "spanish": "chantajear",
+        "english": "to blackmail"
+    },
+    {
+        "spanish": "empeorar",
+        "english": "to worsen"
+    },
+    {
+        "spanish": "dimitir",
+        "english": "to resign"
+    },
+    {
+        "spanish": "difundir",
+        "english": "to spread"
+    },
+    {
+        "spanish": "desteñir",
+        "english": "to fade"
+    },
+    {
+        "spanish": "irrigar",
+        "english": "to irrigate"
+    },
+    {
+        "spanish": "directivo",
+        "english": "executive"
+    },
+    {
+        "spanish": "irritar",
+        "english": "to irritate"
+    },
+    {
+        "spanish": "había",
+        "english": "there was"
+    },
+    {
+        "spanish": "dudar",
+        "english": "to doubt"
+    },
+    {
+        "spanish": "colocar",
+        "english": "to place"
+    },
+    {
+        "spanish": "empezar",
+        "english": "to begin"
+    },
+    {
+        "spanish": "funcionar",
+        "english": "to function"
+    },
+    {
+        "spanish": "fama",
+        "english": "fame"
+    },
+    {
+        "spanish": "parte",
+        "english": "part"
+    },
+    {
+        "spanish": "falso",
+        "english": "false"
+    },
+    {
+        "spanish": "pampa",
+        "english": "pampas"
+    },
+    {
+        "spanish": "pacto",
+        "english": "pact"
+    },
+    {
+        "spanish": "grupo",
+        "english": "group"
+    },
+    {
+        "spanish": "mayo",
+        "english": "May"
+    },
+    {
+        "spanish": "cima",
+        "english": "top"
+    },
+    {
+        "spanish": "dueño",
+        "english": "owner"
+    },
+    {
+        "spanish": "cojo",
+        "english": "lame"
+    },
+    {
+        "spanish": "don",
+        "english": "gift"
+    },
+    {
+        "spanish": "culto",
+        "english": "worship"
+    },
+    {
+        "spanish": "cola",
+        "english": "tail"
+    },
+    {
+        "spanish": "serio",
+        "english": "serious"
+    },
+    {
+        "spanish": "impío",
+        "english": "impious"
+    },
+    {
+        "spanish": "serie",
+        "english": "series"
+    },
+    {
+        "spanish": "fino",
+        "english": "fine"
+    },
+    {
+        "spanish": "senil",
+        "english": "senile"
+    },
+    {
+        "spanish": "genio",
+        "english": "genius"
+    },
+    {
+        "spanish": "ducho",
+        "english": "skilled"
+    },
+    {
+        "spanish": "dulce",
+        "english": "sweet"
+    },
+    {
+        "spanish": "docto",
+        "english": "learned"
+    },
+    {
+        "spanish": "signo",
+        "english": "sign"
+    },
+    {
+        "spanish": "duro",
+        "english": "hard"
+    },
+    {
+        "spanish": "débil",
+        "english": "weak person"
+    },
+    {
+        "spanish": "vasto",
+        "english": "vast"
+    },
+    {
+        "spanish": "fiero",
+        "english": "fierce"
+    },
+    {
+        "spanish": "edad",
+        "english": "age"
+    },
+    {
+        "spanish": "dolor",
+        "english": "pain"
+    },
+    {
+        "spanish": "cara",
+        "english": "face"
+    },
+    {
+        "spanish": "texto",
+        "english": "text"
+    },
+    {
+        "spanish": "dios",
+        "english": "god"
+    },
+    {
+        "spanish": "caza",
+        "english": "hunting"
+    },
+    {
+        "spanish": "tenis",
+        "english": "tennis"
+    },
+    {
+        "spanish": "casco",
+        "english": "helmet"
+    },
+    {
+        "spanish": "ruina",
+        "english": "ruin"
+    },
+    {
+        "spanish": "justo",
+        "english": "just person"
+    },
+    {
+        "spanish": "mate",
+        "english": "matte"
+    },
+    {
+        "spanish": "vacuo",
+        "english": "vacuous"
+    },
+    {
+        "spanish": "cielo",
+        "english": "sky"
+    },
+    {
+        "spanish": "entrevista",
+        "english": "interview"
+    },
+    {
+        "spanish": "frase",
+        "english": "phrase"
+    },
+    {
+        "spanish": "resto",
+        "english": "rest"
+    },
+    {
+        "spanish": "juez",
+        "english": "judge"
+    },
+    {
+        "spanish": "julio",
+        "english": "July"
+    },
+    {
+        "spanish": "línea",
+        "english": "line"
+    },
+    {
+        "spanish": "líder",
+        "english": "leader"
+    },
+    {
+        "spanish": "vil",
+        "english": "vile"
+    },
+    {
+        "spanish": "ciego",
+        "english": "blind"
+    },
+    {
+        "spanish": "foto",
+        "english": "photo"
+    },
+    {
+        "spanish": "caro",
+        "english": "expensive"
+    },
+    {
+        "spanish": "junio",
+        "english": "June"
+    },
+    {
+        "spanish": "carpa",
+        "english": "tent"
+    },
+    {
+        "spanish": "isla",
+        "english": "island"
+    },
+    {
+        "spanish": "culpa",
+        "english": "fault"
+    },
+    {
+        "spanish": "leal",
+        "english": "loyal"
+    },
+    {
+        "spanish": "chico",
+        "english": "boy"
+    },
+    {
+        "spanish": "valle",
+        "english": "valley"
+    },
+    {
+        "spanish": "cerro",
+        "english": "hill"
+    },
+    {
+        "spanish": "cerdo",
+        "english": "pig"
+    },
+    {
+        "spanish": "cosa",
+        "english": "thing"
+    },
+    {
+        "spanish": "fondo",
+        "english": "fund"
+    },
+    {
+        "spanish": "foco",
+        "english": "focus"
+    },
+    {
+        "spanish": "poeta",
+        "english": "poet"
+    },
+    {
+        "spanish": "norma",
+        "english": "norm"
+    },
+    {
+        "spanish": "obvio",
+        "english": "obvious"
+    },
+    {
+        "spanish": "neto",
+        "english": "net"
+    },
+    {
+        "spanish": "cosas",
+        "english": "things"
+    },
+    {
+        "spanish": "héroe",
+        "english": "hero"
+    },
+    {
+        "spanish": "cubo",
+        "english": "bucket"
+    },
+    {
+        "spanish": "molde",
+        "english": "mold"
+    },
+    {
+        "spanish": "disco",
+        "english": "record"
     },
     {
         "spanish": "suma",
         "english": "sum"
     },
     {
-        "spanish": "muebles",
-        "english": "furniture"
+        "spanish": "crudo",
+        "english": "raw"
     },
     {
-        "spanish": "retraso",
-        "english": "delay"
+        "spanish": "enfadado",
+        "english": "angry person"
     },
     {
-        "spanish": "formación",
-        "english": "training"
+        "spanish": "progenie",
+        "english": "progeny"
     },
     {
-        "spanish": "manga",
-        "english": "sleeve"
+        "spanish": "hermana",
+        "english": "sister"
     },
     {
-        "spanish": "tesoro",
-        "english": "treasure"
+        "spanish": "ocasión",
+        "english": "occasion"
     },
     {
-        "spanish": "pulgar",
-        "english": "thumb"
+        "spanish": "tiempos",
+        "english": "times"
     },
     {
-        "spanish": "incidente",
-        "english": "incident"
+        "spanish": "estirpe",
+        "english": "lineage"
+    },
+    {
+        "spanish": "separado",
+        "english": "separated person"
+    },
+    {
+        "spanish": "número",
+        "english": "number"
+    },
+    {
+        "spanish": "tren",
+        "english": "train"
+    },
+    {
+        "spanish": "leche",
+        "english": "milk"
+    },
+    {
+        "spanish": "menú",
+        "english": "menu"
+    },
+    {
+        "spanish": "sopa",
+        "english": "soup"
+    },
+    {
+        "spanish": "ruta",
+        "english": "route"
+    },
+    {
+        "spanish": "plato",
+        "english": "plate"
+    },
+    {
+        "spanish": "sofá",
+        "english": "sofa"
+    },
+    {
+        "spanish": "grifo",
+        "english": "faucet"
+    },
+    {
+        "spanish": "jefe",
+        "english": "boss"
+    },
+    {
+        "spanish": "metro",
+        "english": "meter"
+    },
+    {
+        "spanish": "huevo",
+        "english": "egg"
+    },
+    {
+        "spanish": "solista",
+        "english": "soloist"
+    },
+    {
+        "spanish": "severo",
+        "english": "severe"
+    },
+    {
+        "spanish": "solvente",
+        "english": "solvent"
+    },
+    {
+        "spanish": "humilde",
+        "english": "humble"
+    },
+    {
+        "spanish": "ilusión",
+        "english": "illusion"
+    },
+    {
+        "spanish": "visión",
+        "english": "vision"
+    },
+    {
+        "spanish": "talento",
+        "english": "talent"
+    },
+    {
+        "spanish": "sonoro",
+        "english": "sonorous"
+    },
+    {
+        "spanish": "humildad",
+        "english": "humility"
+    },
+    {
+        "spanish": "ignorado",
+        "english": "ignored"
+    },
+    {
+        "spanish": "idéntico",
+        "english": "identical"
+    },
+    {
+        "spanish": "hábito",
+        "english": "habit"
+    },
+    {
+        "spanish": "tangente",
+        "english": "tangent"
+    },
+    {
+        "spanish": "sinuoso",
+        "english": "sinuous"
+    },
+    {
+        "spanish": "gloria",
+        "english": "glory"
+    },
+    {
+        "spanish": "gracia",
+        "english": "grace"
+    },
+    {
+        "spanish": "sinovial",
+        "english": "synovial"
+    },
+    {
+        "spanish": "gótico",
+        "english": "gothic"
+    },
+    {
+        "spanish": "grupal",
+        "english": "group"
+    },
+    {
+        "spanish": "habitado",
+        "english": "inhabited"
+    },
+    {
+        "spanish": "temporal",
+        "english": "temporary"
+    },
+    {
+        "spanish": "síntesis",
+        "english": "synthesis"
+    },
+    {
+        "spanish": "gregario",
+        "english": "gregarious person"
+    },
+    {
+        "spanish": "heroína",
+        "english": "heroine"
+    },
+    {
+        "spanish": "sucesor",
+        "english": "successor"
+    },
+    {
+        "spanish": "geólogo",
+        "english": "geologist"
+    },
+    {
+        "spanish": "suburbio",
+        "english": "suburb"
+    },
+    {
+        "spanish": "historia",
+        "english": "history"
+    },
+    {
+        "spanish": "solemne",
+        "english": "solemn"
+    },
+    {
+        "spanish": "honesto",
+        "english": "honest person"
+    },
+    {
+        "spanish": "graduado",
+        "english": "graduate"
+    },
+    {
+        "spanish": "supremo",
+        "english": "supreme"
+    },
+    {
+        "spanish": "sincero",
+        "english": "sincere"
+    },
+    {
+        "spanish": "imitado",
+        "english": "imitated"
+    },
+    {
+        "spanish": "volumen",
+        "english": "volume"
+    },
+    {
+        "spanish": "ilógico",
+        "english": "illogical"
+    },
+    {
+        "spanish": "ilíquido",
+        "english": "illiquid"
+    },
+    {
+        "spanish": "híbrido",
+        "english": "hybrid"
+    },
+    {
+        "spanish": "urbano",
+        "english": "urban"
+    },
+    {
+        "spanish": "servil",
+        "english": "servile"
+    },
+    {
+        "spanish": "minero",
+        "english": "miner"
+    },
+    {
+        "spanish": "modelo",
+        "english": "model"
+    },
+    {
+        "spanish": "moderno",
+        "english": "modern"
+    },
+    {
+        "spanish": "modesto",
+        "english": "modest"
+    },
+    {
+        "spanish": "proceso",
+        "english": "process"
+    },
+    {
+        "spanish": "motivo",
+        "english": "motive"
+    },
+    {
+        "spanish": "problema",
+        "english": "problem"
+    },
+    {
+        "spanish": "mucoso",
+        "english": "mucous"
+    },
+    {
+        "spanish": "mundano",
+        "english": "mundane"
+    },
+    {
+        "spanish": "mutilado",
+        "english": "mutilated"
+    },
+    {
+        "spanish": "mánager",
+        "english": "manager"
+    },
+    {
+        "spanish": "méxico",
+        "english": "Mexico"
+    },
+    {
+        "spanish": "múltiple",
+        "english": "multiple"
+    },
+    {
+        "spanish": "nacional",
+        "english": "national"
+    },
+    {
+        "spanish": "nativo",
+        "english": "native"
+    },
+    {
+        "spanish": "negativo",
+        "english": "negative"
+    },
+    {
+        "spanish": "nocturno",
+        "english": "nocturnal"
+    },
+    {
+        "spanish": "notorio",
+        "english": "notorious"
+    },
+    {
+        "spanish": "ministro",
+        "english": "minister"
+    },
+    {
+        "spanish": "militar",
+        "english": "military"
+    },
+    {
+        "spanish": "objetivo",
+        "english": "objective"
+    },
+    {
+        "spanish": "metros",
+        "english": "meters"
+    },
+    {
+        "spanish": "profundo",
+        "english": "profound"
+    },
+    {
+        "spanish": "lánguido",
+        "english": "languid"
+    },
+    {
+        "spanish": "lícito",
+        "english": "licit"
+    },
+    {
+        "spanish": "límite",
+        "english": "limit"
+    },
+    {
+        "spanish": "líquido",
+        "english": "liquid"
+    },
+    {
+        "spanish": "lógica",
+        "english": "logic"
+    },
+    {
+        "spanish": "lógico",
+        "english": "logical"
+    },
+    {
+        "spanish": "maduro",
+        "english": "mature"
+    },
+    {
+        "spanish": "maestría",
+        "english": "mastery"
+    },
+    {
+        "spanish": "profano",
+        "english": "profane"
+    },
+    {
+        "spanish": "producto",
+        "english": "product"
+    },
+    {
+        "spanish": "marinado",
+        "english": "marinated"
+    },
+    {
+        "spanish": "medalla",
+        "english": "medal"
+    },
+    {
+        "spanish": "mediador",
+        "english": "mediator"
+    },
+    {
+        "spanish": "mediato",
+        "english": "mediate"
+    },
+    {
+        "spanish": "medicina",
+        "english": "medicine"
+    },
+    {
+        "spanish": "medular",
+        "english": "medullary"
+    },
+    {
+        "spanish": "novela",
+        "english": "novel"
+    },
+    {
+        "spanish": "objeto",
+        "english": "object"
+    },
+    {
+        "spanish": "profuso",
+        "english": "profuse"
+    },
+    {
+        "spanish": "vegetal",
+        "english": "vegetable"
+    },
+    {
+        "spanish": "permiso",
+        "english": "permission"
+    },
+    {
+        "spanish": "perpetuo",
+        "english": "perpetual"
+    },
+    {
+        "spanish": "preciso",
+        "english": "precise"
+    },
+    {
+        "spanish": "persona",
+        "english": "person"
+    },
+    {
+        "spanish": "pianista",
+        "english": "pianist"
+    },
+    {
+        "spanish": "piloso",
+        "english": "pilose"
+    },
+    {
+        "spanish": "pionero",
+        "english": "pioneer"
+    },
+    {
+        "spanish": "precioso",
+        "english": "precious"
+    },
+    {
+        "spanish": "precepto",
+        "english": "precept"
+    },
+    {
+        "spanish": "potente",
+        "english": "potent"
+    },
+    {
+        "spanish": "usurero",
+        "english": "usurer"
+    },
+    {
+        "spanish": "planta",
+        "english": "plant"
+    },
+    {
+        "spanish": "pomposo",
+        "english": "pompous"
+    },
+    {
+        "spanish": "poroso",
+        "english": "porous"
+    },
+    {
+        "spanish": "posible",
+        "english": "possible"
+    },
+    {
+        "spanish": "positivo",
+        "english": "positive"
+    },
+    {
+        "spanish": "previo",
+        "english": "previous"
+    },
+    {
+        "spanish": "perfecto",
+        "english": "perfect"
+    },
+    {
+        "spanish": "obsoleto",
+        "english": "obsolete"
+    },
+    {
+        "spanish": "uniforme",
+        "english": "uniform"
+    },
+    {
+        "spanish": "obtuso",
+        "english": "obtuse"
+    },
+    {
+        "spanish": "ofensivo",
+        "english": "offensive"
+    },
+    {
+        "spanish": "oneroso",
+        "english": "onerous"
+    },
+    {
+        "spanish": "opcional",
+        "english": "optional"
+    },
+    {
+        "spanish": "opinión",
+        "english": "opinion"
+    },
+    {
+        "spanish": "oponente",
+        "english": "opponent"
+    },
+    {
+        "spanish": "opulento",
+        "english": "opulent"
+    },
+    {
+        "spanish": "origen",
+        "english": "origin"
+    },
+    {
+        "spanish": "paralelo",
+        "english": "parallel"
+    },
+    {
+        "spanish": "inoportuno",
+        "english": "untimely"
+    },
+    {
+        "spanish": "recesivo",
+        "english": "recessive"
+    },
+    {
+        "spanish": "efectivo",
+        "english": "cash"
+    },
+    {
+        "spanish": "dichoso",
+        "english": "blissful"
+    },
+    {
+        "spanish": "cercano",
+        "english": "near"
+    },
+    {
+        "spanish": "cerrado",
+        "english": "closed person"
+    },
+    {
+        "spanish": "cárcel",
+        "english": "jail"
+    },
+    {
+        "spanish": "estándar",
+        "english": "standard"
+    },
+    {
+        "spanish": "conejo",
+        "english": "rabbit"
+    },
+    {
+        "spanish": "código",
+        "english": "code"
+    },
+    {
+        "spanish": "contorno",
+        "english": "outline"
+    },
+    {
+        "spanish": "cómodo",
+        "english": "comfortable"
+    },
+    {
+        "spanish": "dibujo",
+        "english": "drawing"
+    },
+    {
+        "spanish": "esclavo",
+        "english": "slave"
+    },
+    {
+        "spanish": "estudio",
+        "english": "study"
+    },
+    {
+        "spanish": "estudiar",
+        "english": "to study"
+    },
+    {
+        "spanish": "famoso",
+        "english": "famous person"
+    },
+    {
+        "spanish": "ceñido",
+        "english": "tight-fitting"
+    },
+    {
+        "spanish": "fantasía",
+        "english": "fantasy"
+    },
+    {
+        "spanish": "chandal",
+        "english": "tracksuit"
+    },
+    {
+        "spanish": "conserje",
+        "english": "janitor"
+    },
+    {
+        "spanish": "comienzo",
+        "english": "beginning"
+    },
+    {
+        "spanish": "chantaje",
+        "english": "blackmail"
+    },
+    {
+        "spanish": "diario",
+        "english": "daily"
+    },
+    {
+        "spanish": "conforme",
+        "english": "in agreement"
+    },
+    {
+        "spanish": "comedido",
+        "english": "restrained"
+    },
+    {
+        "spanish": "fresco",
+        "english": "fresh"
+    },
+    {
+        "spanish": "fanático",
+        "english": "fanatic"
+    },
+    {
+        "spanish": "cálido",
+        "english": "warm"
+    },
+    {
+        "spanish": "fallido",
+        "english": "failed"
+    },
+    {
+        "spanish": "farmacia",
+        "english": "pharmacy"
+    },
+    {
+        "spanish": "frágil",
+        "english": "fragile"
+    },
+    {
+        "spanish": "condena",
+        "english": "sentence"
+    },
+    {
+        "spanish": "cartero",
+        "english": "mailman"
+    },
+    {
+        "spanish": "cuidado",
+        "english": "care"
+    },
+    {
+        "spanish": "casero",
+        "english": "landlord"
+    },
+    {
+        "spanish": "escala",
+        "english": "scale"
+    },
+    {
+        "spanish": "eufónico",
+        "english": "euphonic"
+    },
+    {
+        "spanish": "caserío",
+        "english": "hamlet"
+    },
+    {
+        "spanish": "etnólogo",
+        "english": "ethnologist"
+    },
+    {
+        "spanish": "culpable",
+        "english": "guilty"
+    },
+    {
+        "spanish": "eterno",
+        "english": "eternal"
+    },
+    {
+        "spanish": "caulinar",
+        "english": "stem"
+    },
+    {
+        "spanish": "factible",
+        "english": "feasible"
+    },
+    {
+        "spanish": "cultivo",
+        "english": "crop"
+    },
+    {
+        "spanish": "cumbre",
+        "english": "summit"
+    },
+    {
+        "spanish": "facultad",
+        "english": "faculty"
+    },
+    {
+        "spanish": "cuneta",
+        "english": "gutter"
+    },
+    {
+        "spanish": "cazador",
+        "english": "hunter"
+    },
+    {
+        "spanish": "cañería",
+        "english": "plumbing"
+    },
+    {
+        "spanish": "estúpido",
+        "english": "stupid"
+    },
+    {
+        "spanish": "curación",
+        "english": "healing"
+    },
+    {
+        "spanish": "estímulo",
+        "english": "stimulus"
+    },
+    {
+        "spanish": "estético",
+        "english": "aesthetic"
+    },
+    {
+        "spanish": "fisurado",
+        "english": "fissured"
+    },
+    {
+        "spanish": "curtido",
+        "english": "weathered"
+    },
+    {
+        "spanish": "cepillo",
+        "english": "brush"
+    },
+    {
+        "spanish": "frente",
+        "english": "front"
+    },
+    {
+        "spanish": "destreza",
+        "english": "skill"
+    },
+    {
+        "spanish": "función",
+        "english": "function"
+    },
+    {
+        "spanish": "espacial",
+        "english": "spatial"
+    },
+    {
+        "spanish": "conocido",
+        "english": "acquaintance"
+    },
+    {
+        "spanish": "denuncia",
+        "english": "report"
+    },
+    {
+        "spanish": "filtrado",
+        "english": "filtered"
+    },
+    {
+        "spanish": "coartada",
+        "english": "alibi"
+    },
+    {
+        "spanish": "forjado",
+        "english": "forged"
+    },
+    {
+        "spanish": "colado",
+        "english": "strained"
+    },
+    {
+        "spanish": "despegue",
+        "english": "takeoff"
+    },
+    {
+        "spanish": "comarca",
+        "english": "region"
+    },
+    {
+        "spanish": "colina",
+        "english": "hill"
+    },
+    {
+        "spanish": "flácido",
+        "english": "flaccid"
+    },
+    {
+        "spanish": "estadio",
+        "english": "stadium"
+    },
+    {
+        "spanish": "colono",
+        "english": "settler"
+    },
+    {
+        "spanish": "derecha",
+        "english": "right (direction)"
+    },
+    {
+        "spanish": "conjunto",
+        "english": "set"
+    },
+    {
+        "spanish": "derecho",
+        "english": "right"
+    },
+    {
+        "spanish": "derogado",
+        "english": "repealed"
+    },
+    {
+        "spanish": "espinoso",
+        "english": "spiny"
+    },
+    {
+        "spanish": "flauta",
+        "english": "flute"
+    },
+    {
+        "spanish": "firmeza",
+        "english": "firmness"
+    },
+    {
+        "spanish": "colocado",
+        "english": "placed"
+    },
+    {
+        "spanish": "deshecho",
+        "english": "unmade"
+    },
+    {
+        "spanish": "colmado",
+        "english": "filled"
+    },
+    {
+        "spanish": "derrumbe",
+        "english": "collapse"
+    },
+    {
+        "spanish": "espacio",
+        "english": "space"
+    },
+    {
+        "spanish": "forzado",
+        "english": "forced"
+    },
+    {
+        "spanish": "cinturón",
+        "english": "belt"
+    },
+    {
+        "spanish": "figurado",
+        "english": "figurative"
+    },
+    {
+        "spanish": "cúspide",
+        "english": "peak"
+    },
+    {
+        "spanish": "cirugía",
+        "english": "surgery"
+    },
+    {
+        "spanish": "franco",
+        "english": "frank"
+    },
+    {
+        "spanish": "dadivoso",
+        "english": "giving person"
+    },
+    {
+        "spanish": "dañino",
+        "english": "harmful"
+    },
+    {
+        "spanish": "comarcal",
+        "english": "county"
+    },
+    {
+        "spanish": "desdicha",
+        "english": "misfortune"
+    },
+    {
+        "spanish": "cirujano",
+        "english": "surgeon"
+    },
+    {
+        "spanish": "fracción",
+        "english": "fraction"
+    },
+    {
+        "spanish": "citación",
+        "english": "summons"
+    },
+    {
+        "spanish": "febrero",
+        "english": "February"
+    },
+    {
+        "spanish": "ciudad",
+        "english": "city"
+    },
+    {
+        "spanish": "estepa",
+        "english": "steppe"
+    },
+    {
+        "spanish": "estatuto",
+        "english": "statute"
+    },
+    {
+        "spanish": "estatal",
+        "english": "state"
+    },
+    {
+        "spanish": "enorme",
+        "english": "enormous"
+    },
+    {
+        "spanish": "clausura",
+        "english": "closing"
+    },
+    {
+        "spanish": "fiable",
+        "english": "reliable"
+    },
+    {
+        "spanish": "delator",
+        "english": "informer"
+    },
+    {
+        "spanish": "empírico",
+        "english": "empiricist"
+    },
+    {
+        "spanish": "delgado",
+        "english": "thin"
+    },
+    {
+        "spanish": "ficticio",
+        "english": "fictitious"
+    },
+    {
+        "spanish": "delito",
+        "english": "crime"
+    },
+    {
+        "spanish": "cartel",
+        "english": "poster"
+    },
+    {
+        "spanish": "estéril",
+        "english": "sterile"
+    },
+    {
+        "spanish": "exótico",
+        "english": "exotic"
+    },
+    {
+        "spanish": "energía",
+        "english": "energy"
+    },
+    {
+        "spanish": "elegido",
+        "english": "chosen"
+    },
+    {
+        "spanish": "doloroso",
+        "english": "painful"
+    },
+    {
+        "spanish": "excluido",
+        "english": "excluded person"
+    },
+    {
+        "spanish": "dolencia",
+        "english": "ailment"
+    },
+    {
+        "spanish": "embalaje",
+        "english": "packaging"
+    },
+    {
+        "spanish": "evacuado",
+        "english": "evacuee"
+    },
+    {
+        "spanish": "exaltado",
+        "english": "exalted"
+    },
+    {
+        "spanish": "extenso",
+        "english": "extensive"
+    },
+    {
+        "spanish": "galería",
+        "english": "gallery"
+    },
+    {
+        "spanish": "entrada",
+        "english": "entrance"
+    },
+    {
+        "spanish": "desatado",
+        "english": "untied"
+    },
+    {
+        "spanish": "domingo",
+        "english": "Sunday"
+    },
+    {
+        "spanish": "externo",
+        "english": "external"
+    },
+    {
+        "spanish": "creencia",
+        "english": "belief"
+    },
+    {
+        "spanish": "corbata",
+        "english": "tie"
+    },
+    {
+        "spanish": "corazón",
+        "english": "heart"
+    },
+    {
+        "spanish": "crespo",
+        "english": "frizzy"
+    },
+    {
+        "spanish": "creyente",
+        "english": "believer"
+    },
+    {
+        "spanish": "crispado",
+        "english": "tense"
+    },
+    {
+        "spanish": "empapado",
+        "english": "soaked"
+    },
+    {
+        "spanish": "crítica",
+        "english": "review"
+    },
+    {
+        "spanish": "empatado",
+        "english": "tied"
+    },
+    {
+        "spanish": "domador",
+        "english": "tamer"
+    },
+    {
+        "spanish": "dorador",
+        "english": "gilder"
+    },
+    {
+        "spanish": "enemigo",
+        "english": "enemy"
+    },
+    {
+        "spanish": "endémico",
+        "english": "endemic"
+    },
+    {
+        "spanish": "exiliado",
+        "english": "exile"
+    },
+    {
+        "spanish": "eficacia",
+        "english": "effectiveness"
+    },
+    {
+        "spanish": "corredor",
+        "english": "broker"
+    },
+    {
+        "spanish": "genérico",
+        "english": "generic"
+    },
+    {
+        "spanish": "cortado",
+        "english": "cut"
+    },
+    {
+        "spanish": "generoso",
+        "english": "generous person"
+    },
+    {
+        "spanish": "eficaz",
+        "english": "effective"
+    },
+    {
+        "spanish": "cortijo",
+        "english": "farmhouse"
+    },
+    {
+        "spanish": "enviado",
+        "english": "envoy"
+    },
+    {
+        "spanish": "ejemplar",
+        "english": "copy"
+    },
+    {
+        "spanish": "cordura",
+        "english": "sanity"
+    },
+    {
+        "spanish": "cosecha",
+        "english": "harvest"
+    },
+    {
+        "spanish": "enólogo",
+        "english": "enologist"
+    },
+    {
+        "spanish": "cosido",
+        "english": "sewn"
+    },
+    {
+        "spanish": "duradero",
+        "english": "lasting"
+    },
+    {
+        "spanish": "dulzón",
+        "english": "sweetish"
+    },
+    {
+        "spanish": "dudoso",
+        "english": "doubtful"
+    },
+    {
+        "spanish": "crecido",
+        "english": "grown"
+    },
+    {
+        "spanish": "epílogo",
+        "english": "epilogue"
+    },
+    {
+        "spanish": "explicar",
+        "english": "to explain"
+    },
+    {
+        "spanish": "ducharse",
+        "english": "to shower"
+    },
+    {
+        "spanish": "cariñoso",
+        "english": "affectionate"
+    },
+    {
+        "spanish": "espurio",
+        "english": "spurious"
+    },
+    {
+        "spanish": "dictamen",
+        "english": "opinion"
+    },
+    {
+        "spanish": "convenio",
+        "english": "agreement"
+    },
+    {
+        "spanish": "furioso",
+        "english": "furious person"
+    },
+    {
+        "spanish": "fundador",
+        "english": "founder"
+    },
+    {
+        "spanish": "cuerpo",
+        "english": "body"
+    },
+    {
+        "spanish": "dinero",
+        "english": "money"
+    },
+    {
+        "spanish": "evadirse",
+        "english": "to evade"
+    },
+    {
+        "spanish": "cuerdo",
+        "english": "sane person"
+    },
+    {
+        "spanish": "cuchillo",
+        "english": "knife"
+    },
+    {
+        "spanish": "errático",
+        "english": "erratic"
+    },
+    {
+        "spanish": "cuchara",
+        "english": "spoon"
+    },
+    {
+        "spanish": "compás",
+        "english": "beat"
+    },
+    {
+        "spanish": "cuento",
+        "english": "story"
+    },
+    {
+        "spanish": "entidad",
+        "english": "entity"
+    },
+    {
+        "spanish": "cubierto",
+        "english": "overcast"
+    },
+    {
+        "spanish": "carnoso",
+        "english": "fleshy"
+    },
+    {
+        "spanish": "empeño",
+        "english": "determination"
+    },
+    {
+        "spanish": "fétido",
+        "english": "fetid"
+    },
+    {
+        "spanish": "fundado",
+        "english": "founded"
+    },
+    {
+        "spanish": "erróneo",
+        "english": "erroneous"
+    },
+    {
+        "spanish": "extraído",
+        "english": "extracted"
+    },
+    {
+        "spanish": "cuerda",
+        "english": "rope"
+    },
+    {
+        "spanish": "diestro",
+        "english": "skillful"
+    },
+    {
+        "spanish": "fértil",
+        "english": "fertile"
+    },
+    {
+        "spanish": "ermitaño",
+        "english": "hermit"
+    },
+    {
+        "spanish": "diseño",
+        "english": "design"
+    },
+    {
+        "spanish": "descanso",
+        "english": "rest"
+    },
+    {
+        "spanish": "resonante",
+        "english": "resonant"
+    },
+    {
+        "spanish": "desafinado",
+        "english": "out of tune"
+    },
+    {
+        "spanish": "excéntrico",
+        "english": "eccentric"
+    },
+    {
+        "spanish": "insaturado",
+        "english": "unsaturated"
+    },
+    {
+        "spanish": "inmaculado",
+        "english": "immaculate"
+    },
+    {
+        "spanish": "exhibición",
+        "english": "exhibition"
+    },
+    {
+        "spanish": "inventario",
+        "english": "inventory"
+    },
+    {
+        "spanish": "existente",
+        "english": "existing"
+    },
+    {
+        "spanish": "concurrido",
+        "english": "crowded"
+    },
+    {
+        "spanish": "reverente",
+        "english": "reverent"
+    },
+    {
+        "spanish": "intrínseco",
+        "english": "intrinsic"
+    },
+    {
+        "spanish": "desaliñado",
+        "english": "slovenly"
+    },
+    {
+        "spanish": "estacional",
+        "english": "seasonal"
+    },
+    {
+        "spanish": "concedido",
+        "english": "granted"
+    },
+    {
+        "spanish": "intrincado",
+        "english": "intricate"
+    },
+    {
+        "spanish": "reportero",
+        "english": "reporter"
+    },
+    {
+        "spanish": "resistente",
+        "english": "resistant"
+    },
+    {
+        "spanish": "religioso",
+        "english": "religious"
+    },
+    {
+        "spanish": "mutualista",
+        "english": "mutualistic"
+    },
+    {
+        "spanish": "confiable",
+        "english": "trustworthy"
+    },
+    {
+        "spanish": "represivo",
+        "english": "repressive"
+    },
+    {
+        "spanish": "confección",
+        "english": "making"
+    },
+    {
+        "spanish": "desanimado",
+        "english": "discouraged"
+    },
+    {
+        "spanish": "evolución",
+        "english": "evolution"
+    },
+    {
+        "spanish": "estrategia",
+        "english": "strategy"
+    },
+    {
+        "spanish": "congelado",
+        "english": "frozen"
+    },
+    {
+        "spanish": "inmediato",
+        "english": "immediate"
+    },
+    {
+        "spanish": "reservado",
+        "english": "reserved"
+    },
+    {
+        "spanish": "contusión",
+        "english": "bruise"
+    },
+    {
+        "spanish": "librería",
+        "english": "bookstore"
+    },
+    {
+        "spanish": "libro",
+        "english": "book"
+    },
+    {
+        "spanish": "licenciado",
+        "english": "licensed"
+    },
+    {
+        "spanish": "televisor",
+        "english": "television"
+    },
+    {
+        "spanish": "lavabo",
+        "english": "sink"
+    },
+    {
+        "spanish": "cuentista",
+        "english": "short story writer"
+    },
+    {
+        "spanish": "curandero",
+        "english": "healer"
+    },
+    {
+        "spanish": "sensitivo",
+        "english": "sensitive"
+    },
+    {
+        "spanish": "cumpleaños",
+        "english": "birthday"
+    },
+    {
+        "spanish": "letárgico",
+        "english": "lethargic person"
+    },
+    {
+        "spanish": "cuidadoso",
+        "english": "careful"
+    },
+    {
+        "spanish": "tendinoso",
+        "english": "tendinous"
+    },
+    {
+        "spanish": "socialista",
+        "english": "socialist"
+    },
+    {
+        "spanish": "cualquier",
+        "english": "any"
+    },
+    {
+        "spanish": "creciente",
+        "english": "growing"
+    },
+    {
+        "spanish": "cotización",
+        "english": "quote"
+    },
+    {
+        "spanish": "epidérmico",
+        "english": "epidermal"
+    },
+    {
+        "spanish": "cristalero",
+        "english": "glass worker"
+    },
+    {
+        "spanish": "cooperante",
+        "english": "aid worker"
+    },
+    {
+        "spanish": "subcutáneo",
+        "english": "subcutaneous"
+    },
+    {
+        "spanish": "subjuntivo",
+        "english": "subjunctive"
+    },
+    {
+        "spanish": "cordillera",
+        "english": "mountain range"
+    },
+    {
+        "spanish": "taciturno",
+        "english": "taciturn"
+    },
+    {
+        "spanish": "manuscrito",
+        "english": "manuscript"
+    },
+    {
+        "spanish": "lavadora",
+        "english": "washing machine"
+    },
+    {
+        "spanish": "enojado",
+        "english": "angry person"
+    },
+    {
+        "spanish": "sacrificio",
+        "english": "sacrifice"
+    },
+    {
+        "spanish": "salario",
+        "english": "salary"
+    },
+    {
+        "spanish": "delantero",
+        "english": "front"
+    },
+    {
+        "spanish": "específico",
+        "english": "specific"
+    },
+    {
+        "spanish": "espejo",
+        "english": "mirror"
+    },
+    {
+        "spanish": "derribado",
+        "english": "knocked down"
+    },
+    {
+        "spanish": "espléndido",
+        "english": "splendid"
+    },
+    {
+        "spanish": "transeúnte",
+        "english": "transient"
+    },
+    {
+        "spanish": "construido",
+        "english": "built"
+    },
+    {
+        "spanish": "testimonio",
+        "english": "testimony"
+    },
+    {
+        "spanish": "joyería",
+        "english": "jewelry store"
+    },
+    {
+        "spanish": "escéptico",
+        "english": "skeptic"
+    },
+    {
+        "spanish": "debilidad",
+        "english": "weakness"
+    },
+    {
+        "spanish": "secretaría",
+        "english": "secretariat"
+    },
+    {
+        "spanish": "escultura",
+        "english": "sculpture"
+    },
+    {
+        "spanish": "sectorial",
+        "english": "sectoral"
+    },
+    {
+        "spanish": "desarrollo",
+        "english": "development"
+    },
+    {
+        "spanish": "reformista",
+        "english": "reformist"
+    },
+    {
+        "spanish": "desaseado",
+        "english": "untidy"
+    },
+    {
+        "spanish": "preventivo",
+        "english": "preventive"
+    },
+    {
+        "spanish": "empolvado",
+        "english": "dusty"
+    },
+    {
+        "spanish": "presidente",
+        "english": "president"
+    },
+    {
+        "spanish": "dibujante",
+        "english": "draftsman"
+    },
+    {
+        "spanish": "pacifista",
+        "english": "pacifist"
+    },
+    {
+        "spanish": "desvelarse",
+        "english": "to stay awake"
+    },
+    {
+        "spanish": "chapucero",
+        "english": "shoddy"
+    },
+    {
+        "spanish": "prisionero",
+        "english": "prisoner"
+    },
+    {
+        "spanish": "homólogo",
+        "english": "counterpart"
+    },
+    {
+        "spanish": "cerrajero",
+        "english": "locksmith"
+    },
+    {
+        "spanish": "homogéneo",
+        "english": "homogeneous"
+    },
+    {
+        "spanish": "presentado",
+        "english": "presented"
+    },
+    {
+        "spanish": "higiénico",
+        "english": "hygienic"
+    },
+    {
+        "spanish": "visionario",
+        "english": "visionary"
+    },
+    {
+        "spanish": "celeridad",
+        "english": "swiftness"
+    },
+    {
+        "spanish": "hipotético",
+        "english": "hypothetical"
+    },
+    {
+        "spanish": "cercanías",
+        "english": "vicinity"
+    },
+    {
+        "spanish": "cerradura",
+        "english": "lock"
+    },
+    {
+        "spanish": "violinista",
+        "english": "violinist"
+    },
+    {
+        "spanish": "empresario",
+        "english": "business owner"
+    },
+    {
+        "spanish": "productor",
+        "english": "producer"
+    },
+    {
+        "spanish": "desprecio",
+        "english": "contempt"
+    },
+    {
+        "spanish": "vehemente",
+        "english": "vehement"
+    },
+    {
+        "spanish": "desplegado",
+        "english": "unfolded"
+    },
+    {
+        "spanish": "organizado",
+        "english": "organized"
+    },
+    {
+        "spanish": "ciudadano",
+        "english": "citizen"
+    },
+    {
+        "spanish": "destacado",
+        "english": "outstanding"
+    },
+    {
+        "spanish": "imparcial",
+        "english": "impartial person"
+    },
+    {
+        "spanish": "dispuesto",
+        "english": "willing"
+    },
+    {
+        "spanish": "dramaturgo",
+        "english": "playwright"
+    },
+    {
+        "spanish": "piramidal",
+        "english": "pyramidal"
+    },
+    {
+        "spanish": "plagiario",
+        "english": "plagiarist"
+    },
+    {
+        "spanish": "distintivo",
+        "english": "badge"
+    },
+    {
+        "spanish": "distendido",
+        "english": "relaxed"
+    },
+    {
+        "spanish": "platónico",
+        "english": "platonic"
+    },
+    {
+        "spanish": "embaucado",
+        "english": "duped person"
+    },
+    {
+        "spanish": "embelesado",
+        "english": "enthralled person"
+    },
+    {
+        "spanish": "capacitado",
+        "english": "trained"
+    },
+    {
+        "spanish": "disparejo",
+        "english": "uneven"
+    },
+    {
+        "spanish": "disminuido",
+        "english": "decreased"
+    },
+    {
+        "spanish": "guía",
+        "english": "guide"
+    },
+    {
+        "spanish": "pesimista",
+        "english": "pessimist"
+    },
+    {
+        "spanish": "granívoro",
+        "english": "granivorous"
+    },
+    {
+        "spanish": "pertinente",
+        "english": "pertinent"
+    },
+    {
+        "spanish": "persuasivo",
+        "english": "persuasive"
+    },
+    {
+        "spanish": "perforado",
+        "english": "perforated"
+    },
+    {
+        "spanish": "editorial",
+        "english": "publisher"
+    },
+    {
+        "spanish": "periódico",
+        "english": "periodic"
+    },
+    {
+        "spanish": "edificado",
+        "english": "built"
+    },
+    {
+        "spanish": "permisivo",
+        "english": "permissive"
+    },
+    {
+        "spanish": "edafólogo",
+        "english": "soil scientist"
+    },
+    {
+        "spanish": "casualidad",
+        "english": "coincidence"
+    },
+    {
+        "spanish": "helado",
+        "english": "ice cream"
+    },
+    {
+        "spanish": "parlamento",
+        "english": "parliament"
+    },
+    {
+        "spanish": "posmoderno",
+        "english": "postmodern"
+    },
+    {
+        "spanish": "paramédico",
+        "english": "paramedic"
+    },
+    {
+        "spanish": "empeorado",
+        "english": "worsened"
+    },
+    {
+        "spanish": "potencial",
+        "english": "potential"
+    },
+    {
+        "spanish": "dirección",
+        "english": "address"
+    },
+    {
+        "spanish": "diplomado",
+        "english": "certified"
+    },
+    {
+        "spanish": "difundido",
+        "english": "spread"
+    },
+    {
+        "spanish": "heladero",
+        "english": "ice cream maker"
+    },
+    {
+        "spanish": "vegetativo",
+        "english": "vegetative"
+    },
+    {
+        "spanish": "organista",
+        "english": "organist"
+    },
+    {
+        "spanish": "indefinido",
+        "english": "undefined"
+    },
+    {
+        "spanish": "indicación",
+        "english": "indication"
+    },
+    {
+        "spanish": "razonable",
+        "english": "reasonable"
+    },
+    {
+        "spanish": "descomunal",
+        "english": "huge"
+    },
+    {
+        "spanish": "incógnito",
+        "english": "incognito person"
+    },
+    {
+        "spanish": "realizado",
+        "english": "realized"
+    },
+    {
+        "spanish": "fatalidad",
+        "english": "fatality"
+    },
+    {
+        "spanish": "descuidado",
+        "english": "careless"
+    },
+    {
+        "spanish": "incrédulo",
+        "english": "incredulous"
+    },
+    {
+        "spanish": "informe",
+        "english": "report"
+    },
+    {
+        "spanish": "receptivo",
+        "english": "receptive"
+    },
+    {
+        "spanish": "desbordado",
+        "english": "overflowing"
+    },
+    {
+        "spanish": "desgastado",
+        "english": "worn"
+    },
+    {
+        "spanish": "oferta",
+        "english": "offer"
+    },
+    {
+        "spanish": "prolífico",
+        "english": "prolific"
+    },
+    {
+        "spanish": "desgracia",
+        "english": "misfortune"
+    },
+    {
+        "spanish": "oficiante",
+        "english": "officiant"
+    },
+    {
+        "spanish": "deslucido",
+        "english": "lackluster"
+    },
+    {
+        "spanish": "obrero",
+        "english": "worker"
+    },
+    {
+        "spanish": "despejado",
+        "english": "clear"
+    },
+    {
+        "spanish": "despeinado",
+        "english": "disheveled"
+    },
+    {
+        "spanish": "codiciado",
+        "english": "coveted person"
+    },
+    {
+        "spanish": "desmedido",
+        "english": "excessive"
+    },
+    {
+        "spanish": "progresivo",
+        "english": "progressive"
+    },
+    {
+        "spanish": "prolongado",
+        "english": "prolonged"
+    },
+    {
+        "spanish": "prohibido",
+        "english": "prohibited"
+    },
+    {
+        "spanish": "desligado",
+        "english": "unbound"
+    },
+    {
+        "spanish": "flemático",
+        "english": "phlegmatic"
+    },
+    {
+        "spanish": "habitación",
+        "english": "room"
+    },
+    {
+        "spanish": "promoción",
+        "english": "promotion"
+    },
+    {
+        "spanish": "escritorio",
+        "english": "desk"
+    },
+    {
+        "spanish": "ocupación",
+        "english": "occupation"
+    },
+    {
+        "spanish": "operativo",
+        "english": "operational"
+    },
+    {
+        "spanish": "estantería",
+        "english": "bookshelf"
+    },
+    {
+        "spanish": "hostigado",
+        "english": "harassed person"
+    },
+    {
+        "spanish": "lavaplatos",
+        "english": "dishwasher"
+    },
+    {
+        "spanish": "lección",
+        "english": "lesson"
+    },
+    {
+        "spanish": "escuela",
+        "english": "school"
+    },
+    {
+        "spanish": "hablar",
+        "english": "to speak"
+    },
+    {
+        "spanish": "enseñar",
+        "english": "to teach"
+    },
+    {
+        "spanish": "gritar",
+        "english": "to shout"
+    },
+    {
+        "spanish": "enviar",
+        "english": "to send"
+    },
+    {
+        "spanish": "llamar",
+        "english": "to call"
+    },
+    {
+        "spanish": "evocar",
+        "english": "to evoke"
+    },
+    {
+        "spanish": "entrar",
+        "english": "to enter"
+    },
+    {
+        "spanish": "falsificar",
+        "english": "to falsify"
+    },
+    {
+        "spanish": "gratificar",
+        "english": "to gratify"
+    },
+    {
+        "spanish": "espirar",
+        "english": "to expire"
+    },
+    {
+        "spanish": "guiar",
+        "english": "to guide"
+    },
+    {
+        "spanish": "intentar",
+        "english": "to try"
+    },
+    {
+        "spanish": "influir",
+        "english": "to influence"
+    },
+    {
+        "spanish": "inmolar",
+        "english": "to immolate"
+    },
+    {
+        "spanish": "excluir",
+        "english": "to exclude"
+    },
+    {
+        "spanish": "mamá",
+        "english": "mom"
+    },
+    {
+        "spanish": "flamear",
+        "english": "to flutter"
+    },
+    {
+        "spanish": "lápiz",
+        "english": "pencil"
+    },
+    {
+        "spanish": "irradiar",
+        "english": "to radiate"
+    },
+    {
+        "spanish": "honrar",
+        "english": "to honor"
+    },
+    {
+        "spanish": "goma",
+        "english": "eraser"
+    },
+    {
+        "spanish": "gobernar",
+        "english": "to govern"
+    },
+    {
+        "spanish": "enmendar",
+        "english": "to amend"
+    },
+    {
+        "spanish": "flotar",
+        "english": "to float"
+    },
+    {
+        "spanish": "iniciar",
+        "english": "to initiate"
+    },
+    {
+        "spanish": "extraer",
+        "english": "to extract"
+    },
+    {
+        "spanish": "juzgar",
+        "english": "to judge"
+    },
+    {
+        "spanish": "nota",
+        "english": "note"
+    },
+    {
+        "spanish": "viudo",
+        "english": "widower"
+    },
+    {
+        "spanish": "humillar",
+        "english": "to humiliate"
+    },
+    {
+        "spanish": "estacionar",
+        "english": "to park"
+    },
+    {
+        "spanish": "esculpir",
+        "english": "to sculpt"
+    },
+    {
+        "spanish": "enrollar",
+        "english": "to roll up"
+    },
+    {
+        "spanish": "justificar",
+        "english": "to justify"
+    },
+    {
+        "spanish": "incluir",
+        "english": "to include"
+    },
+    {
+        "spanish": "errar",
+        "english": "to err"
+    },
+    {
+        "spanish": "fallar",
+        "english": "to fail"
+    },
+    {
+        "spanish": "forjar",
+        "english": "to forge"
+    },
+    {
+        "spanish": "entender",
+        "english": "to understand"
+    },
+    {
+        "spanish": "establecer",
+        "english": "to establish"
+    },
+    {
+        "spanish": "escupir",
+        "english": "to spit"
+    },
+    {
+        "spanish": "entonar",
+        "english": "to intone"
+    },
+    {
+        "spanish": "lago",
+        "english": "lake"
+    },
+    {
+        "spanish": "flojo",
+        "english": "loose"
+    },
+    {
+        "spanish": "falaz",
+        "english": "false"
+    },
+    {
+        "spanish": "letra",
+        "english": "letter (alphabet)"
+    },
+    {
+        "spanish": "feria",
+        "english": "fair"
+    },
+    {
+        "spanish": "gafas",
+        "english": "glasses"
+    },
+    {
+        "spanish": "frito",
+        "english": "fried"
+    },
+    {
+        "spanish": "gato",
+        "english": "cat"
+    },
+    {
+        "spanish": "león",
+        "english": "lion"
+    },
+    {
+        "spanish": "imán",
+        "english": "imam"
+    },
+    {
+        "spanish": "feroz",
+        "english": "fierce"
+    },
+    {
+        "spanish": "farsa",
+        "english": "farce"
+    },
+    {
+        "spanish": "igual",
+        "english": "equal"
+    },
+    {
+        "spanish": "lleno",
+        "english": "full"
+    },
+    {
+        "spanish": "largo",
+        "english": "long"
+    },
+    {
+        "spanish": "gris",
+        "english": "gray"
+    },
+    {
+        "spanish": "espía",
+        "english": "spy"
+    },
+    {
+        "spanish": "fijo",
+        "english": "fixed"
+    },
+    {
+        "spanish": "lento",
+        "english": "slow"
+    },
+    {
+        "spanish": "libre",
+        "english": "free"
+    },
+    {
+        "spanish": "mago",
+        "english": "magician"
+    },
+    {
+        "spanish": "fuego",
+        "english": "fire"
+    },
+    {
+        "spanish": "llano",
+        "english": "flat"
+    },
+    {
+        "spanish": "horno",
+        "english": "oven"
+    },
+    {
+        "spanish": "maleta",
+        "english": "suitcase"
+    },
+    {
+        "spanish": "puerto",
+        "english": "port"
+    },
+    {
+        "spanish": "lectura",
+        "english": "reading"
+    },
+    {
+        "spanish": "mensaje",
+        "english": "message"
+    },
+    {
+        "spanish": "equipaje",
+        "english": "luggage"
+    },
+    {
+        "spanish": "reserva",
+        "english": "reservation"
+    },
+    {
+        "spanish": "tiempo",
+        "english": "time"
+    },
+    {
+        "spanish": "pasado",
+        "english": "past"
+    },
+    {
+        "spanish": "moto",
+        "english": "motorcycle"
+    },
+    {
+        "spanish": "empático",
+        "english": "empathetic person"
+    },
+    {
+        "spanish": "enfoque",
+        "english": "focus"
+    },
+    {
+        "spanish": "entereza",
+        "english": "integrity"
+    },
+    {
+        "spanish": "enseñanza",
+        "english": "teaching"
+    },
+    {
+        "spanish": "manta",
+        "english": "blanket"
+    },
+    {
+        "spanish": "enfocado",
+        "english": "focused"
+    },
+    {
+        "spanish": "geógrafo",
+        "english": "geographer"
+    },
+    {
+        "spanish": "jurado",
+        "english": "jury"
+    },
+    {
+        "spanish": "estático",
+        "english": "static person"
+    },
+    {
+        "spanish": "impresor",
+        "english": "printer"
+    },
+    {
+        "spanish": "erigido",
+        "english": "erected"
+    },
+    {
+        "spanish": "estrella",
+        "english": "star"
+    },
+    {
+        "spanish": "importe",
+        "english": "amount"
+    },
+    {
+        "spanish": "florido",
+        "english": "flowery"
+    },
+    {
+        "spanish": "intento",
+        "english": "attempt"
+    },
+    {
+        "spanish": "estirado",
+        "english": "stretched"
+    },
+    {
+        "spanish": "estimado",
+        "english": "esteemed person"
+    },
+    {
+        "spanish": "foráneo",
+        "english": "foreign"
+    },
+    {
+        "spanish": "húmedo",
+        "english": "humid"
+    },
+    {
+        "spanish": "ilustre",
+        "english": "illustrious person"
+    },
+    {
+        "spanish": "esquema",
+        "english": "scheme"
+    },
+    {
+        "spanish": "ilegal",
+        "english": "illegal person"
+    },
+    {
+        "spanish": "longevo",
+        "english": "long-lived"
+    },
+    {
+        "spanish": "longitud",
+        "english": "length"
+    },
+    {
+        "spanish": "igualado",
+        "english": "equaled"
+    },
+    {
+        "spanish": "fotófilo",
+        "english": "photophilic"
+    },
+    {
+        "spanish": "fotófobo",
+        "english": "photophobic"
+    },
+    {
+        "spanish": "letrado",
+        "english": "literate"
+    },
+    {
+        "spanish": "etéreo",
+        "english": "ethereal"
+    },
+    {
+        "spanish": "filósofo",
+        "english": "philosopher"
+    },
+    {
+        "spanish": "incierto",
+        "english": "uncertain"
+    },
+    {
+        "spanish": "vacaciones",
+        "english": "vacation"
+    },
+    {
+        "spanish": "expuesto",
+        "english": "exposed"
+    },
+    {
+        "spanish": "infiel",
+        "english": "unfaithful"
+    },
+    {
+        "spanish": "exterior",
+        "english": "outer"
+    },
+    {
+        "spanish": "limosna",
+        "english": "alms"
+    },
+    {
+        "spanish": "ineficaz",
+        "english": "ineffective"
+    },
+    {
+        "spanish": "errado",
+        "english": "erroneous"
+    },
+    {
+        "spanish": "lipófilo",
+        "english": "lipophilic"
+    },
+    {
+        "spanish": "lipófobo",
+        "english": "lipophobic"
+    },
+    {
+        "spanish": "ligero",
+        "english": "light"
+    },
+    {
+        "spanish": "ingreso",
+        "english": "income"
+    },
+    {
+        "spanish": "inmóvil",
+        "english": "immobile"
+    },
+    {
+        "spanish": "litoral",
+        "english": "coastal"
+    },
+    {
+        "spanish": "inculto",
+        "english": "uncultured"
+    },
+    {
+        "spanish": "inodoro",
+        "english": "odorless"
+    },
+    {
+        "spanish": "escritor",
+        "english": "writer"
+    },
+    {
+        "spanish": "inconexo",
+        "english": "unconnected"
+    },
+    {
+        "spanish": "llanura",
+        "english": "plain"
+    },
+    {
+        "spanish": "vacacional",
+        "english": "vacation"
+    },
+    {
+        "spanish": "invernal",
+        "english": "winter"
+    },
+    {
+        "spanish": "iletrado",
+        "english": "illiterate"
+    },
+    {
+        "spanish": "esguince",
+        "english": "sprain"
+    },
+    {
+        "spanish": "esfera",
+        "english": "sphere"
+    },
+    {
+        "spanish": "granjero",
+        "english": "farmer"
+    },
+    {
+        "spanish": "heredero",
+        "english": "heir"
+    },
+    {
+        "spanish": "fundidor",
+        "english": "foundryman"
+    },
+    {
+        "spanish": "enérgico",
+        "english": "energetic person"
+    },
+    {
+        "spanish": "joyero",
+        "english": "jeweler"
+    },
+    {
+        "spanish": "escaso",
+        "english": "scarce"
+    },
+    {
+        "spanish": "ático",
+        "english": "attic"
+    },
+    {
+        "spanish": "luxación",
+        "english": "dislocation"
+    },
+    {
+        "spanish": "esférico",
+        "english": "spherical"
+    },
+    {
+        "spanish": "ganadero",
+        "english": "rancher"
+    },
+    {
+        "spanish": "lúcido",
+        "english": "lucid person"
+    },
+    {
+        "spanish": "guantes",
+        "english": "gloves"
+    },
+    {
+        "spanish": "maderero",
+        "english": "timber"
+    },
+    {
+        "spanish": "esfuerzo",
+        "english": "effort"
+    },
+    {
+        "spanish": "herencia",
+        "english": "inheritance"
+    },
+    {
+        "spanish": "jocoso",
+        "english": "jocular"
+    },
+    {
+        "spanish": "isleño",
+        "english": "islander"
+    },
+    {
+        "spanish": "honrado",
+        "english": "honorable person"
+    },
+    {
+        "spanish": "fraile",
+        "english": "friar"
+    },
+    {
+        "spanish": "escamoso",
+        "english": "scaly"
+    },
+    {
+        "spanish": "lujoso",
+        "english": "luxurious"
+    },
+    {
+        "spanish": "invierno",
+        "english": "winter"
+    },
+    {
+        "spanish": "gestor",
+        "english": "manager"
+    },
+    {
+        "spanish": "vino",
+        "english": "wine"
+    },
+    {
+        "spanish": "frontera",
+        "english": "border"
+    },
+    {
+        "spanish": "horadado",
+        "english": "bored"
+    },
+    {
+        "spanish": "gobierno",
+        "english": "government"
+    },
+    {
+        "spanish": "honradez",
+        "english": "honesty"
+    },
+    {
+        "spanish": "español",
+        "english": "Spanish"
+    },
+    {
+        "spanish": "frutal",
+        "english": "fruit-bearing"
+    },
+    {
+        "spanish": "escarnio",
+        "english": "derision"
+    },
+    {
+        "spanish": "todo",
+        "english": "all"
+    },
+    {
+        "spanish": "ingeniero",
+        "english": "engineer"
+    },
+    {
+        "spanish": "toda",
+        "english": "all"
+    },
+    {
+        "spanish": "excedente",
+        "english": "excess"
+    },
+    {
+        "spanish": "innombrado",
+        "english": "unnamed"
+    },
+    {
+        "spanish": "jerárquico",
+        "english": "hierarchical"
+    },
+    {
+        "spanish": "tío",
+        "english": "uncle"
+    },
+    {
+        "spanish": "estancado",
+        "english": "stagnant"
+    },
+    {
+        "spanish": "esmaltador",
+        "english": "enameler"
+    },
+    {
+        "spanish": "intachable",
+        "english": "impeccable"
+    },
+    {
+        "spanish": "etnógrafo",
+        "english": "ethnographer"
+    },
+    {
+        "spanish": "insensible",
+        "english": "insensitive person"
+    },
+    {
+        "spanish": "mismo",
+        "english": "same"
+    },
+    {
+        "spanish": "esponjoso",
+        "english": "spongy"
+    },
+    {
+        "spanish": "enfatizado",
+        "english": "emphasized"
+    },
+    {
+        "spanish": "jerarquía",
+        "english": "hierarchy"
+    },
+    {
+        "spanish": "entrenado",
+        "english": "trained"
+    },
+    {
+        "spanish": "forrajero",
+        "english": "fodder"
+    },
+    {
+        "spanish": "fotografía",
+        "english": "photography"
+    },
+    {
+        "spanish": "fotógrafo",
+        "english": "photographer"
+    },
+    {
+        "spanish": "idolatrado",
+        "english": "idolized person"
+    },
+    {
+        "spanish": "ictiólogo",
+        "english": "ichthyologist"
+    },
+    {
+        "spanish": "vez",
+        "english": "time (occurrence)"
+    },
+    {
+        "spanish": "primo",
+        "english": "cousin"
+    },
+    {
+        "spanish": "horroroso",
+        "english": "horrific"
+    },
+    {
+        "spanish": "vigía",
+        "english": "lookout"
+    },
+    {
+        "spanish": "fructífero",
+        "english": "fruitful"
+    },
+    {
+        "spanish": "hidrólogo",
+        "english": "hydrologist"
+    },
+    {
+        "spanish": "hidrófobo",
+        "english": "hydrophobic"
+    },
+    {
+        "spanish": "padre",
+        "english": "father"
+    },
+    {
+        "spanish": "hacendado",
+        "english": "landowner"
+    },
+    {
+        "spanish": "habilitado",
+        "english": "enabled"
+    },
+    {
+        "spanish": "galerista",
+        "english": "gallery owner"
+    },
+    {
+        "spanish": "plazo",
+        "english": "term"
+    },
+    {
+        "spanish": "época",
+        "english": "era"
+    },
+    {
+        "spanish": "grasiento",
+        "english": "greasy"
+    },
+    {
+        "spanish": "único",
+        "english": "only"
+    },
+    {
+        "spanish": "fortaleza",
+        "english": "fortress"
+    },
+    {
+        "spanish": "formulario",
+        "english": "form"
+    },
+    {
+        "spanish": "inesperado",
+        "english": "unexpected"
+    },
+    {
+        "spanish": "extranjero",
+        "english": "foreigner"
+    },
+    {
+        "spanish": "nieto",
+        "english": "grandson"
+    },
+    {
+        "spanish": "indudable",
+        "english": "undoubted"
+    },
+    {
+        "spanish": "fagotista",
+        "english": "bassoonist"
+    },
+    {
+        "spanish": "encubierto",
+        "english": "covert"
+    },
+    {
+        "spanish": "noche",
+        "english": "night"
+    },
+    {
+        "spanish": "rato",
+        "english": "while"
+    },
+    {
+        "spanish": "indefenso",
+        "english": "defenseless person"
+    },
+    {
+        "spanish": "filántropo",
+        "english": "philanthropist"
+    },
+    {
+        "spanish": "imprevisor",
+        "english": "improvident"
+    },
+    {
+        "spanish": "impresora",
+        "english": "printer"
+    },
+    {
+        "spanish": "prole",
+        "english": "offspring"
+    },
+    {
+        "spanish": "forastero",
+        "english": "outsider"
+    },
+    {
+        "spanish": "linfático",
+        "english": "lymphatic"
+    },
+    {
+        "spanish": "envidiado",
+        "english": "envied person"
+    },
+    {
+        "spanish": "entregado",
+        "english": "delivered"
+    },
+    {
+        "spanish": "tarde",
+        "english": "afternoon"
+    },
+    {
+        "spanish": "mes",
+        "english": "month"
+    },
+    {
+        "spanish": "lavandería",
+        "english": "laundry"
+    },
+    {
+        "spanish": "siglo",
+        "english": "century"
+    },
+    {
+        "spanish": "mayor",
+        "english": "older"
+    },
+    {
+        "spanish": "mejor",
+        "english": "better"
+    },
+    {
+        "spanish": "tal",
+        "english": "such"
+    },
+    {
+        "spanish": "entrenador",
+        "english": "trainer"
+    },
+    {
+        "spanish": "reducir",
+        "english": "to reduce"
+    },
+    {
+        "spanish": "venerar",
+        "english": "to venerate"
+    },
+    {
+        "spanish": "nebulizar",
+        "english": "to nebulize"
+    },
+    {
+        "spanish": "refinar",
+        "english": "to refine"
+    },
+    {
+        "spanish": "plantar",
+        "english": "to plant"
+    },
+    {
+        "spanish": "guardar",
+        "english": "to keep"
+    },
+    {
+        "spanish": "malcriar",
+        "english": "to spoil"
+    },
+    {
+        "spanish": "maldecir",
+        "english": "to curse"
+    },
+    {
+        "spanish": "producir",
+        "english": "to produce"
+    },
+    {
+        "spanish": "extirpar",
+        "english": "to remove"
+    },
+    {
+        "spanish": "recriminar",
+        "english": "to recriminate"
+    },
+    {
+        "spanish": "recomponer",
+        "english": "to recompose"
+    },
+    {
+        "spanish": "enterar",
+        "english": "to inform"
+    },
+    {
+        "spanish": "extrañar",
+        "english": "to miss"
+    },
+    {
+        "spanish": "lograr",
+        "english": "to achieve"
+    },
+    {
+        "spanish": "maximizar",
+        "english": "to maximize"
+    },
+    {
+        "spanish": "nevera",
+        "english": "refrigerator"
+    },
+    {
+        "spanish": "optimizar",
+        "english": "to optimize"
+    },
+    {
+        "spanish": "erosionar",
+        "english": "to erode"
+    },
+    {
+        "spanish": "madrugar",
+        "english": "to get up early"
+    },
+    {
+        "spanish": "peatón",
+        "english": "pedestrian"
+    },
+    {
+        "spanish": "reintegrar",
+        "english": "to reintegrate"
+    },
+    {
+        "spanish": "licuar",
+        "english": "to liquefy"
+    },
+    {
+        "spanish": "suspender",
+        "english": "to suspend"
+    },
+    {
+        "spanish": "luchar",
+        "english": "to fight"
+    },
+    {
+        "spanish": "simbolizar",
+        "english": "to symbolize"
+    },
+    {
+        "spanish": "meditar",
+        "english": "to meditate"
+    },
+    {
+        "spanish": "manipular",
+        "english": "to manipulate"
+    },
+    {
+        "spanish": "practicar",
+        "english": "to practice"
+    },
+    {
+        "spanish": "ensayar",
+        "english": "to rehearse"
+    },
+    {
+        "spanish": "fracasar",
+        "english": "to fail"
+    },
+    {
+        "spanish": "mutilar",
+        "english": "to mutilate"
+    },
+    {
+        "spanish": "enfadar",
+        "english": "to anger"
+    },
+    {
+        "spanish": "exigir",
+        "english": "to demand"
+    },
+    {
+        "spanish": "enderezar",
+        "english": "to straighten"
+    },
+    {
+        "spanish": "simular",
+        "english": "to simulate"
+    },
+    {
+        "spanish": "endulzar",
+        "english": "to sweeten"
+    },
+    {
+        "spanish": "refrescar",
+        "english": "to refresh"
+    },
+    {
+        "spanish": "panadero",
+        "english": "baker"
+    },
+    {
+        "spanish": "refutar",
+        "english": "to refute"
+    },
+    {
+        "spanish": "limpiar",
+        "english": "to clean"
+    },
+    {
+        "spanish": "regenerar",
+        "english": "to regenerate"
+    },
+    {
+        "spanish": "ensuciar",
+        "english": "to dirty"
+    },
+    {
+        "spanish": "proclamar",
+        "english": "to proclaim"
+    },
+    {
+        "spanish": "hallar",
+        "english": "to find"
+    },
+    {
+        "spanish": "liderar",
+        "english": "to lead"
+    },
+    {
+        "spanish": "sublimar",
+        "english": "to sublimate"
+    },
+    {
+        "spanish": "halagar",
+        "english": "to flatter"
+    },
+    {
+        "spanish": "impedir",
+        "english": "to prevent"
+    },
+    {
+        "spanish": "indultar",
+        "english": "to pardon"
+    },
+    {
+        "spanish": "proponer",
+        "english": "to propose"
+    },
+    {
+        "spanish": "numerar",
+        "english": "to number"
+    },
+    {
+        "spanish": "gustar",
+        "english": "to like"
+    },
+    {
+        "spanish": "pulverizar",
+        "english": "to pulverize"
+    },
+    {
+        "spanish": "vaporizar",
+        "english": "to vaporize"
+    },
+    {
+        "spanish": "propagar",
+        "english": "to propagate"
+    },
+    {
+        "spanish": "lamer",
+        "english": "to lick"
+    },
+    {
+        "spanish": "festejar",
+        "english": "to celebrate"
+    },
+    {
+        "spanish": "encoger",
+        "english": "to shrink"
+    },
+    {
+        "spanish": "martirizar",
+        "english": "to martyrize"
+    },
+    {
+        "spanish": "inclinar",
+        "english": "to tilt"
+    },
+    {
+        "spanish": "sustituir",
+        "english": "to substitute"
+    },
+    {
+        "spanish": "enchufar",
+        "english": "to plug in"
+    },
+    {
+        "spanish": "participar",
+        "english": "to participate"
+    },
+    {
+        "spanish": "haber",
+        "english": "to have (auxiliary)"
+    },
+    {
+        "spanish": "imprimir",
+        "english": "to print"
+    },
+    {
+        "spanish": "utilizar",
+        "english": "to utilize"
+    },
+    {
+        "spanish": "validar",
+        "english": "to validate"
+    },
+    {
+        "spanish": "llegar",
+        "english": "to arrive"
+    },
+    {
+        "spanish": "marinar",
+        "english": "to marinate"
+    },
+    {
+        "spanish": "observar",
+        "english": "to observe"
+    },
+    {
+        "spanish": "encender",
+        "english": "to turn on"
+    },
+    {
+        "spanish": "llenar",
+        "english": "to fill"
+    },
+    {
+        "spanish": "obstruir",
+        "english": "to obstruct"
+    },
+    {
+        "spanish": "habilitar",
+        "english": "to enable"
+    },
+    {
+        "spanish": "encantar",
+        "english": "to love (things)"
+    },
+    {
+        "spanish": "fingir",
+        "english": "to pretend"
+    },
+    {
+        "spanish": "ocasionar",
+        "english": "to occasion"
+    },
+    {
+        "spanish": "encandilar",
+        "english": "to dazzle"
+    },
+    {
+        "spanish": "promover",
+        "english": "to promote"
+    },
+    {
+        "spanish": "llover",
+        "english": "to rain"
+    },
+    {
+        "spanish": "fortalecer",
+        "english": "to fortify"
+    },
+    {
+        "spanish": "importar",
+        "english": "to matter"
+    },
+    {
+        "spanish": "postponer",
+        "english": "to postpone"
+    },
+    {
+        "spanish": "fabricar",
+        "english": "to manufacture"
+    },
+    {
+        "spanish": "uniformar",
+        "english": "to uniform"
+    },
+    {
+        "spanish": "encubrir",
+        "english": "to cover up"
+    },
+    {
+        "spanish": "lisonjear",
+        "english": "to flatter"
+    },
+    {
+        "spanish": "operar",
+        "english": "to operate"
+    },
+    {
+        "spanish": "posponer",
+        "english": "to postpone"
+    },
+    {
+        "spanish": "programar",
+        "english": "to program"
+    },
+    {
+        "spanish": "progresar",
+        "english": "to progress"
+    },
+    {
+        "spanish": "normalizar",
+        "english": "to normalize"
+    },
+    {
+        "spanish": "malnutrir",
+        "english": "to malnourish"
+    },
+    {
+        "spanish": "taxista",
+        "english": "taxi driver"
+    },
+    {
+        "spanish": "prolongar",
+        "english": "to prolong"
     }
 ];
