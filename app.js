@@ -2,14 +2,27 @@ const GRID_SIZE = 10;
 
 let placedWords = [];
 let currentWord = null;
+difficulty = localStorage.getItem("difficulty") || "easy";
 
 // ========================
 // RANDOM WORD SELECTION
 // ========================
 
+function getWordPool(wordList) {
+    if (difficulty === "easy") {
+        return wordList.slice(0, 500);
+    } else if (difficulty === "intermediate") {
+        return wordList.slice(0, 1000);
+    } else {
+        return wordList; // advanced
+    }
+}
+
 function getRandomWords(wordList) {
-    const filtered = wordList.filter(w => 
-        w.spanish.length >= 3 && w.spanish.length <= 8 // 🔥 key
+    const pool = getWordPool(wordList);
+
+    const filtered = pool.filter(w => 
+        w.spanish.length >= 3 && w.spanish.length <= 10
     );
 
     const count = Math.floor(Math.random() * 5) + 6;
@@ -32,6 +45,15 @@ function createEmptyGrid() {
 // ========================
 // VALIDATION
 // ========================
+
+function normalize(str) {
+    return str
+        .toLowerCase()
+        .replace(/ñ/g, "__enye__") // 🔥 protect ñ
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "") // remove accents
+        .replace(/__enye__/g, "ñ"); // 🔥 restore ñ
+}
 
 function canPlaceWord(grid, word, row, col, direction, requireIntersection = true) {
     let hasIntersection = false;
@@ -151,10 +173,10 @@ function generateCrossword(words) {
                             ? existing.col + i
                             : existing.col;
 
-                        const options = [
-                            { dir: "across", row: baseRow, col: baseCol - j },
-                            { dir: "down", row: baseRow - j, col: baseCol }
-                        ];
+                        const options =
+                            existing.direction === "across"
+                                ? [{ dir: "down", row: baseRow - j, col: baseCol }]
+                                : [{ dir: "across", row: baseRow, col: baseCol - j }];
 
                         for (let opt of options) {
                             if (canPlaceWord(grid, word, opt.row, opt.col, opt.dir, true)) {
@@ -294,7 +316,7 @@ function checkCurrentWord() {
         userWord += cell.value;
     }
 
-    if (userWord === currentWord.word) {
+    if (normalize(userWord) === normalize(currentWord.word)) {
         lockWord(currentWord);
     }
 }
@@ -374,7 +396,7 @@ function checkAllWords() {
             userWord += cell.value;
         }
 
-        if (userWord === word.word) {
+        if (normalize(userWord) === normalize(word.word)) {
             lockWord(word);
         }
     });
@@ -385,6 +407,11 @@ function lockWord(word) {
 
     word.solved = true;
 
+    // Remove highlights
+    document.querySelectorAll(".cell").forEach(cell => {
+        cell.classList.remove("highlight");
+    });
+
     for (let i = 0; i < word.word.length; i++) {
         const r = word.direction === "across" ? word.row : word.row + i;
         const c = word.direction === "across" ? word.col + i : word.col;
@@ -394,10 +421,15 @@ function lockWord(word) {
         );
 
         cell.value = word.word[i];
+        cell.classList.remove("highlight");
         cell.style.background = "#c8f7c5";
         cell.disabled = true;
     }
 
+    // 🔥 IMPORTANT: re-check ALL words (fixes final word issue)
+    checkAllWords();
+
+    // 🔥 THEN check completion
     checkPuzzleComplete();
 }
 
@@ -438,6 +470,16 @@ document.addEventListener("input", (e) => {
 
     const next = getNextCell(e.target);
     if (next && !next.disabled) next.focus();
+});
+
+const select = document.getElementById("difficulty-select");
+
+select.value = difficulty;
+
+select.addEventListener("change", (e) => {
+    difficulty = e.target.value;
+    localStorage.setItem("difficulty", difficulty);
+    initGame();
 });
 
 // ========================
@@ -493,15 +535,48 @@ function triggerFireworks() {
     container.id = "fireworks";
     document.body.appendChild(container);
 
-    for (let i = 0; i < 50; i++) {
-        const spark = document.createElement("div");
-        spark.className = "spark";
-        spark.style.left = Math.random() * 100 + "vw";
-        spark.style.top = Math.random() * 100 + "vh";
-        container.appendChild(spark);
+    const colors = [
+        "#ff4d4d", "#ffd166", "#06d6a0",
+        "#118ab2", "#9b5de5", "#f15bb5"
+    ];
+
+    function createExplosion(x, y) {
+        const particleCount = 30;
+
+        for (let i = 0; i < particleCount; i++) {
+            const spark = document.createElement("div");
+            spark.className = "spark";
+
+            const angle = Math.random() * 2 * Math.PI;
+            const distance = Math.random() * 80 + 40;
+
+            const dx = Math.cos(angle) * distance;
+            const dy = Math.sin(angle) * distance;
+
+            spark.style.left = x + "px";
+            spark.style.top = y + "px";
+            spark.style.backgroundColor =
+                colors[Math.floor(Math.random() * colors.length)];
+
+            spark.style.setProperty("--dx", `${dx}px`);
+            spark.style.setProperty("--dy", `${dy}px`);
+
+            container.appendChild(spark);
+        }
     }
 
-    setTimeout(() => container.remove(), 2000);
+    // 🔥 Multiple bursts over time
+    for (let i = 0; i < 4; i++) {
+        setTimeout(() => {
+            const x = Math.random() * window.innerWidth;
+            const y = Math.random() * window.innerHeight * 0.6;
+
+            createExplosion(x, y);
+        }, i * 500);
+    }
+
+    // Cleanup
+    setTimeout(() => container.remove(), 3500);
 }
 
 // ========================
