@@ -10,9 +10,9 @@ difficulty = localStorage.getItem("difficulty") || "easy";
 
 function getWordPool(wordList) {
     if (difficulty === "easy") {
-        return wordList.slice(0, 500);
+        return wordList.slice(0, 150);
     } else if (difficulty === "intermediate") {
-        return wordList.slice(0, 1000);
+        return wordList.slice(0, 600);
     } else {
         return wordList; // advanced
     }
