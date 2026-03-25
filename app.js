@@ -463,13 +463,45 @@ document.addEventListener("input", (e) => {
     if (!e.target.classList.contains("cell")) return;
     if (!currentWord) return;
 
-    e.target.value = e.target.value.toLowerCase();
+    const cell = e.target;
+
+    // 🔥 KEY FIX: ignore empty input (prevents forward jump on backspace)
+    if (!cell.value) return;
+
+    cell.value = cell.value.toLowerCase();
 
     checkCurrentWord();
     checkAllWords(); 
 
-    const next = getNextCell(e.target);
+    const next = getNextCell(cell);
     if (next && !next.disabled) next.focus();
+
+});
+document.addEventListener("keydown", (e) => {
+    if (!e.target.classList.contains("cell")) return;
+    if (!currentWord) return;
+
+    const cell = e.target;
+
+    if (e.key === "Backspace") {
+        e.preventDefault(); // 🔥 critical
+
+        if (cell.value) {
+            // Clear current cell
+            cell.value = "";
+        } else {
+            // Move backward if already empty
+            const prev = getPrevCell(cell);
+
+            if (prev) {
+                prev.focus();
+
+                if (!prev.disabled) {
+                    prev.value = "";
+                }
+            }
+        }
+    }
 });
 
 const select = document.getElementById("difficulty-select");
@@ -503,6 +535,24 @@ function getNextCell(cell) {
 
         // 🔥 Skip locked/disabled cells
         if (!next.disabled) return next;
+    }
+}
+function getPrevCell(cell) {
+    let r = parseInt(cell.dataset.row);
+    let c = parseInt(cell.dataset.col);
+
+    while (true) {
+        if (currentWord.direction === "across") c--;
+        else r--;
+
+        const prev = document.querySelector(
+            `.cell[data-row='${r}'][data-col='${c}']`
+        );
+
+        if (!prev) return null;
+
+        // Skip locked cells
+        if (!prev.disabled) return prev;
     }
 }
 
